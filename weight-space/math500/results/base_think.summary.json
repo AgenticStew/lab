@@ -1,0 +1,26 @@
+{
+ "model": "base",
+ "weights": "Qwen/Qwen3.5-0.8B @ 2fc06364715b967f1860aea9cf38778875588b17",
+ "mode": "think",
+ "sampling": {
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "presence_penalty": 1.5,
+  "max_tokens": 32768,
+  "seed": 0
+ },
+ "thinking": true,
+ "problems": 500,
+ "samples": 1,
+ "responses": 500,
+ "accuracy": 7.2,
+ "cut_share": 93.6,
+ "accuracy_on_finished": 100.0,
+ "mean_tokens": 31011.8,
+ "median_tokens_correct": 5896,
+ "wall_s": 3228.0,
+ "tokens_per_s": 4803.5,
+ "gpu": "NVIDIA GeForce RTX 5090 (32 GB)",
+ "date": "2026-11-02 22:21 GMT"
+}

@@ -1,0 +1,9 @@
+# downloaded inputs (see each folder's README)
+lm_understand-logs/
+models/
+.hf_datasets/
+# run by-products
+logs_*.log
+*.partial.jsonl
+__pycache__/
+.venv/

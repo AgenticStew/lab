@@ -1,0 +1,26 @@
+{
+ "model": "edit",
+ "weights": "Qwen/Qwen3.5-0.8B @ 2fc06364715b967f1860aea9cf38778875588b17 + p50c edit (rebuild_edit.py)",
+ "mode": "think",
+ "sampling": {
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "presence_penalty": 1.5,
+  "max_tokens": 32768,
+  "seed": 0
+ },
+ "thinking": true,
+ "problems": 500,
+ "samples": 1,
+ "responses": 500,
+ "accuracy": 49.8,
+ "cut_share": 32.6,
+ "accuracy_on_finished": 73.89,
+ "mean_tokens": 21957.8,
+ "median_tokens_correct": 15348,
+ "wall_s": 2078.2,
+ "tokens_per_s": 5282.8,
+ "gpu": "NVIDIA GeForce RTX 5090 (32 GB)",
+ "date": "2026-11-02 23:01 GMT"
+}

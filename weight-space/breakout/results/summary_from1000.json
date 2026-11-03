@@ -1,0 +1,21 @@
+{
+ "network": "lm_understand-logs/exp5_write_from_scratch/networks/breakout/hand.npz",
+ "minatar": "1.0.15",
+ "episodes": 1000,
+ "first_seed": 1000,
+ "sticky_action_prob": 0.1,
+ "max_steps": 10000,
+ "mean": 507.802,
+ "se": 7.727,
+ "median": 643.0,
+ "max": 807.0,
+ "min": 3.0,
+ "mean_length": 7248.5,
+ "hit_step_cap": 528,
+ "authors_mean": 517.411,
+ "authors_se": 7.417,
+ "authors_mean_length": 7417.202,
+ "ppo500_best_seed": 25.3,
+ "ppo100_best_seed": 15.8,
+ "wall_s": 5.5
+}
