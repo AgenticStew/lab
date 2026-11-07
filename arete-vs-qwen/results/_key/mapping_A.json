@@ -1,0 +1,130 @@
+{
+ "C01": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "C02": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "C03": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "C04": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "C05": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "C06": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "D01": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "D02": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "H01": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "H02": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "H03": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "H04": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "P01": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "P02": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "P03": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "P04": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "P05": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "P06": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "P07": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "P08": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "P09": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "P10": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "P11": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "P12": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "R01": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "R02": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "R03": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "R04": {
+  "LEFT": "qwen",
+  "RIGHT": "arete"
+ },
+ "W01": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "W02": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "W03": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ },
+ "W04": {
+  "LEFT": "arete",
+  "RIGHT": "qwen"
+ }
+}

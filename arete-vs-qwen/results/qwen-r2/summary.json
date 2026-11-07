@@ -1,0 +1,64 @@
+{
+ "label": "qwen-r2",
+ "model": "contestant",
+ "base": "http://127.0.0.1:8080/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "cache_prompt": false
+ },
+ "note": "reverse-order repeat, no drafting",
+ "speed": {
+  "prose": {
+   "decode_tps": 75.0,
+   "e2e_tps": 73.83,
+   "completion_tokens": 512,
+   "runs": [
+    76.04,
+    75.0,
+    74.55
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 75.24,
+   "e2e_tps": 74.05,
+   "completion_tokens": 512,
+   "runs": [
+    75.24,
+    75.68,
+    74.94
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 75.35,
+   "e2e_tps": 73.84,
+   "completion_tokens": 512,
+   "runs": [
+    74.68,
+    75.63,
+    75.35
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 74.81,
+   "e2e_tps": 71.72,
+   "completion_tokens": 512,
+   "runs": [
+    74.74,
+    74.81,
+    75.35
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794056167.295023,
+   1794056279.4609606
+  ]
+ }
+}

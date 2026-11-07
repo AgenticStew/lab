@@ -1,0 +1,202 @@
+{
+ "qwen": {
+  "C01": {
+   "pass": 5,
+   "total": 5,
+   "notes": []
+  },
+  "C02": {
+   "pass": 6,
+   "total": 6,
+   "notes": []
+  },
+  "C03": {
+   "pass": 5,
+   "total": 5,
+   "notes": []
+  },
+  "C04": {
+   "pass": 3,
+   "total": 3,
+   "notes": []
+  },
+  "C05": {
+   "pass": 3,
+   "total": 3,
+   "notes": []
+  },
+  "C06": {
+   "pass": 5,
+   "total": 5,
+   "notes": []
+  },
+  "R01": {
+   "pass": 1,
+   "total": 1,
+   "notes": []
+  },
+  "R02": {
+   "pass": 1,
+   "total": 1,
+   "notes": []
+  },
+  "R03": {
+   "pass": 1,
+   "total": 1,
+   "notes": [
+    "schedule validity scored by the rubric"
+   ]
+  },
+  "R04": {
+   "pass": 1,
+   "total": 1,
+   "notes": [
+    "counterexample scored by the rubric"
+   ]
+  },
+  "W01": {
+   "pass": 0,
+   "total": 1,
+   "notes": [
+    "103 words"
+   ]
+  },
+  "W02": {
+   "pass": 2,
+   "total": 2,
+   "notes": [
+    "73 words"
+   ]
+  },
+  "W03": {
+   "pass": 2,
+   "total": 2,
+   "notes": [
+    "3 bullets"
+   ]
+  },
+  "W04": {
+   "pass": 3,
+   "total": 3,
+   "notes": []
+  },
+  "H01": null,
+  "H02": null,
+  "H03": null,
+  "H04": null,
+  "P01": null,
+  "P02": null,
+  "P03": null,
+  "P04": null,
+  "P05": null,
+  "P06": null,
+  "P07": null,
+  "P08": null,
+  "P09": null,
+  "P10": null,
+  "P11": null,
+  "P12": null,
+  "D01": null,
+  "D02": null
+ },
+ "arete": {
+  "C01": {
+   "pass": 5,
+   "total": 5,
+   "notes": []
+  },
+  "C02": {
+   "pass": 6,
+   "total": 6,
+   "notes": []
+  },
+  "C03": {
+   "pass": 5,
+   "total": 5,
+   "notes": []
+  },
+  "C04": {
+   "pass": 3,
+   "total": 3,
+   "notes": []
+  },
+  "C05": {
+   "pass": 3,
+   "total": 3,
+   "notes": []
+  },
+  "C06": {
+   "pass": 5,
+   "total": 5,
+   "notes": []
+  },
+  "R01": {
+   "pass": 1,
+   "total": 1,
+   "notes": []
+  },
+  "R02": {
+   "pass": 1,
+   "total": 1,
+   "notes": []
+  },
+  "R03": {
+   "pass": 1,
+   "total": 1,
+   "notes": [
+    "schedule validity scored by the rubric"
+   ]
+  },
+  "R04": {
+   "pass": 1,
+   "total": 1,
+   "notes": [
+    "counterexample scored by the rubric"
+   ]
+  },
+  "W01": {
+   "pass": 0,
+   "total": 1,
+   "notes": [
+    "121 words"
+   ]
+  },
+  "W02": {
+   "pass": 2,
+   "total": 2,
+   "notes": [
+    "65 words"
+   ]
+  },
+  "W03": {
+   "pass": 2,
+   "total": 2,
+   "notes": [
+    "3 bullets"
+   ]
+  },
+  "W04": {
+   "pass": 3,
+   "total": 3,
+   "notes": []
+  },
+  "H01": null,
+  "H02": null,
+  "H03": null,
+  "H04": null,
+  "P01": null,
+  "P02": null,
+  "P03": null,
+  "P04": null,
+  "P05": null,
+  "P06": null,
+  "P07": null,
+  "P08": null,
+  "P09": null,
+  "P10": null,
+  "P11": null,
+  "P12": null,
+  "D01": null,
+  "D02": null
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "label": "qwen-A",
+ "model": "contestant",
+ "base": "http://127.0.0.1:8080/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "cache_prompt": false
+ },
+ "note": "b12189, no drafting, 32K ctx, F16 KV",
+ "speed": {
+  "prose": {
+   "decode_tps": 69.77,
+   "e2e_tps": 68.72,
+   "completion_tokens": 512,
+   "runs": [
+    70.04,
+    69.77,
+    69.62
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 71.13,
+   "e2e_tps": 70.11,
+   "completion_tokens": 512,
+   "runs": [
+    72.43,
+    71.13,
+    70.29
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 74.91,
+   "e2e_tps": 73.39,
+   "completion_tokens": 512,
+   "runs": [
+    73.24,
+    74.91,
+    74.92
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 74.86,
+   "e2e_tps": 71.77,
+   "completion_tokens": 512,
+   "runs": [
+    74.27,
+    74.86,
+    75.28
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794055422.8224974,
+   1794055539.0729113
+  ],
+  "prefill": [
+   1794055539.0730424,
+   1794055551.9250968
+  ]
+ },
+ "prefill": {
+  "2k": {
+   "ttft": 0.6439,
+   "prefill_tps": 3138.9,
+   "prompt_tokens": 2022,
+   "needle": "3/3"
+  },
+  "8k": {
+   "ttft": 2.2859,
+   "prefill_tps": 3570.1,
+   "prompt_tokens": 8162,
+   "needle": "3/3"
+  }
+ }
+}

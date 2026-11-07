@@ -1,0 +1,64 @@
+{
+ "label": "qwen-mtp",
+ "model": "contestant",
+ "base": "http://127.0.0.1:8080/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "cache_prompt": false
+ },
+ "note": "b12189, Qwen MTP head as drafter (-md mtp-Qwen3.8-27B-Q4_0.gguf), n-max 3, p-min 0.1",
+ "speed": {
+  "prose": {
+   "decode_tps": 127.24,
+   "e2e_tps": 123.54,
+   "completion_tokens": 512,
+   "runs": [
+    127.24,
+    127.45,
+    126.05
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 175.47,
+   "e2e_tps": 168.65,
+   "completion_tokens": 512,
+   "runs": [
+    169.47,
+    175.47,
+    178.76
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 184.48,
+   "e2e_tps": 174.78,
+   "completion_tokens": 512,
+   "runs": [
+    184.33,
+    184.48,
+    185.08
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 203.13,
+   "e2e_tps": 180.68,
+   "completion_tokens": 512,
+   "runs": [
+    203.13,
+    202.36,
+    205.06
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794055929.9477413,
+   1794055982.562522
+  ]
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "label": "arete-r2",
+ "model": "contestant",
+ "base": "http://127.0.0.1:8080/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "cache_prompt": false
+ },
+ "note": "reverse-order repeat, no drafting",
+ "speed": {
+  "prose": {
+   "decode_tps": 74.65,
+   "e2e_tps": 73.48,
+   "completion_tokens": 512,
+   "runs": [
+    74.89,
+    74.65,
+    74.59
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 74.87,
+   "e2e_tps": 73.68,
+   "completion_tokens": 512,
+   "runs": [
+    75.08,
+    74.87,
+    74.81
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 74.9,
+   "e2e_tps": 73.41,
+   "completion_tokens": 512,
+   "runs": [
+    75.38,
+    74.9,
+    74.73
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 74.91,
+   "e2e_tps": 71.89,
+   "completion_tokens": 512,
+   "runs": [
+    75.42,
+    74.91,
+    74.66
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794056049.699641,
+   1794056161.9063177
+  ]
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "label": "arete-A",
+ "model": "contestant",
+ "base": "http://127.0.0.1:8080/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "cache_prompt": false
+ },
+ "note": "b12189, no drafting, 32K ctx, F16 KV",
+ "speed": {
+  "prose": {
+   "decode_tps": 75.17,
+   "e2e_tps": 74.01,
+   "completion_tokens": 512,
+   "runs": [
+    75.03,
+    75.17,
+    76.03
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 75.22,
+   "e2e_tps": 74.12,
+   "completion_tokens": 512,
+   "runs": [
+    75.1,
+    75.22,
+    75.64
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 75.12,
+   "e2e_tps": 73.57,
+   "completion_tokens": 512,
+   "runs": [
+    75.25,
+    75.12,
+    75.02
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 75.08,
+   "e2e_tps": 72.05,
+   "completion_tokens": 512,
+   "runs": [
+    75.63,
+    75.08,
+    75.04
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794055798.3161137,
+   1794055909.731781
+  ],
+  "prefill": [
+   1794055909.7319667,
+   1794055922.4400163
+  ]
+ },
+ "prefill": {
+  "2k": {
+   "ttft": 0.6783,
+   "prefill_tps": 2981.0,
+   "prompt_tokens": 2022,
+   "needle": "3/3"
+  },
+  "8k": {
+   "ttft": 2.2109,
+   "prefill_tps": 3691.7,
+   "prompt_tokens": 8161,
+   "needle": "3/3"
+  }
+ }
+}

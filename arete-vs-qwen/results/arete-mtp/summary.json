@@ -1,0 +1,64 @@
+{
+ "label": "arete-mtp",
+ "model": "contestant",
+ "base": "http://127.0.0.1:8080/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "cache_prompt": false
+ },
+ "note": "b12189, Qwen MTP head as drafter (-md mtp-Qwen3.8-27B-Q4_0.gguf), n-max 3, p-min 0.1",
+ "speed": {
+  "prose": {
+   "decode_tps": 118.47,
+   "e2e_tps": 115.28,
+   "completion_tokens": 512,
+   "runs": [
+    123.24,
+    117.05,
+    118.47
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 168.94,
+   "e2e_tps": 162.23,
+   "completion_tokens": 512,
+   "runs": [
+    174.32,
+    166.07,
+    168.94
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 180.82,
+   "e2e_tps": 171.59,
+   "completion_tokens": 512,
+   "runs": [
+    180.82,
+    181.44,
+    179.52
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 202.52,
+   "e2e_tps": 180.17,
+   "completion_tokens": 512,
+   "runs": [
+    202.52,
+    202.83,
+    202.28
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794055990.112219,
+   1794056044.188034
+  ]
+ }
+}
