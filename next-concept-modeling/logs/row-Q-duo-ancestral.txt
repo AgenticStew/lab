@@ -1,0 +1,21 @@
+/usr/local/lib/python3.12/dist-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+/usr/local/lib/python3.12/dist-packages/torch/profiler/profiler.py:217: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+  seed 42: 256 samples
+  seed 0: 256 samples
+  seed 1: 256 samples
+  seed 2: 256 samples
+  seed 3: 256 samples
+
+merged 1 shards -> 1280 lm1b-duo-ancestral outputs
+
+ seed   genPPL  entropy
+   42   100.61   4.3057
+    0   101.32   4.3064
+    1    96.70   4.2961
+    2   100.67   4.3028
+    3   102.01   4.3047
+
+ mean   100.26   4.3031   (+/- 2.07 over 5 seeds, 1280 samples)
+
+table Q duo_ancestral -> /results/results.json: gen ppl 100.26, entropy 4.3031

@@ -1,0 +1,10 @@
+VQVAE, Total parameter count: 111.40M
+VQVAE, Non embedding parameter count: 99.63M
+NCP Transformer, Total parameter count: 97.07M
+NCP Transformer, Non embedding parameter count: 96.76M
+NCM bf16 kv=on graphs=on penalties=off: 1024 sequences, batch 16
+  warm-up done (1 batch); graphs captured so far: 12
+  repeat 1/3: 4.321 s wall, 1024 sequences
+  repeat 2/3: 4.298 s wall, 1024 sequences
+  repeat 3/3: 4.286 s wall, 1024 sequences
+table C ncm -> /results/results.json: median wall 4.298 s

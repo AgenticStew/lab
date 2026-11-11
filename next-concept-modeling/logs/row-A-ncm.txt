@@ -1,0 +1,11 @@
+VQVAE, Total parameter count: 111.40M
+VQVAE, Non embedding parameter count: 99.63M
+NCP Transformer, Total parameter count: 97.07M
+NCP Transformer, Non embedding parameter count: 96.76M
+NCM fp32 kv=off graphs=off penalties=config: 1024 sequences, batch 16
+  warm-up done (1 batch); graphs captured so far: 0
+  repeat 1/3: 9.022 s wall, 1024 sequences
+  repeat 2/3: 9.039 s wall, 1024 sequences
+  repeat 3/3: 9.033 s wall, 1024 sequences
+  ids -> /results/ids-A-ncm.json
+table A ncm -> /results/results.json: median wall 9.033 s

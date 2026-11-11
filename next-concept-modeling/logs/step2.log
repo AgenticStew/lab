@@ -1,0 +1,33 @@
+/usr/bin/python
+/usr/bin/python3
+/usr/local/bin/pip
+/usr/bin/python 2.10.0+cu128 /usr/local/lib/python3.12/dist-packages/torch/__init__.py
+pip 25.3 from /usr/local/lib/python3.12/dist-packages/pip (python 3.12)
+Requirement already satisfied: huggingface_hub==2.4.0 in /usr/local/lib/python3.12/dist-packages (2.4.0)
+Requirement already satisfied: click<9.0.0,>=8.4.2 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub==2.4.0) (8.5.1)
+Requirement already satisfied: filelock>=3.10.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub==2.4.0) (3.20.3)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub==2.4.0) (2026.1.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.6.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub==2.4.0) (1.8.0)
+Requirement already satisfied: httpx2<3,>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub==2.4.0) (2.16.0)
+Requirement already satisfied: packaging>=20.9 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub==2.4.0) (23.2)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub==2.4.0) (6.0.3)
+Requirement already satisfied: tqdm>=4.42.1 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub==2.4.0) (4.70.1)
+Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.12/dist-packages (from huggingface_hub==2.4.0) (4.16.0)
+Requirement already satisfied: anyio>=4.10 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface_hub==2.4.0) (4.16.0)
+Requirement already satisfied: httpcore2==2.16.0 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface_hub==2.4.0) (2.16.0)
+Requirement already satisfied: idna>=3.18 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface_hub==2.4.0) (3.20)
+Requirement already satisfied: truststore>=0.10 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface_hub==2.4.0) (0.10.5)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface_hub==2.4.0) (0.16.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s][32m✓ Downloaded[0m
+  path: /dl/ncm
+Fetching 3 files: 100%|██████████| 3/3 [00:00<00:00, 413.83it/s]
+/dl/ncm/lm1b/small/generator.pt: OK
+/dl/ncm/lm1b/tokenizer.pt: OK
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 493.70it/s]
+[32m✓ Downloaded[0m
+  path: /dl/gpt2-large
+4db04299a87f7eb1627de0abb2f0b257e50e5ea0138edda771ad287cdabd7edf  /dl/ncm/lm1b/small/config.yaml
+5f47f3e12f91cd33b662ce7e433b6150ad5512b5884a2cee961b50e9c3bbebce  /dl/gpt2-large/model.safetensors
+b11ee9a4cc533435adb9e1149cff74aec0872a9df2a459b4ab58f1867f6cddfb  /dl/duo/lm1b_Duo.ckpt
+2229753893

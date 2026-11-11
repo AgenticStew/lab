@@ -1,0 +1,446 @@
+3.12.3 (main, Jan  8 2026, 11:30:50) [GCC 13.3.0]
+2.10.0+cu128 ['sm_70', 'sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+env OK
+ncm-c702742.tar.gz: OK
+duo-7c9b498.tar.gz: OK
+ncm-pr5.patch: OK
+torch
+numpy
+omegaconf
+hydra-core
+transformers>=4.51
+huggingface_hub[cli]
+regex
+rouge_score
+sacrebleu
+# conda install nvidia/label/cuda-12.4.0::cuda-toolkit
+datasets==2.15.0
+einops==0.7.0
+fsspec
+git-lfs==1.6
+h5py==3.10.0
+hydra-core==1.3.2
+ipdb==0.13.13
+lightning==2.2.1
+notebook==7.1.1
+nvitop==1.3.2
+omegaconf==2.3.0
+packaging==23.2
+pandas==2.2.1
+rich==13.7.1
+seaborn==0.13.2
+scikit-learn==1.4.0
+transformers==4.38.2
+triton==2.2.0
+torch==2.3.1
+torchaudio==2.3.1
+torchmetrics==1.6.1
+torchvision==0.18.1
+wandb
+timm
+ocifs
+hf_transfer
+huggingface-hub
+# Install flash attention only after installing the above modules via pip install -r requirements.txt
+# flash_attn==2.7.4.post1
+# conda install nvidia/label/cuda-12.4.0::cuda-toolkit
+datasets==2.15.0
+einops==0.7.0
+fsspec
+git-lfs==1.6
+h5py==3.10.0
+hydra-core==1.3.2
+ipdb==0.13.13
+lightning==2.2.1
+notebook==7.1.1
+nvitop==1.3.2
+omegaconf==2.3.0
+packaging==23.2
+pandas==2.2.1
+rich==13.7.1
+seaborn==0.13.2
+scikit-learn==1.4.0
+torchmetrics==1.6.1
+wandb
+timm
+ocifs
+hf_transfer
+huggingface-hub
+# Install flash attention only after installing the above modules via pip install -r requirements.txt
+# flash_attn==2.7.4.post1
+Requirement already satisfied: transformers==5.22.2 in /usr/local/lib/python3.12/dist-packages (5.22.2)
+Requirement already satisfied: huggingface-hub<3.0,>=1.31.0 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.2) (2.4.0)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.2) (2.4.1)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.2) (23.2)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.2) (6.0.3)
+Requirement already satisfied: regex>=2025.10.22 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.2) (2026.11.9)
+Requirement already satisfied: tokenizers<0.24.0,>=0.23.1 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.2) (0.23.3)
+Requirement already satisfied: typer in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.2) (0.29.0)
+Requirement already satisfied: safetensors>=0.8.0 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.2) (0.8.0)
+Requirement already satisfied: tqdm>=4.60 in /usr/local/lib/python3.12/dist-packages (from transformers==5.22.2) (4.70.1)
+Requirement already satisfied: click<9.0.0,>=8.4.2 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (8.5.1)
+Requirement already satisfied: filelock>=3.10.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (3.20.3)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (2026.1.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.6.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (1.8.0)
+Requirement already satisfied: httpx2<3,>=2.0.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (2.16.0)
+Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (4.16.0)
+Requirement already satisfied: anyio>=4.10 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (4.16.0)
+Requirement already satisfied: httpcore2==2.16.0 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (2.16.0)
+Requirement already satisfied: idna>=3.18 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (3.20)
+Requirement already satisfied: truststore>=0.10 in /usr/local/lib/python3.12/dist-packages (from httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (0.10.5)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub<3.0,>=1.31.0->transformers==5.22.2) (0.16.0)
+Requirement already satisfied: pydantic>=2.5.3 in /usr/local/lib/python3.12/dist-packages (from typer->transformers==5.22.2) (2.14.3)
+Requirement already satisfied: shellingham>=1.3.0 in /usr/local/lib/python3.12/dist-packages (from typer->transformers==5.22.2) (1.5.4)
+Collecting rich>=13.8.0 (from typer->transformers==5.22.2)
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: annotated-doc>=0.0.2 in /usr/local/lib/python3.12/dist-packages (from typer->transformers==5.22.2) (0.0.5)
+Requirement already satisfied: annotated-types>=0.6.0 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.5.3->typer->transformers==5.22.2) (0.8.0)
+Requirement already satisfied: pydantic-core==2.50.4 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.5.3->typer->transformers==5.22.2) (2.50.4)
+Requirement already satisfied: typing-inspection>=0.4.4 in /usr/local/lib/python3.12/dist-packages (from pydantic>=2.5.3->typer->transformers==5.22.2) (0.4.5)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich>=13.8.0->typer->transformers==5.22.2) (4.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich>=13.8.0->typer->transformers==5.22.2) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers==5.22.2) (0.1.2)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Installing collected packages: rich
+  Attempting uninstall: rich
+    Found existing installation: rich 13.7.1
+    Uninstalling rich-13.7.1:
+      Successfully uninstalled rich-13.7.1
+Successfully installed rich-15.0.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Requirement already satisfied: torch in /usr/local/lib/python3.12/dist-packages (from -r /work/ncm/requirements.txt (line 1)) (2.10.0+cu128)
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from -r /work/ncm/requirements.txt (line 2)) (2.4.1)
+Requirement already satisfied: omegaconf in /usr/local/lib/python3.12/dist-packages (from -r /work/ncm/requirements.txt (line 3)) (2.3.0)
+Requirement already satisfied: hydra-core in /usr/local/lib/python3.12/dist-packages (from -r /work/ncm/requirements.txt (line 4)) (1.3.2)
+Requirement already satisfied: transformers>=4.51 in /usr/local/lib/python3.12/dist-packages (from -r /work/ncm/requirements.txt (line 5)) (5.22.2)
+Requirement already satisfied: regex in /usr/local/lib/python3.12/dist-packages (from -r /work/ncm/requirements.txt (line 7)) (2026.11.9)
+Requirement already satisfied: rouge_score in /usr/local/lib/python3.12/dist-packages (from -r /work/ncm/requirements.txt (line 8)) (0.1.2)
+Requirement already satisfied: sacrebleu in /usr/local/lib/python3.12/dist-packages (from -r /work/ncm/requirements.txt (line 9)) (2.6.0)
+Requirement already satisfied: huggingface_hub[cli] in /usr/local/lib/python3.12/dist-packages (from -r /work/ncm/requirements.txt (line 6)) (2.4.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Requirement already satisfied: datasets==2.15.0 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 2)) (2.15.0)
+Requirement already satisfied: einops==0.7.0 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 3)) (0.7.0)
+Requirement already satisfied: fsspec in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 4)) (2026.1.0)
+Requirement already satisfied: git-lfs==1.6 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 5)) (1.6)
+Requirement already satisfied: h5py==3.10.0 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 6)) (3.10.0)
+Requirement already satisfied: hydra-core==1.3.2 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 7)) (1.3.2)
+Requirement already satisfied: ipdb==0.13.13 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 8)) (0.13.13)
+Requirement already satisfied: lightning==2.2.1 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 9)) (2.2.1)
+Requirement already satisfied: notebook==7.1.1 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 10)) (7.1.1)
+Requirement already satisfied: nvitop==1.3.2 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 11)) (1.3.2)
+Requirement already satisfied: omegaconf==2.3.0 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 12)) (2.3.0)
+Requirement already satisfied: packaging==23.2 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 13)) (23.2)
+Requirement already satisfied: pandas==2.2.1 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 14)) (2.2.1)
+Collecting rich==13.7.1 (from -r /work/duo-reqs-nodeps.txt (line 15))
+  Using cached rich-13.7.1-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: seaborn==0.13.2 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 16)) (0.13.2)
+Requirement already satisfied: scikit-learn==1.4.0 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 17)) (1.4.0)
+Requirement already satisfied: torchmetrics==1.6.1 in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 18)) (1.6.1)
+Requirement already satisfied: wandb in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 19)) (0.31.0)
+Requirement already satisfied: timm in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 20)) (1.0.31)
+Requirement already satisfied: ocifs in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 21)) (1.3.4)
+Requirement already satisfied: hf_transfer in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 22)) (0.1.9)
+Requirement already satisfied: huggingface-hub in /usr/local/lib/python3.12/dist-packages (from -r /work/duo-reqs-nodeps.txt (line 23)) (2.4.0)
+Using cached rich-13.7.1-py3-none-any.whl (240 kB)
+Installing collected packages: rich
+  Attempting uninstall: rich
+    Found existing installation: rich 15.0.0
+    Uninstalling rich-15.0.0:
+      Successfully uninstalled rich-15.0.0
+Successfully installed rich-13.7.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+nvitop 1.3.2 requires nvidia-ml-py, which is not installed.
+hydra-core 1.3.2 has requirement antlr4-python3-runtime==4.9.*, but you have antlr4-python3-runtime 4.13.2.
+typer 0.29.0 has requirement rich>=13.8.0, but you have rich 13.7.1.
+omegaconf 2.3.0 has requirement antlr4-python3-runtime==4.9.*, but you have antlr4-python3-runtime 4.13.2.
+pandas 2.2.1 has requirement numpy<2,>=1.26.0; python_version >= "3.12", but you have numpy 2.4.1.
+wandb 0.31.0 has requirement cwevals==0.0.1b1, but you have cwevals 0.0.1b3.
+notebook 7.1.1 has requirement jupyterlab<4.2,>=4.1.1, but you have jupyterlab 4.6.6.
+lightning 2.2.1 has requirement fsspec[http]<2025.0,>=2022.5.0, but you have fsspec 2026.1.0.
+scikit-learn 1.4.0 has requirement numpy<2.0,>=1.19.5, but you have numpy 2.4.1.
+datasets 2.15.0 has requirement dill<0.3.8,>=0.3.0, but you have dill 0.4.1.
+datasets 2.15.0 has requirement fsspec[http]<=2023.10.0,>=2023.1.0, but you have fsspec 2026.1.0.
+build 1.4.0 has requirement packaging>=24.0, but you have packaging 23.2.
+spin 0.16 has requirement click!=8.3.0,<8.4,>=8, but you have click 8.5.1.
+Collecting antlr4-python3-runtime==4.9.3
+  Downloading antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: antlr4-python3-runtime
+  Building wheel for antlr4-python3-runtime (pyproject.toml): started
+  Building wheel for antlr4-python3-runtime (pyproject.toml): finished with status 'done'
+  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144590 sha256=40e50ddf9539f1044fb03f973c0d34fd52ab6ad62327061d98d142e627a7ce21
+  Stored in directory: /root/.cache/pip/wheels/1f/be/48/13754633f1d08d1fbfc60d5e80ae1e5d7329500477685286cd
+Successfully built antlr4-python3-runtime
+Installing collected packages: antlr4-python3-runtime
+  Attempting uninstall: antlr4-python3-runtime
+    Found existing installation: antlr4-python3-runtime 4.13.2
+    Uninstalling antlr4-python3-runtime-4.13.2:
+      Successfully uninstalled antlr4-python3-runtime-4.13.2
+Successfully installed antlr4-python3-runtime-4.9.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+omegaconf interpolation OK
+nvitop 1.3.2 requires nvidia-ml-py, which is not installed.
+typer 0.29.0 has requirement rich>=13.8.0, but you have rich 13.7.1.
+pandas 2.2.1 has requirement numpy<2,>=1.26.0; python_version >= "3.12", but you have numpy 2.4.1.
+wandb 0.31.0 has requirement cwevals==0.0.1b1, but you have cwevals 0.0.1b3.
+notebook 7.1.1 has requirement jupyterlab<4.2,>=4.1.1, but you have jupyterlab 4.6.6.
+lightning 2.2.1 has requirement fsspec[http]<2025.0,>=2022.5.0, but you have fsspec 2026.1.0.
+scikit-learn 1.4.0 has requirement numpy<2.0,>=1.19.5, but you have numpy 2.4.1.
+datasets 2.15.0 has requirement dill<0.3.8,>=0.3.0, but you have dill 0.4.1.
+datasets 2.15.0 has requirement fsspec[http]<=2023.10.0,>=2023.1.0, but you have fsspec 2026.1.0.
+build 1.4.0 has requirement packaging>=24.0, but you have packaging 23.2.
+spin 0.16 has requirement click!=8.3.0,<8.4,>=8, but you have click 8.5.1.
+torch held 2.10.0+cu128
+absl-py==2.5.1
+aiohappyeyeballs==2.7.1
+aiohttp==3.14.5
+aiosignal==1.4.0
+annotated-doc==0.0.5
+annotated-types==0.8.0
+antlr4-python3-runtime==4.9.3
+anyio==4.16.0
+argon2-cffi==25.1.0
+argon2-cffi-bindings==26.1.0
+arrow==1.4.0
+asn1crypto==1.5.1
+asttokens==3.0.1
+async-lru==2.4.0
+attrs==26.1.0
+babel==2.18.0
+beautifulsoup4==4.15.0
+bleach==6.4.0
+build==1.4.0
+cachetools==8.0.0
+certifi==2026.10.23
+cffi==2.1.1
+charset-normalizer==3.4.4
+circuitbreaker==2.1.3
+click==8.5.1
+cloudpickle==3.1.2
+cmake==4.2.1
+colorama==0.4.6
+comm==0.2.3
+contourpy==1.4.0
+crc32c==2.8
+cryptography==50.0.2
+cuda-bindings==12.9.4
+cuda-pathfinder==1.2.2
+cwevals==0.0.1b3
+cycler==0.12.1
+datasets==2.15.0
+debugpy==1.8.22
+decorator==5.2.1
+defusedxml==0.7.1
+dill==0.4.1
+distro==1.9.0
+dnspython==2.8.0
+einops==0.7.0
+executing==2.2.1
+expecttest==0.3.0
+fastjsonschema==2.22.3
+filelock==3.20.3
+fonttools==4.68.0
+fqdn==1.6.0
+frozenlist==1.8.0
+fsspec==2026.1.0
+git-lfs==1.6
+googleapis-common-protos==1.76.0
+h11==0.16.0
+h5py==3.10.0
+hf-xet==1.8.0
+hf_transfer==0.1.9
+httpcore==1.0.9
+httpcore2==2.16.0
+httpx==0.28.1
+httpx2==2.16.0
+huggingface_hub==2.4.0
+hydra-core==1.3.2
+hypothesis==6.150.2
+idna==3.20
+importlib_metadata==8.7.1
+ipdb==0.13.13
+ipykernel==7.4.0
+ipython==9.9.0
+ipython_pygments_lexers==1.1.1
+isoduration==20.11.0
+jedi==0.19.2
+Jinja2==3.1.6
+joblib==1.6.0
+json5==0.17.3
+jsonpointer==3.10
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+jupyter-events==0.12.1
+jupyter-lsp==2.3.1
+jupyter_builder==1.2.4
+jupyter_client==8.10.0
+jupyter_core==5.9.1
+jupyter_server==2.21.1
+jupyter_server_terminals==0.5.4
+jupyterlab==4.6.6
+jupyterlab_pygments==0.3.0
+jupyterlab_server==2.28.1
+kiwisolver==1.5.1
+lark==1.3.1
+lightning==2.2.1
+lightning-utilities==0.15.3
+lintrunner==0.12.11
+lxml==6.1.3
+markdown-it-py==4.2.0
+MarkupSafe==3.0.3
+matplotlib==3.11.2
+matplotlib-inline==0.2.1
+mdurl==0.1.2
+mistune==3.4.0
+mpmath==1.3.0
+multidict==7.2.1
+multiprocess==0.70.19
+nbclient==0.11.0
+nbconvert==7.17.2
+nbformat==5.11.1
+nest-asyncio2==1.7.4
+networkx==3.6.1
+ninja==1.13.0
+nltk==3.10.4
+notebook==7.1.1
+notebook_shim==0.2.4
+numpy==2.4.1
+nvidia-cublas-cu12==12.8.4.1
+nvidia-cuda-cupti-cu12==12.8.90
+nvidia-cuda-nvrtc-cu12==12.8.93
+nvidia-cuda-runtime-cu12==12.8.90
+nvidia-cudnn-cu12==9.10.2.21
+nvidia-cufft-cu12==11.3.3.83
+nvidia-cufile-cu12==1.13.1.3
+nvidia-curand-cu12==10.3.9.90
+nvidia-cusolver-cu12==11.7.3.90
+nvidia-cusparse-cu12==12.5.8.93
+nvidia-cusparselt-cu12==0.7.1
+nvidia-nccl-cu12==2.27.5
+nvidia-nvjitlink-cu12==12.8.93
+nvidia-nvshmem-cu12==3.4.5
+nvidia-nvtx-cu12==12.8.90
+nvitop==1.3.2
+oci==2.191.0
+ocifs==1.3.4
+omegaconf==2.3.0
+opentelemetry-api==1.45.2
+opentelemetry-exporter-http-transport==0.66b2
+opentelemetry-exporter-otlp-common==0.66b2
+opentelemetry-exporter-otlp-proto-common==1.45.2
+opentelemetry-exporter-otlp-proto-http==1.45.2
+opentelemetry-proto==1.45.2
+opentelemetry-sdk==1.45.2
+opentelemetry-semantic-conventions==0.66b2
+optree==0.18.0
+packaging==23.2
+pandas==2.2.1
+pandocfilters==1.5.1
+parso==0.8.5
+pexpect==4.9.0
+pillow==12.0.0
+platformdirs==4.14.5
+portalocker==4.4.2
+prometheus_client==0.26.0
+prompt_toolkit==3.0.52
+propcache==0.5.4
+protobuf==7.36.2
+psutil==7.2.1
+ptyprocess==0.7.0
+pure_eval==0.2.3
+pyarrow==26.0.1
+pyarrow-hotfix==0.7
+pycparser==3.12
+pydantic==2.14.3
+pydantic_core==2.50.4
+Pygments==2.19.2
+PyJWT==2.15.1
+pyOpenSSL==26.4.0
+pyparsing==3.3.3
+pyproject_hooks==1.2.0
+python-dateutil==2.9.0.post0
+python-etcd==0.4.5
+python-json-logger==4.2.0
+python-pkcs11==0.9.4
+pytorch-lightning==2.6.6
+pytz==2026.6
+PyYAML==6.0.3
+pyzmq==27.3.0
+referencing==0.37.0
+regex==2026.11.9
+requests==2.32.5
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+rfc3987-syntax==1.1.0
+rich==13.7.1
+rouge_score==0.1.2
+rpds-py==2026.9.1
+sacrebleu==2.6.0
+safetensors==0.8.0
+scikit-learn==1.4.0
+scipy==1.18.1
+seaborn==0.13.2
+Send2Trash==2.1.0
+setuptools==80.10.1
+shellingham==1.5.4
+six==1.17.0
+sniffio==1.3.1
+sortedcontainers==2.4.0
+soupsieve==4.1
+spin==0.16
+stack-data==0.6.3
+sympy==1.14.0
+tabulate==0.10.0
+termcolor==3.3.0
+terminado==0.18.1
+threadpoolctl==3.8.0
+timm==1.0.31
+tinycss2==1.5.1
+tokenizers==0.23.3
+torch==2.10.0+cu128
+torchaudio==2.10.0+cu128
+torchelastic==0.2.2
+torchmetrics==1.6.1
+torchvision==0.25.0+cu128
+tornado==6.6.1
+tqdm==4.70.1
+traitlets==5.14.3
+transformers==5.22.2
+triton==3.6.0
+truststore==0.10.5
+typer==0.29.0
+typing-inspection==0.4.5
+typing_extensions==4.16.0
+tzdata==2026.6
+uri-template==1.3.0
+urllib3==2.8.0
+uv==0.9.26
+wandb==0.31.0
+wcwidth==0.3.0
+webcolors==25.10.0
+webencodings==0.6.1
+websocket-client==1.9.2
+wheel==0.45.1
+xxhash==4.1.0
+yarl==1.25.1
+zipp==3.23.0
+c702742 tarball: no git history; #5 is not in c702742 (GitHub, see ncm-pr5.json); applying its saved diff
+2c18bad559a5a10c7db5f997137a5d293778cf8a867d7e6e3073e052bb0c99d0  /work/ncm-pr5.patch
+would patch README.md
+would patch models/common.py
+would patch models/next_concept.py
+would patch scripts/bench_kv.py
+would patch scripts/eval_shard.py
+5 files check out
+patched README.md
+patched models/common.py
+patched models/next_concept.py
+patched scripts/bench_kv.py
+patched scripts/eval_shard.py
+5 files patched
+#5 cached-path lines in models/next_concept.py: 5

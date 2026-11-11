@@ -1,0 +1,9 @@
+c702742 tarball: no git history; #5 is not in c702742 (GitHub, see ncm-pr5.json); applying its saved diff
+2c18bad559a5a10c7db5f997137a5d293778cf8a867d7e6e3073e052bb0c99d0  /work/ncm-pr5.patch
+patched README.md
+patched models/common.py
+patched models/next_concept.py
+patched scripts/bench_kv.py
+patched scripts/eval_shard.py
+5 files patched
+#5 cached-path lines in models/next_concept.py: 5

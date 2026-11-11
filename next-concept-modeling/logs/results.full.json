@@ -1,0 +1,3023 @@
+{
+ "tables": {
+  "A": {
+   "ncm": {
+    "n": 1024,
+    "batch": 16,
+    "batches_per_run": 64,
+    "warmup_batches": 1,
+    "repeats": 3,
+    "seed": 42,
+    "wall_s": [
+     9.022025897022104,
+     9.03879316500388,
+     9.033091132005211
+    ],
+    "median_wall_s": 9.033091132005211,
+    "level0_s_per_run": [
+     0.010249616985674948,
+     0.010372550023021176,
+     0.010455464973347262
+    ],
+    "median_level0_s": 0.010372550023021176,
+    "repeat_ids_sha256": [
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7"
+    ],
+    "repeat_ids_identical": true,
+    "passes_per_batch": 11,
+    "median_ms_per_pass": 7.138399839401245,
+    "mean_ms_per_pass": 7.9477856888464,
+    "pass_ms_by_name": {
+     "_decode_level_logits": {
+      "calls": 2112,
+      "median_ms": 7.138399839401245
+     }
+    },
+    "pass_ms_by_index": [
+     4.615808010101318,
+     5.289103984832764,
+     6.297968149185181,
+     6.4524641036987305,
+     6.354127883911133,
+     7.130367994308472,
+     9.003472328186035,
+     9.21833610534668,
+     9.79800033569336,
+     10.54262399673462,
+     12.32030439376831
+    ],
+    "pass_ms_sum_per_run_s": [
+     5.58747913980484,
+     5.601851268768311,
+     5.596392966270447
+    ],
+    "non_pass_share_pct_per_run": [
+     38.06846484835411,
+     38.024344992676845,
+     38.04564921921549
+    ],
+    "non_pass_share_pct": 38.04564921921549,
+    "pass_timing": "CUDA events recorded around each model forward call on the current stream; with graphs on, the time includes copying the inputs into the graph's static tensors",
+    "model": "ncm",
+    "label": "NCM, eager (as released)",
+    "precision": "fp32",
+    "kv_cache": "off",
+    "graphs": "off",
+    "seq_len": 128,
+    "kv": {
+     "kv_source": "none",
+     "note": "eager path, unchanged by #5"
+    },
+    "meta": {
+     "time_utc": "2026-11-10T15:48:36+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "43c46d957db546056f8cf948d2d5e0361c80ea6b90cfac7e2310ec153c28ada6",
+     "argv": [
+      "--model",
+      "ncm",
+      "--cfg",
+      "/work/cfg/lm1b_b16_pen.yaml",
+      "--n",
+      "1024",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--precision",
+      "fp32",
+      "--kv-cache",
+      "off",
+      "--graphs",
+      "off",
+      "--penalties",
+      "config",
+      "--l0",
+      "unigram",
+      "--seed",
+      "42",
+      "--warmup",
+      "1",
+      "--repeats",
+      "3",
+      "--count-passes",
+      "--save-ids",
+      "--table",
+      "A",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.88
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "ncm_root": "/work/ncm",
+      "ncm_head": "no .git (tree copied from the sha-checked tarball)",
+      "config": "/work/cfg/lm1b_b16_pen.yaml",
+      "config_sha256": "167dd21be380085999633d2f62757f4d627e97e4a9bf5f73e9b3c05e14017e33",
+      "eval_shard_sha256": "bf4d42b64bf44b7a57c17c37ba27633fdad34a0124e8f5f67595e3544a7e506e",
+      "functions_sha256": "2ded01d2f5824f7497aad60d97d118eb392f1a40c24e6de85005fe280759638a",
+      "checkpoints": {
+       "generator.pt": {
+        "path": "/dl/ncm/lm1b/small/generator.pt",
+        "bytes": 390138443
+       },
+       "../tokenizer.pt": {
+        "path": "/dl/ncm/lm1b/small/../tokenizer.pt",
+        "bytes": 597840331
+       }
+      }
+     },
+     "generation": {
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0,
+      "cfg_scale": 0.0,
+      "frequency_penalty": 11.5,
+      "frequency_deficit": 2.0,
+      "adjacency_penalty": [
+       10.0,
+       4.0,
+       0.5
+      ],
+      "frequency_allowance": "generator.pt:inference.token_unigram",
+      "level0": "unigram draw from generator.pt:inference.level0_unigram",
+      "penalties": "config",
+      "level_sampling": "multinomial per level at the temperature above",
+      "token_pick": "pick_tokens from eval_shard.py (argmax with the penalties above)"
+     },
+     "levels": [
+      1,
+      8,
+      16,
+      24,
+      32,
+      40,
+      52,
+      64,
+      76,
+      92,
+      108,
+      128
+     ]
+    },
+    "ids_file": "/results/ids-A-ncm.json",
+    "ids_sha256": "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7"
+   },
+   "duo": {
+    "n": 1024,
+    "batch": 16,
+    "batches_per_run": 64,
+    "warmup_batches": 1,
+    "repeats": 3,
+    "seed": 42,
+    "wall_s": [
+     225.00918931001797,
+     225.37135845498415,
+     225.60811903400463
+    ],
+    "median_wall_s": 225.37135845498415,
+    "level0_s_per_run": [
+     0,
+     0,
+     0
+    ],
+    "median_level0_s": 0.0,
+    "repeat_ids_sha256": [
+     "3070eb5f37d5f673a11ecb21f7cbe0da547cf7856ce672ac249844e8234d9d2f",
+     "3070eb5f37d5f673a11ecb21f7cbe0da547cf7856ce672ac249844e8234d9d2f",
+     "3070eb5f37d5f673a11ecb21f7cbe0da547cf7856ce672ac249844e8234d9d2f"
+    ],
+    "repeat_ids_identical": true,
+    "passes_per_batch": 129,
+    "median_ms_per_pass": 13.203455924987793,
+    "mean_ms_per_pass": 13.257208379163606,
+    "pass_ms_by_name": {
+     "backbone": {
+      "calls": 24768,
+      "median_ms": 13.203455924987793
+     }
+    },
+    "pass_ms_by_index": [
+     13.607360363006592,
+     13.18775987625122,
+     13.164447784423828,
+     13.176368236541748,
+     13.181888103485107,
+     13.142512321472168,
+     13.208816051483154,
+     13.175008296966553,
+     13.184080123901367,
+     13.1835036277771,
+     13.227983951568604,
+     13.179903984069824,
+     13.172336101531982,
+     13.22873592376709,
+     13.177663803100586,
+     13.205344200134277,
+     13.191423892974854,
+     13.220399856567383,
+     13.185488224029541,
+     13.208960056304932,
+     13.204400062561035,
+     13.23579216003418,
+     13.188735961914062,
+     13.223759651184082,
+     13.198847770690918,
+     13.16923189163208,
+     13.200640201568604,
+     13.203295707702637,
+     13.224384307861328,
+     13.191104412078857,
+     13.226463794708252,
+     13.1736478805542,
+     13.212991714477539,
+     13.217952251434326,
+     13.191423892974854,
+     13.172383785247803,
+     13.224544048309326,
+     13.195247650146484,
+     13.187952041625977,
+     13.2160964012146,
+     13.201599597930908,
+     13.241519927978516,
+     13.1975679397583,
+     13.223680019378662,
+     13.207023620605469,
+     13.247759819030762,
+     13.23695993423462,
+     13.186944007873535,
+     13.215648174285889,
+     13.198239803314209,
+     13.212160110473633,
+     13.186639785766602,
+     13.206480026245117,
+     13.208176136016846,
+     13.186800003051758,
+     13.186399936676025,
+     13.220623970031738,
+     13.212960243225098,
+     13.182783603668213,
+     13.231279850006104,
+     13.19268798828125,
+     13.205199718475342,
+     13.199728012084961,
+     13.177184104919434,
+     13.232272148132324,
+     13.189248085021973,
+     13.18395185470581,
+     13.172768115997314,
+     13.201904296875,
+     13.20585584640503,
+     13.188447952270508,
+     13.19980764389038,
+     13.217135906219482,
+     13.201648235321045,
+     13.190336227416992,
+     13.204224109649658,
+     13.177055835723877,
+     13.199024200439453,
+     13.22006368637085,
+     13.226655960083008,
+     13.203648090362549,
+     13.213776111602783,
+     13.19052791595459,
+     13.199344158172607,
+     13.225951671600342,
+     13.218080043792725,
+     13.231103897094727,
+     13.163360118865967,
+     13.226287841796875,
+     13.198639869689941,
+     13.196271896362305,
+     13.217567920684814,
+     13.188080310821533,
+     13.200239658355713,
+     13.209904193878174,
+     13.212831974029541,
+     13.19649600982666,
+     13.203343868255615,
+     13.201760292053223,
+     13.194784164428711,
+     13.19268798828125,
+     13.194047927856445,
+     13.192240238189697,
+     13.179696083068848,
+     13.205600261688232,
+     13.176080226898193,
+     13.198016166687012,
+     13.201711654663086,
+     13.214816093444824,
+     13.189616203308105,
+     13.223423957824707,
+     13.204464435577393,
+     13.199151992797852,
+     13.194416046142578,
+     13.207344055175781,
+     13.176543712615967,
+     13.182991981506348,
+     13.223648071289062,
+     13.176688194274902,
+     13.213136196136475,
+     13.248607635498047,
+     13.229135990142822,
+     13.17964792251587,
+     13.194543838500977,
+     13.211296081542969,
+     13.212607860565186,
+     13.218127727508545,
+     13.21401596069336,
+     13.300960063934326
+    ],
+    "pass_ms_sum_per_run_s": [
+     109.25472004508973,
+     109.46385976505279,
+     109.63595732498169
+    ],
+    "non_pass_share_pct_per_run": [
+     51.444329727103536,
+     51.4295602975135,
+     51.40425007999961
+    ],
+    "non_pass_share_pct": 51.4295602975135,
+    "pass_timing": "CUDA events recorded around each model forward call on the current stream; with graphs on, the time includes copying the inputs into the graph's static tensors",
+    "model": "duo",
+    "label": "DUO, SDPA attention",
+    "precision": "fp32",
+    "kv_cache": "off",
+    "graphs": "off",
+    "seq_len": 128,
+    "steps": 128,
+    "noise_removal": "ancestral",
+    "attention": {
+     "backend": "SDPA patch",
+     "attention_fn": "models.dit.regular_attention_multi_headed (F.scaled_dot_product_attention)",
+     "rotary": "duo_sdpa_patch.apply_rotary_emb_torch (flash-attn 2.x pure-torch rotary)",
+     "patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385",
+     "probe_precision": "fp32",
+     "q_dtypes": [
+      "torch.float32"
+     ],
+     "q_shapes": [
+      [
+       16,
+       128,
+       12,
+       64
+      ]
+     ],
+     "attention_calls_in_probe": 12,
+     "cuda_kernels": [
+      "fmha_cutlassF_f32_aligned_64x64_rf_sm80(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm80, true, 64, 64, 64, true, true>::Params)"
+     ]
+    },
+    "meta": {
+     "time_utc": "2026-11-10T15:49:10+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "43c46d957db546056f8cf948d2d5e0361c80ea6b90cfac7e2310ec153c28ada6",
+     "argv": [
+      "--model",
+      "duo",
+      "--ckpt",
+      "/dl/duo/lm1b_Duo.ckpt",
+      "--n",
+      "1024",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--steps",
+      "128",
+      "--precision",
+      "fp32",
+      "--kv-cache",
+      "off",
+      "--graphs",
+      "off",
+      "--noise-removal",
+      "ancestral",
+      "--seed",
+      "42",
+      "--warmup",
+      "1",
+      "--repeats",
+      "3",
+      "--count-passes",
+      "--log-attn",
+      "--table",
+      "A",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.62
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "duo_root": "/work/duo",
+      "duo_head": "no .git (tree copied from the sha-checked tarball)",
+      "dit_py_sha256": "32ee71d182ca69645730b4c4624e9cba92bbed9afe3c8ace3aac74e8f1089f97",
+      "algo_py_sha256": "d6cf18959f77f5002f5a9dde3df3fc109809afc87e6d735da88d0cb28dfa9d46",
+      "sdpa_patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385",
+      "compat": []
+     },
+     "load": {
+      "checkpoint": {
+       "path": "/dl/duo/lm1b_Duo.ckpt",
+       "bytes": 2229753893
+      },
+      "pickle_stubs": {
+       "classes": [
+        "transformers.models.bert.tokenization_bert.BasicTokenizer",
+        "transformers.models.bert.tokenization_bert.WordpieceTokenizer",
+        "transformers.tokenization_utils.Trie"
+       ],
+       "note": "transformers 4.x classes gone in 5.x, pickled in the checkpoint's hyper_parameters; stood in by empty holders, never used (the bench builds its own BertTokenizer)"
+      },
+      "config_vs_checkpoint": {
+       "model.qk_norm": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "model.softcap": {
+        "bench": null,
+        "checkpoint": -1.0
+       },
+       "algo.curriculum_end": {
+        "bench": null,
+        "checkpoint": 500000
+       },
+       "algo.curriculum_start": {
+        "bench": null,
+        "checkpoint": 0
+       },
+       "algo.gamma_max": {
+        "bench": null,
+        "checkpoint": -1.85
+       },
+       "algo.gamma_min": {
+        "bench": null,
+        "checkpoint": -3.55
+       },
+       "algo.gumbel_tau_log10_end": {
+        "bench": null,
+        "checkpoint": -3.0
+       },
+       "algo.gumbel_tau_log10_start": {
+        "bench": null,
+        "checkpoint": -3.0
+       },
+       "algo.integral_cache_path": {
+        "bench": null,
+        "checkpoint": "${hydra:runtime.cwd}/integral/${data.tokenizer_name_or_path}.pkl"
+       },
+       "algo.name": {
+        "bench": "duo_base",
+        "checkpoint": "duo"
+       },
+       "noise.denoiser_latent_conditioning": {
+        "bench": null,
+        "checkpoint": -1
+       },
+       "noise.eps": {
+        "bench": 0.001,
+        "checkpoint": 0
+       },
+       "noise.freeze_decoder": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "noise.freeze_encoder": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "noise.parameterization": {
+        "bench": null,
+        "checkpoint": "log-linear"
+       }
+      },
+      "checkpoint_only_keys_off": [
+       "model.qk_norm",
+       "model.softcap"
+      ],
+      "on_load_checkpoint": "ok",
+      "state_dict": "strict=True ok",
+      "ema": "EMA weights copied in (_eval_mode)"
+     },
+     "sampling": {
+      "predictor": "ancestral",
+      "steps": 128,
+      "noise_removal": "ancestral",
+      "use_float64": true,
+      "length": 128,
+      "loop": "DUO_BASE.generate_samples as released"
+     }
+    },
+    "precision_note": "fp32: DIT's hard-coded bf16 block autocast switched off (true fp32)"
+   }
+  },
+  "B": {
+   "ncm": {
+    "n": 1024,
+    "batch": 16,
+    "batches_per_run": 64,
+    "warmup_batches": 1,
+    "repeats": 3,
+    "seed": 42,
+    "wall_s": [
+     5.673438149999129,
+     5.6488455399812665,
+     5.617900706012733
+    ],
+    "median_wall_s": 5.6488455399812665,
+    "level0_s_per_run": [
+     0.011114949971670285,
+     0.01066565391374752,
+     0.01106024903128855
+    ],
+    "median_level0_s": 0.01106024903128855,
+    "repeat_ids_sha256": [
+     "0109ffcddfc419f0aff441e42cb777f26d61b1a58f7359981b56c99d55ad9507",
+     "0109ffcddfc419f0aff441e42cb777f26d61b1a58f7359981b56c99d55ad9507",
+     "0109ffcddfc419f0aff441e42cb777f26d61b1a58f7359981b56c99d55ad9507"
+    ],
+    "repeat_ids_identical": true,
+    "passes_per_batch": 12,
+    "median_ms_per_pass": 3.0699039697647095,
+    "mean_ms_per_pass": 2.9725490960085557,
+    "pass_ms_by_name": {
+     "_kv_prefix": {
+      "calls": 192,
+      "median_ms": 1.3205119967460632
+     },
+     "_kv_level": {
+      "calls": 2112,
+      "median_ms": 3.1182239055633545
+     }
+    },
+    "pass_ms_by_index": [
+     1.3205119967460632,
+     1.7688159942626953,
+     1.9498719573020935,
+     2.0678080320358276,
+     2.5389440059661865,
+     2.812816023826599,
+     3.107200026512146,
+     3.284432053565979,
+     3.295248031616211,
+     3.684671998023987,
+     4.219327926635742,
+     4.977295875549316
+    ],
+    "pass_ms_sum_per_run_s": [
+     2.290069309234619,
+     2.280514432668686,
+     2.2781693753004073
+    ],
+    "non_pass_share_pct_per_run": [
+     59.63524676416944,
+     59.62866365299397,
+     59.44803059865181
+    ],
+    "non_pass_share_pct": 59.62866365299397,
+    "pass_timing": "CUDA events recorded around each model forward call on the current stream; with graphs on, the time includes copying the inputs into the graph's static tensors",
+    "graphs": {
+     "captured": 12,
+     "captured_during_timed_runs": 0,
+     "captures": [
+      "_kv_prefix [(16, 1, 768), (16, 1, 1, 1), (2, 64), (2, 64)]",
+      "_kv_level [(16, 8, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 8, 9), (9, 64), (9, 64)]",
+      "_kv_level [(16, 16, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 16, 17), (17, 64), (17, 64)]",
+      "_kv_level [(16, 24, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 24, 25), (25, 64), (25, 64)]",
+      "_kv_level [(16, 32, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 32, 33), (33, 64), (33, 64)]",
+      "_kv_level [(16, 40, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 40, 41), (41, 64), (41, 64)]",
+      "_kv_level [(16, 52, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 52, 53), (53, 64), (53, 64)]",
+      "_kv_level [(16, 64, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 64, 65), (65, 64), (65, 64)]",
+      "_kv_level [(16, 76, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 76, 77), (77, 64), (77, 64)]",
+      "_kv_level [(16, 92, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 92, 93), (93, 64), (93, 64)]",
+      "_kv_level [(16, 108, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 108, 109), (109, 64), (109, 64)]",
+      "_kv_level [(16, 128, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 128, 129), (129, 64), (129, 64)]"
+     ]
+    },
+    "model": "ncm",
+    "label": "NCM, KV cache via #5",
+    "precision": "bf16",
+    "kv_cache": "on",
+    "seq_len": 128,
+    "kv": {
+     "kv_source": "#5",
+     "pr5_record_lines": [
+      "c702742 tarball: no git history; #5 is not in c702742 (GitHub, see ncm-pr5.json); applying its saved diff",
+      "2c18bad559a5a10c7db5f997137a5d293778cf8a867d7e6e3073e052bb0c99d0  /work/ncm-pr5.patch",
+      "patched README.md",
+      "patched models/common.py",
+      "patched models/next_concept.py",
+      "patched scripts/bench_kv.py",
+      "patched scripts/eval_shard.py",
+      "5 files patched",
+      "#5 cached-path lines in models/next_concept.py: 5"
+     ],
+     "model_file": "/work/ncm/models/next_concept.py",
+     "model_file_sha256": "930bdce1c6fb25caccac3fb9dff0aaf6ae5147f450bb8b07f1d3dfa2da8a5804",
+     "patch": "/work/ncm-pr5.patch",
+     "patch_sha256": "2c18bad559a5a10c7db5f997137a5d293778cf8a867d7e6e3073e052bb0c99d0",
+     "patch_applied_check": "every added line present"
+    },
+    "meta": {
+     "time_utc": "2026-11-10T16:00:35+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "43c46d957db546056f8cf948d2d5e0361c80ea6b90cfac7e2310ec153c28ada6",
+     "argv": [
+      "--model",
+      "ncm",
+      "--cfg",
+      "/work/cfg/lm1b_b16_pen.yaml",
+      "--n",
+      "1024",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--precision",
+      "bf16",
+      "--kv-cache",
+      "on",
+      "--kv-source",
+      "pr5",
+      "--graphs",
+      "on",
+      "--penalties",
+      "config",
+      "--l0",
+      "unigram",
+      "--seed",
+      "42",
+      "--warmup",
+      "1",
+      "--repeats",
+      "3",
+      "--count-passes",
+      "--save-ids",
+      "--table",
+      "B",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.88
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "ncm_root": "/work/ncm",
+      "ncm_head": "no .git (tree copied from the sha-checked tarball)",
+      "config": "/work/cfg/lm1b_b16_pen.yaml",
+      "config_sha256": "167dd21be380085999633d2f62757f4d627e97e4a9bf5f73e9b3c05e14017e33",
+      "eval_shard_sha256": "bf4d42b64bf44b7a57c17c37ba27633fdad34a0124e8f5f67595e3544a7e506e",
+      "functions_sha256": "2ded01d2f5824f7497aad60d97d118eb392f1a40c24e6de85005fe280759638a",
+      "checkpoints": {
+       "generator.pt": {
+        "path": "/dl/ncm/lm1b/small/generator.pt",
+        "bytes": 390138443
+       },
+       "../tokenizer.pt": {
+        "path": "/dl/ncm/lm1b/small/../tokenizer.pt",
+        "bytes": 597840331
+       }
+      }
+     },
+     "generation": {
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0,
+      "cfg_scale": 0.0,
+      "frequency_penalty": 11.5,
+      "frequency_deficit": 2.0,
+      "adjacency_penalty": [
+       10.0,
+       4.0,
+       0.5
+      ],
+      "frequency_allowance": "generator.pt:inference.token_unigram",
+      "level0": "unigram draw from generator.pt:inference.level0_unigram",
+      "penalties": "config",
+      "level_sampling": "multinomial per level at the temperature above",
+      "token_pick": "pick_tokens from eval_shard.py (argmax with the penalties above)"
+     },
+     "levels": [
+      1,
+      8,
+      16,
+      24,
+      32,
+      40,
+      52,
+      64,
+      76,
+      92,
+      108,
+      128
+     ]
+    },
+    "precision_note": "torch.autocast bf16 around generate, idx_to_zhats and the decoder; pick_tokens runs in float64 as released",
+    "ids_file": "/results/ids-B-ncm.json",
+    "ids_sha256": "0109ffcddfc419f0aff441e42cb777f26d61b1a58f7359981b56c99d55ad9507"
+   },
+   "duo": {
+    "n": 1024,
+    "batch": 16,
+    "batches_per_run": 64,
+    "warmup_batches": 1,
+    "repeats": 3,
+    "seed": 42,
+    "wall_s": [
+     159.65302849499858,
+     159.3679942190065,
+     159.23038859700318
+    ],
+    "median_wall_s": 159.3679942190065,
+    "level0_s_per_run": [
+     0,
+     0,
+     0
+    ],
+    "median_level0_s": 0.0,
+    "repeat_ids_sha256": [
+     "76d24b14dbf084e9b77be9b322eaea6a1ba7e014e811e4394e713ad9911b18b7",
+     "76d24b14dbf084e9b77be9b322eaea6a1ba7e014e811e4394e713ad9911b18b7",
+     "76d24b14dbf084e9b77be9b322eaea6a1ba7e014e811e4394e713ad9911b18b7"
+    ],
+    "repeat_ids_identical": true,
+    "passes_per_batch": 129,
+    "median_ms_per_pass": 5.453375816345215,
+    "mean_ms_per_pass": 5.582980741922399,
+    "pass_ms_by_name": {
+     "backbone": {
+      "calls": 24768,
+      "median_ms": 5.453375816345215
+     }
+    },
+    "pass_ms_by_index": [
+     5.656368017196655,
+     5.451663970947266,
+     5.453088045120239,
+     5.453216075897217,
+     5.455904006958008,
+     5.452944040298462,
+     5.455087900161743,
+     5.455088138580322,
+     5.452591896057129,
+     5.4523680210113525,
+     5.455151796340942,
+     5.454399824142456,
+     5.455375909805298,
+     5.452351808547974,
+     5.450783967971802,
+     5.45684814453125,
+     5.45632004737854,
+     5.457119941711426,
+     5.4517600536346436,
+     5.451279878616333,
+     5.453472137451172,
+     5.453119993209839,
+     5.455712080001831,
+     5.451599836349487,
+     5.45468807220459,
+     5.4520158767700195,
+     5.45364785194397,
+     5.455136060714722,
+     5.45304012298584,
+     5.455120086669922,
+     5.456815958023071,
+     5.463295936584473,
+     5.452032089233398,
+     5.453552007675171,
+     5.453871965408325,
+     5.4535839557647705,
+     5.4508960247039795,
+     5.455568075180054,
+     5.453344106674194,
+     5.45361590385437,
+     5.460304021835327,
+     5.456400156021118,
+     5.453503847122192,
+     5.45580792427063,
+     5.4521119594573975,
+     5.454336166381836,
+     5.454352140426636,
+     5.453855991363525,
+     5.453824043273926,
+     5.452176094055176,
+     5.455471992492676,
+     5.458320140838623,
+     5.457744121551514,
+     5.450783967971802,
+     5.452239990234375,
+     5.449616193771362,
+     5.451280117034912,
+     5.450991868972778,
+     5.4515838623046875,
+     5.45414400100708,
+     5.4541120529174805,
+     5.454063892364502,
+     5.455711841583252,
+     5.4517600536346436,
+     5.451344013214111,
+     5.453664064407349,
+     5.451488018035889,
+     5.459215879440308,
+     5.456543922424316,
+     5.451552152633667,
+     5.454047918319702,
+     5.4514241218566895,
+     5.454495906829834,
+     5.453775882720947,
+     5.451584100723267,
+     5.452576160430908,
+     5.449376106262207,
+     5.451824188232422,
+     5.452048063278198,
+     5.449824094772339,
+     5.450991868972778,
+     5.457535982131958,
+     5.455183982849121,
+     5.452064037322998,
+     5.451167821884155,
+     5.452831983566284,
+     5.45196795463562,
+     5.451903820037842,
+     5.45035195350647,
+     5.454080104827881,
+     5.451120138168335,
+     5.451168060302734,
+     5.45299220085144,
+     5.452768087387085,
+     5.452143907546997,
+     5.45139217376709,
+     5.455007791519165,
+     5.4543681144714355,
+     5.450576066970825,
+     5.4529759883880615,
+     5.451599836349487,
+     5.449728012084961,
+     5.455264091491699,
+     5.454911947250366,
+     5.452127933502197,
+     5.455104112625122,
+     5.455168008804321,
+     5.454208135604858,
+     5.454064130783081,
+     5.453392028808594,
+     5.4540159702301025,
+     5.451568126678467,
+     5.454447984695435,
+     5.453968048095703,
+     5.4513280391693115,
+     5.458703994750977,
+     5.450527906417847,
+     5.453471899032593,
+     5.45412802696228,
+     5.455103874206543,
+     5.451647996902466,
+     5.449919939041138,
+     5.4510719776153564,
+     5.451744079589844,
+     5.452048063278198,
+     5.4537599086761475,
+     5.456464052200317,
+     5.446703910827637,
+     5.451312065124512
+    ],
+    "pass_ms_sum_per_run_s": [
+     46.146260080814365,
+     46.08212239742279,
+     46.05088453769684
+    ],
+    "non_pass_share_pct_per_run": [
+     71.09590684509942,
+     71.08445605828742,
+     71.07908550405713
+    ],
+    "non_pass_share_pct": 71.08445605828742,
+    "pass_timing": "CUDA events recorded around each model forward call on the current stream; with graphs on, the time includes copying the inputs into the graph's static tensors",
+    "graphs": {
+     "captured": 1,
+     "captured_during_timed_runs": 0,
+     "captures": [
+      "backbone [(16, 128), (16,)]"
+     ]
+    },
+    "model": "duo",
+    "label": "DUO, SDPA attention",
+    "precision": "bf16",
+    "kv_cache": "off",
+    "seq_len": 128,
+    "steps": 128,
+    "noise_removal": "ancestral",
+    "attention": {
+     "backend": "SDPA patch",
+     "attention_fn": "models.dit.regular_attention_multi_headed (F.scaled_dot_product_attention)",
+     "rotary": "duo_sdpa_patch.apply_rotary_emb_torch (flash-attn 2.x pure-torch rotary)",
+     "patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385",
+     "probe_precision": "bf16",
+     "q_dtypes": [
+      "torch.bfloat16"
+     ],
+     "q_shapes": [
+      [
+       16,
+       128,
+       12,
+       64
+      ]
+     ],
+     "attention_calls_in_probe": 12,
+     "cuda_kernels": [
+      "void pytorch_flash::flash_fwd_kernel<Flash_fwd_kernel_traits<64, 128, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 128, 128, 4, cutlass::bfloat16_t> >, false, false, false, false, true, true, false, false>(pytorch_flash::Flash_fwd_params)"
+     ]
+    },
+    "meta": {
+     "time_utc": "2026-11-10T16:01:00+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "43c46d957db546056f8cf948d2d5e0361c80ea6b90cfac7e2310ec153c28ada6",
+     "argv": [
+      "--model",
+      "duo",
+      "--ckpt",
+      "/dl/duo/lm1b_Duo.ckpt",
+      "--n",
+      "1024",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--steps",
+      "128",
+      "--precision",
+      "bf16",
+      "--kv-cache",
+      "off",
+      "--graphs",
+      "on",
+      "--noise-removal",
+      "ancestral",
+      "--seed",
+      "42",
+      "--warmup",
+      "1",
+      "--repeats",
+      "3",
+      "--count-passes",
+      "--log-attn",
+      "--table",
+      "B",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.62
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "duo_root": "/work/duo",
+      "duo_head": "no .git (tree copied from the sha-checked tarball)",
+      "dit_py_sha256": "32ee71d182ca69645730b4c4624e9cba92bbed9afe3c8ace3aac74e8f1089f97",
+      "algo_py_sha256": "d6cf18959f77f5002f5a9dde3df3fc109809afc87e6d735da88d0cb28dfa9d46",
+      "sdpa_patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385",
+      "compat": []
+     },
+     "load": {
+      "checkpoint": {
+       "path": "/dl/duo/lm1b_Duo.ckpt",
+       "bytes": 2229753893
+      },
+      "pickle_stubs": {
+       "classes": [
+        "transformers.models.bert.tokenization_bert.BasicTokenizer",
+        "transformers.models.bert.tokenization_bert.WordpieceTokenizer",
+        "transformers.tokenization_utils.Trie"
+       ],
+       "note": "transformers 4.x classes gone in 5.x, pickled in the checkpoint's hyper_parameters; stood in by empty holders, never used (the bench builds its own BertTokenizer)"
+      },
+      "config_vs_checkpoint": {
+       "model.qk_norm": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "model.softcap": {
+        "bench": null,
+        "checkpoint": -1.0
+       },
+       "algo.curriculum_end": {
+        "bench": null,
+        "checkpoint": 500000
+       },
+       "algo.curriculum_start": {
+        "bench": null,
+        "checkpoint": 0
+       },
+       "algo.gamma_max": {
+        "bench": null,
+        "checkpoint": -1.85
+       },
+       "algo.gamma_min": {
+        "bench": null,
+        "checkpoint": -3.55
+       },
+       "algo.gumbel_tau_log10_end": {
+        "bench": null,
+        "checkpoint": -3.0
+       },
+       "algo.gumbel_tau_log10_start": {
+        "bench": null,
+        "checkpoint": -3.0
+       },
+       "algo.integral_cache_path": {
+        "bench": null,
+        "checkpoint": "${hydra:runtime.cwd}/integral/${data.tokenizer_name_or_path}.pkl"
+       },
+       "algo.name": {
+        "bench": "duo_base",
+        "checkpoint": "duo"
+       },
+       "noise.denoiser_latent_conditioning": {
+        "bench": null,
+        "checkpoint": -1
+       },
+       "noise.eps": {
+        "bench": 0.001,
+        "checkpoint": 0
+       },
+       "noise.freeze_decoder": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "noise.freeze_encoder": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "noise.parameterization": {
+        "bench": null,
+        "checkpoint": "log-linear"
+       }
+      },
+      "checkpoint_only_keys_off": [
+       "model.qk_norm",
+       "model.softcap"
+      ],
+      "on_load_checkpoint": "ok",
+      "state_dict": "strict=True ok",
+      "ema": "EMA weights copied in (_eval_mode)"
+     },
+     "sampling": {
+      "predictor": "ancestral",
+      "steps": 128,
+      "noise_removal": "ancestral",
+      "use_float64": true,
+      "length": 128,
+      "loop": "DUO_BASE.generate_samples as released"
+     }
+    },
+    "precision_note": "bf16: DIT's own bf16 block autocast, as released"
+   }
+  },
+  "C": {
+   "ncm": {
+    "n": 1024,
+    "batch": 16,
+    "batches_per_run": 64,
+    "warmup_batches": 1,
+    "repeats": 3,
+    "seed": 42,
+    "wall_s": [
+     4.320863369997824,
+     4.297531871998217,
+     4.286263486981625
+    ],
+    "median_wall_s": 4.297531871998217,
+    "level0_s_per_run": [
+     0.01530116202775389,
+     0.014325410884339362,
+     0.012920376961119473
+    ],
+    "median_level0_s": 0.014325410884339362,
+    "repeat_ids_sha256": [
+     "d5f554598421fccc729b7b103e0f8be3e4c092ef29aaf477f8bbbba04f8e30ac",
+     "d5f554598421fccc729b7b103e0f8be3e4c092ef29aaf477f8bbbba04f8e30ac",
+     "d5f554598421fccc729b7b103e0f8be3e4c092ef29aaf477f8bbbba04f8e30ac"
+    ],
+    "repeat_ids_identical": true,
+    "passes_per_batch": 12,
+    "median_ms_per_pass": 3.05948805809021,
+    "mean_ms_per_pass": 2.964081292765008,
+    "pass_ms_by_name": {
+     "_kv_prefix": {
+      "calls": 192,
+      "median_ms": 1.32396799325943
+     },
+     "_kv_level": {
+      "calls": 2112,
+      "median_ms": 3.098431944847107
+     }
+    },
+    "pass_ms_by_index": [
+     1.32396799325943,
+     1.7689599990844727,
+     1.9413920044898987,
+     2.06876802444458,
+     2.534656047821045,
+     2.8175359964370728,
+     3.082352042198181,
+     3.2663999795913696,
+     3.2872320413589478,
+     3.678287982940674,
+     4.041167974472046,
+     4.977567911148071
+    ],
+    "pass_ms_sum_per_run_s": [
+     2.2891416684389116,
+     2.269271167874336,
+     2.2708304622173308
+    ],
+    "non_pass_share_pct_per_run": [
+     47.021197561262746,
+     47.19594326547259,
+     47.02074501219141
+    ],
+    "non_pass_share_pct": 47.021197561262746,
+    "pass_timing": "CUDA events recorded around each model forward call on the current stream; with graphs on, the time includes copying the inputs into the graph's static tensors",
+    "graphs": {
+     "captured": 12,
+     "captured_during_timed_runs": 0,
+     "captures": [
+      "_kv_prefix [(16, 1, 768), (16, 1, 1, 1), (2, 64), (2, 64)]",
+      "_kv_level [(16, 8, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 8, 9), (9, 64), (9, 64)]",
+      "_kv_level [(16, 16, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 16, 17), (17, 64), (17, 64)]",
+      "_kv_level [(16, 24, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 24, 25), (25, 64), (25, 64)]",
+      "_kv_level [(16, 32, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 32, 33), (33, 64), (33, 64)]",
+      "_kv_level [(16, 40, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 40, 41), (41, 64), (41, 64)]",
+      "_kv_level [(16, 52, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 52, 53), (53, 64), (53, 64)]",
+      "_kv_level [(16, 64, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 64, 65), (65, 64), (65, 64)]",
+      "_kv_level [(16, 76, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 76, 77), (77, 64), (77, 64)]",
+      "_kv_level [(16, 92, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 92, 93), (93, 64), (93, 64)]",
+      "_kv_level [(16, 108, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 108, 109), (109, 64), (109, 64)]",
+      "_kv_level [(16, 128, 768), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 12, 1, 64), (16, 1, 128, 129), (129, 64), (129, 64)]"
+     ]
+    },
+    "model": "ncm",
+    "label": "NCM, KV cache via #5",
+    "precision": "bf16",
+    "kv_cache": "on",
+    "seq_len": 128,
+    "kv": {
+     "kv_source": "#5",
+     "pr5_record_lines": [
+      "c702742 tarball: no git history; #5 is not in c702742 (GitHub, see ncm-pr5.json); applying its saved diff",
+      "2c18bad559a5a10c7db5f997137a5d293778cf8a867d7e6e3073e052bb0c99d0  /work/ncm-pr5.patch",
+      "patched README.md",
+      "patched models/common.py",
+      "patched models/next_concept.py",
+      "patched scripts/bench_kv.py",
+      "patched scripts/eval_shard.py",
+      "5 files patched",
+      "#5 cached-path lines in models/next_concept.py: 5"
+     ],
+     "model_file": "/work/ncm/models/next_concept.py",
+     "model_file_sha256": "930bdce1c6fb25caccac3fb9dff0aaf6ae5147f450bb8b07f1d3dfa2da8a5804",
+     "patch": "/work/ncm-pr5.patch",
+     "patch_sha256": "2c18bad559a5a10c7db5f997137a5d293778cf8a867d7e6e3073e052bb0c99d0",
+     "patch_applied_check": "every added line present"
+    },
+    "meta": {
+     "time_utc": "2026-11-10T16:09:07+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "43c46d957db546056f8cf948d2d5e0361c80ea6b90cfac7e2310ec153c28ada6",
+     "argv": [
+      "--model",
+      "ncm",
+      "--cfg",
+      "/work/cfg/lm1b_b16_nopen.yaml",
+      "--n",
+      "1024",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--precision",
+      "bf16",
+      "--kv-cache",
+      "on",
+      "--kv-source",
+      "pr5",
+      "--graphs",
+      "on",
+      "--penalties",
+      "off",
+      "--l0",
+      "unigram",
+      "--seed",
+      "42",
+      "--warmup",
+      "1",
+      "--repeats",
+      "3",
+      "--count-passes",
+      "--table",
+      "C",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.88
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "ncm_root": "/work/ncm",
+      "ncm_head": "no .git (tree copied from the sha-checked tarball)",
+      "config": "/work/cfg/lm1b_b16_nopen.yaml",
+      "config_sha256": "1422fce313c8d9eea1376a424b80bf2675ea17730c4e0aabb22a5337029bf07c",
+      "eval_shard_sha256": "bf4d42b64bf44b7a57c17c37ba27633fdad34a0124e8f5f67595e3544a7e506e",
+      "functions_sha256": "2ded01d2f5824f7497aad60d97d118eb392f1a40c24e6de85005fe280759638a",
+      "checkpoints": {
+       "generator.pt": {
+        "path": "/dl/ncm/lm1b/small/generator.pt",
+        "bytes": 390138443
+       },
+       "../tokenizer.pt": {
+        "path": "/dl/ncm/lm1b/small/../tokenizer.pt",
+        "bytes": 597840331
+       }
+      }
+     },
+     "generation": {
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0,
+      "cfg_scale": 0.0,
+      "frequency_penalty": 0.0,
+      "frequency_deficit": 0.0,
+      "adjacency_penalty": null,
+      "frequency_allowance": "generator.pt:inference.token_unigram",
+      "level0": "unigram draw from generator.pt:inference.level0_unigram",
+      "penalties": "off",
+      "level_sampling": "multinomial per level at the temperature above",
+      "token_pick": "pick_tokens from eval_shard.py (argmax with the penalties above)"
+     },
+     "levels": [
+      1,
+      8,
+      16,
+      24,
+      32,
+      40,
+      52,
+      64,
+      76,
+      92,
+      108,
+      128
+     ]
+    },
+    "precision_note": "torch.autocast bf16 around generate, idx_to_zhats and the decoder; pick_tokens runs in float64 as released"
+   }
+  },
+  "Q": {
+   "duo_ancestral": {
+    "model": "duo",
+    "label": "DUO, SDPA attention",
+    "noise_removal": "ancestral",
+    "precision": "fp32",
+    "steps": 128,
+    "seq_len": 128,
+    "samples_per_seed": 256,
+    "seeds": [
+     42,
+     0,
+     1,
+     2,
+     3
+    ],
+    "scorer": "genppl_flm via NCM scripts/eval_merge.py, ref /dl/gpt2-large",
+    "eval_merge_txt": "/results/quality-duo-ancestral.txt",
+    "eval_merge_config": "/results/eval-merge-duo-ancestral.yaml",
+    "pkl": "/results/duo-ancestral.pkl",
+    "pkl_sha256": "1b98b04fa0d84fccb4a93c442d53561cf0e1e9b79ed3731bf7d0b3c196bb3dc0",
+    "generation_s": 280.250321451982,
+    "gen_ppl_mean": 100.26,
+    "entropy_mean": 4.3031,
+    "gen_ppl_sd": 2.07,
+    "n_seeds": 5,
+    "n_samples": 1280,
+    "per_seed": [
+     {
+      "seed": 42,
+      "gen_ppl": 100.61,
+      "entropy": 4.3057
+     },
+     {
+      "seed": 0,
+      "gen_ppl": 101.32,
+      "entropy": 4.3064
+     },
+     {
+      "seed": 1,
+      "gen_ppl": 96.7,
+      "entropy": 4.2961
+     },
+     {
+      "seed": 2,
+      "gen_ppl": 100.67,
+      "entropy": 4.3028
+     },
+     {
+      "seed": 3,
+      "gen_ppl": 102.01,
+      "entropy": 4.3047
+     }
+    ],
+    "truncation": {
+     "generation_len_not_seq_len": 0,
+     "scorer_inputs_over_128_gpt2_tokens": 1279,
+     "note": "eval_merge.py scores the first 128 gpt2-large tokens of each sample"
+    },
+    "attention": {
+     "backend": "SDPA patch",
+     "attention_fn": "models.dit.regular_attention_multi_headed (F.scaled_dot_product_attention)",
+     "rotary": "duo_sdpa_patch.apply_rotary_emb_torch (flash-attn 2.x pure-torch rotary)",
+     "patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385",
+     "probe_precision": "fp32",
+     "q_dtypes": [
+      "torch.float32"
+     ],
+     "q_shapes": [
+      [
+       16,
+       128,
+       12,
+       64
+      ]
+     ],
+     "attention_calls_in_probe": 12,
+     "cuda_kernels": [
+      "fmha_cutlassF_f32_aligned_64x64_rf_sm80(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm80, true, 64, 64, 64, true, true>::Params)"
+     ]
+    },
+    "meta": {
+     "time_utc": "2026-11-10T16:10:00+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "43c46d957db546056f8cf948d2d5e0361c80ea6b90cfac7e2310ec153c28ada6",
+     "argv": [
+      "--model",
+      "duo",
+      "--ckpt",
+      "/dl/duo/lm1b_Duo.ckpt",
+      "--quality",
+      "--scorer",
+      "genppl_flm",
+      "--ref",
+      "/dl/gpt2-large",
+      "--samples",
+      "256",
+      "--seeds",
+      "42",
+      "0",
+      "1",
+      "2",
+      "3",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--steps",
+      "128",
+      "--precision",
+      "fp32",
+      "--kv-cache",
+      "off",
+      "--graphs",
+      "off",
+      "--noise-removal",
+      "ancestral",
+      "--count-truncated",
+      "--log-attn",
+      "--table",
+      "Q",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.62
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "duo_root": "/work/duo",
+      "duo_head": "no .git (tree copied from the sha-checked tarball)",
+      "dit_py_sha256": "32ee71d182ca69645730b4c4624e9cba92bbed9afe3c8ace3aac74e8f1089f97",
+      "algo_py_sha256": "d6cf18959f77f5002f5a9dde3df3fc109809afc87e6d735da88d0cb28dfa9d46",
+      "sdpa_patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385",
+      "compat": []
+     },
+     "load": {
+      "checkpoint": {
+       "path": "/dl/duo/lm1b_Duo.ckpt",
+       "bytes": 2229753893
+      },
+      "pickle_stubs": {
+       "classes": [
+        "transformers.models.bert.tokenization_bert.BasicTokenizer",
+        "transformers.models.bert.tokenization_bert.WordpieceTokenizer",
+        "transformers.tokenization_utils.Trie"
+       ],
+       "note": "transformers 4.x classes gone in 5.x, pickled in the checkpoint's hyper_parameters; stood in by empty holders, never used (the bench builds its own BertTokenizer)"
+      },
+      "config_vs_checkpoint": {
+       "model.qk_norm": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "model.softcap": {
+        "bench": null,
+        "checkpoint": -1.0
+       },
+       "algo.curriculum_end": {
+        "bench": null,
+        "checkpoint": 500000
+       },
+       "algo.curriculum_start": {
+        "bench": null,
+        "checkpoint": 0
+       },
+       "algo.gamma_max": {
+        "bench": null,
+        "checkpoint": -1.85
+       },
+       "algo.gamma_min": {
+        "bench": null,
+        "checkpoint": -3.55
+       },
+       "algo.gumbel_tau_log10_end": {
+        "bench": null,
+        "checkpoint": -3.0
+       },
+       "algo.gumbel_tau_log10_start": {
+        "bench": null,
+        "checkpoint": -3.0
+       },
+       "algo.integral_cache_path": {
+        "bench": null,
+        "checkpoint": "${hydra:runtime.cwd}/integral/${data.tokenizer_name_or_path}.pkl"
+       },
+       "algo.name": {
+        "bench": "duo_base",
+        "checkpoint": "duo"
+       },
+       "noise.denoiser_latent_conditioning": {
+        "bench": null,
+        "checkpoint": -1
+       },
+       "noise.eps": {
+        "bench": 0.001,
+        "checkpoint": 0
+       },
+       "noise.freeze_decoder": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "noise.freeze_encoder": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "noise.parameterization": {
+        "bench": null,
+        "checkpoint": "log-linear"
+       }
+      },
+      "checkpoint_only_keys_off": [
+       "model.qk_norm",
+       "model.softcap"
+      ],
+      "on_load_checkpoint": "ok",
+      "state_dict": "strict=True ok",
+      "ema": "EMA weights copied in (_eval_mode)"
+     },
+     "sampling": {
+      "predictor": "ancestral",
+      "steps": 128,
+      "noise_removal": "ancestral",
+      "use_float64": true,
+      "length": 128,
+      "loop": "DUO_BASE.generate_samples as released"
+     }
+    },
+    "precision_note": "fp32: DIT's hard-coded bf16 block autocast switched off (true fp32)"
+   },
+   "duo_greedy": {
+    "model": "duo",
+    "label": "DUO, SDPA attention",
+    "noise_removal": "greedy",
+    "precision": "fp32",
+    "steps": 128,
+    "seq_len": 128,
+    "samples_per_seed": 256,
+    "seeds": [
+     42,
+     0,
+     1,
+     2,
+     3
+    ],
+    "scorer": "genppl_flm via NCM scripts/eval_merge.py, ref /dl/gpt2-large",
+    "eval_merge_txt": "/results/quality-duo-greedy.txt",
+    "eval_merge_config": "/results/eval-merge-duo-greedy.yaml",
+    "pkl": "/results/duo-greedy.pkl",
+    "pkl_sha256": "326a626c3130b4df12555de753b52dff390c8eb8e48c477bfca53d2788a2ddec",
+    "generation_s": 279.09720496900263,
+    "gen_ppl_mean": 87.96,
+    "entropy_mean": 4.1788,
+    "gen_ppl_sd": 1.79,
+    "n_seeds": 5,
+    "n_samples": 1280,
+    "per_seed": [
+     {
+      "seed": 42,
+      "gen_ppl": 86.25,
+      "entropy": 4.1804
+     },
+     {
+      "seed": 0,
+      "gen_ppl": 89.39,
+      "entropy": 4.1851
+     },
+     {
+      "seed": 1,
+      "gen_ppl": 89.16,
+      "entropy": 4.1729
+     },
+     {
+      "seed": 2,
+      "gen_ppl": 89.23,
+      "entropy": 4.183
+     },
+     {
+      "seed": 3,
+      "gen_ppl": 85.78,
+      "entropy": 4.1726
+     }
+    ],
+    "truncation": {
+     "generation_len_not_seq_len": 0,
+     "scorer_inputs_over_128_gpt2_tokens": 1278,
+     "note": "eval_merge.py scores the first 128 gpt2-large tokens of each sample"
+    },
+    "attention": {
+     "backend": "SDPA patch",
+     "attention_fn": "models.dit.regular_attention_multi_headed (F.scaled_dot_product_attention)",
+     "rotary": "duo_sdpa_patch.apply_rotary_emb_torch (flash-attn 2.x pure-torch rotary)",
+     "patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385",
+     "probe_precision": "fp32",
+     "q_dtypes": [
+      "torch.float32"
+     ],
+     "q_shapes": [
+      [
+       16,
+       128,
+       12,
+       64
+      ]
+     ],
+     "attention_calls_in_probe": 12,
+     "cuda_kernels": [
+      "fmha_cutlassF_f32_aligned_64x64_rf_sm80(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm80, true, 64, 64, 64, true, true>::Params)"
+     ]
+    },
+    "meta": {
+     "time_utc": "2026-11-10T16:15:04+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "43c46d957db546056f8cf948d2d5e0361c80ea6b90cfac7e2310ec153c28ada6",
+     "argv": [
+      "--model",
+      "duo",
+      "--ckpt",
+      "/dl/duo/lm1b_Duo.ckpt",
+      "--quality",
+      "--scorer",
+      "genppl_flm",
+      "--ref",
+      "/dl/gpt2-large",
+      "--samples",
+      "256",
+      "--seeds",
+      "42",
+      "0",
+      "1",
+      "2",
+      "3",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--steps",
+      "128",
+      "--precision",
+      "fp32",
+      "--kv-cache",
+      "off",
+      "--graphs",
+      "off",
+      "--noise-removal",
+      "greedy",
+      "--count-truncated",
+      "--log-attn",
+      "--table",
+      "Q",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.62
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "duo_root": "/work/duo",
+      "duo_head": "no .git (tree copied from the sha-checked tarball)",
+      "dit_py_sha256": "32ee71d182ca69645730b4c4624e9cba92bbed9afe3c8ace3aac74e8f1089f97",
+      "algo_py_sha256": "d6cf18959f77f5002f5a9dde3df3fc109809afc87e6d735da88d0cb28dfa9d46",
+      "sdpa_patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385",
+      "compat": []
+     },
+     "load": {
+      "checkpoint": {
+       "path": "/dl/duo/lm1b_Duo.ckpt",
+       "bytes": 2229753893
+      },
+      "pickle_stubs": {
+       "classes": [
+        "transformers.models.bert.tokenization_bert.BasicTokenizer",
+        "transformers.models.bert.tokenization_bert.WordpieceTokenizer",
+        "transformers.tokenization_utils.Trie"
+       ],
+       "note": "transformers 4.x classes gone in 5.x, pickled in the checkpoint's hyper_parameters; stood in by empty holders, never used (the bench builds its own BertTokenizer)"
+      },
+      "config_vs_checkpoint": {
+       "model.qk_norm": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "model.softcap": {
+        "bench": null,
+        "checkpoint": -1.0
+       },
+       "algo.curriculum_end": {
+        "bench": null,
+        "checkpoint": 500000
+       },
+       "algo.curriculum_start": {
+        "bench": null,
+        "checkpoint": 0
+       },
+       "algo.gamma_max": {
+        "bench": null,
+        "checkpoint": -1.85
+       },
+       "algo.gamma_min": {
+        "bench": null,
+        "checkpoint": -3.55
+       },
+       "algo.gumbel_tau_log10_end": {
+        "bench": null,
+        "checkpoint": -3.0
+       },
+       "algo.gumbel_tau_log10_start": {
+        "bench": null,
+        "checkpoint": -3.0
+       },
+       "algo.integral_cache_path": {
+        "bench": null,
+        "checkpoint": "${hydra:runtime.cwd}/integral/${data.tokenizer_name_or_path}.pkl"
+       },
+       "algo.name": {
+        "bench": "duo_base",
+        "checkpoint": "duo"
+       },
+       "noise.denoiser_latent_conditioning": {
+        "bench": null,
+        "checkpoint": -1
+       },
+       "noise.eps": {
+        "bench": 0.001,
+        "checkpoint": 0
+       },
+       "noise.freeze_decoder": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "noise.freeze_encoder": {
+        "bench": null,
+        "checkpoint": false
+       },
+       "noise.parameterization": {
+        "bench": null,
+        "checkpoint": "log-linear"
+       }
+      },
+      "checkpoint_only_keys_off": [
+       "model.qk_norm",
+       "model.softcap"
+      ],
+      "on_load_checkpoint": "ok",
+      "state_dict": "strict=True ok",
+      "ema": "EMA weights copied in (_eval_mode)"
+     },
+     "sampling": {
+      "predictor": "ancestral",
+      "steps": 128,
+      "noise_removal": "greedy",
+      "use_float64": true,
+      "length": 128,
+      "loop": "DUO_BASE.generate_samples as released"
+     }
+    },
+    "precision_note": "fp32: DIT's hard-coded bf16 block autocast switched off (true fp32)"
+   }
+  }
+ },
+ "superseded": [
+  {
+   "table": "A",
+   "key": "ncm",
+   "replaced_at": "2026-11-10T15:45:42+00:00",
+   "row": {
+    "n": 1024,
+    "batch": 16,
+    "batches_per_run": 64,
+    "warmup_batches": 1,
+    "repeats": 3,
+    "seed": 42,
+    "wall_s": [
+     9.142232646001503,
+     9.112163362005958,
+     9.08263014498516
+    ],
+    "median_wall_s": 9.112163362005958,
+    "level0_s_per_run": [
+     0.010575466905720532,
+     0.010643861984135583,
+     0.010128818015800789
+    ],
+    "median_level0_s": 0.010575466905720532,
+    "repeat_ids_sha256": [
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7"
+    ],
+    "repeat_ids_identical": true,
+    "passes_per_batch": 11,
+    "median_ms_per_pass": 7.269168138504028,
+    "mean_ms_per_pass": 8.001050013710152,
+    "pass_ms_by_name": {
+     "_decode_level_logits": {
+      "calls": 2112,
+      "median_ms": 7.269168138504028
+     }
+    },
+    "pass_ms_by_index": [
+     4.670223951339722,
+     5.1942079067230225,
+     6.3277599811553955,
+     6.419583797454834,
+     6.3433921337127686,
+     7.229551792144775,
+     9.01302433013916,
+     9.214735984802246,
+     9.92518424987793,
+     10.588863849639893,
+     12.324560165405273
+    ],
+    "pass_ms_sum_per_run_s": [
+     5.647443769931793,
+     5.635043098926544,
+     5.615730760097503
+    ],
+    "non_pass_share_pct_per_run": [
+     38.226864392892146,
+     38.1591080508675,
+     38.17065464018541
+    ],
+    "non_pass_share_pct": 38.17065464018541,
+    "pass_timing": "CUDA events recorded around each model forward call on the current stream; with graphs on, the time includes copying the inputs into the graph's static tensors",
+    "model": "ncm",
+    "label": "NCM, eager (as released)",
+    "precision": "fp32",
+    "kv_cache": "off",
+    "graphs": "off",
+    "seq_len": 128,
+    "kv": {
+     "kv_source": "none",
+     "note": "eager path, unchanged by #5"
+    },
+    "meta": {
+     "time_utc": "2026-11-10T15:43:31+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "da4ec619609b67926e88c96f81750201be24a0e3c3eb1c33add9c5797c1ed64f",
+     "argv": [
+      "--model",
+      "ncm",
+      "--cfg",
+      "/work/cfg/lm1b_b16_pen.yaml",
+      "--n",
+      "1024",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--precision",
+      "fp32",
+      "--kv-cache",
+      "off",
+      "--graphs",
+      "off",
+      "--penalties",
+      "config",
+      "--l0",
+      "unigram",
+      "--seed",
+      "42",
+      "--warmup",
+      "1",
+      "--repeats",
+      "3",
+      "--count-passes",
+      "--save-ids",
+      "--table",
+      "A",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.88
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "ncm_root": "/work/ncm",
+      "ncm_head": "no .git (tree copied from the sha-checked tarball)",
+      "config": "/work/cfg/lm1b_b16_pen.yaml",
+      "config_sha256": "167dd21be380085999633d2f62757f4d627e97e4a9bf5f73e9b3c05e14017e33",
+      "eval_shard_sha256": "bf4d42b64bf44b7a57c17c37ba27633fdad34a0124e8f5f67595e3544a7e506e",
+      "functions_sha256": "2ded01d2f5824f7497aad60d97d118eb392f1a40c24e6de85005fe280759638a",
+      "checkpoints": {
+       "generator.pt": {
+        "path": "/dl/ncm/lm1b/small/generator.pt",
+        "bytes": 390138443
+       },
+       "../tokenizer.pt": {
+        "path": "/dl/ncm/lm1b/small/../tokenizer.pt",
+        "bytes": 597840331
+       }
+      }
+     },
+     "generation": {
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0,
+      "cfg_scale": 0.0,
+      "frequency_penalty": 11.5,
+      "frequency_deficit": 2.0,
+      "adjacency_penalty": [
+       10.0,
+       4.0,
+       0.5
+      ],
+      "frequency_allowance": "generator.pt:inference.token_unigram",
+      "level0": "unigram draw from generator.pt:inference.level0_unigram",
+      "penalties": "config",
+      "level_sampling": "multinomial per level at the temperature above",
+      "token_pick": "pick_tokens from eval_shard.py (argmax with the penalties above)"
+     },
+     "levels": [
+      1,
+      8,
+      16,
+      24,
+      32,
+      40,
+      52,
+      64,
+      76,
+      92,
+      108,
+      128
+     ]
+    },
+    "ids_file": "/results/ids-A-ncm.json",
+    "ids_sha256": "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7"
+   }
+  },
+  {
+   "table": "A",
+   "key": "ncm",
+   "replaced_at": "2026-11-10T15:47:46+00:00",
+   "row": {
+    "n": 1024,
+    "batch": 16,
+    "batches_per_run": 64,
+    "warmup_batches": 1,
+    "repeats": 3,
+    "seed": 42,
+    "wall_s": [
+     9.190574439009652,
+     9.1616661559965,
+     9.116761878016405
+    ],
+    "median_wall_s": 9.1616661559965,
+    "level0_s_per_run": [
+     0.010171661037020385,
+     0.010161297919694334,
+     0.010214713955065235
+    ],
+    "median_level0_s": 0.010171661037020385,
+    "repeat_ids_sha256": [
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7"
+    ],
+    "repeat_ids_identical": true,
+    "passes_per_batch": 11,
+    "median_ms_per_pass": 7.296335935592651,
+    "mean_ms_per_pass": 8.036265387453817,
+    "pass_ms_by_name": {
+     "_decode_level_logits": {
+      "calls": 2112,
+      "median_ms": 7.296335935592651
+     }
+    },
+    "pass_ms_by_index": [
+     4.6909120082855225,
+     5.217888116836548,
+     6.378592014312744,
+     6.522079944610596,
+     6.399199962615967,
+     7.236127853393555,
+     9.034192085266113,
+     9.192016124725342,
+     9.950464248657227,
+     10.608767986297607,
+     12.34870433807373
+    ],
+    "pass_ms_sum_per_run_s": [
+     5.671350464344025,
+     5.664080344676972,
+     5.637161689281464
+    ],
+    "non_pass_share_pct_per_run": [
+     38.291664988079326,
+     38.176307145074105,
+     38.16706233301358
+    ],
+    "non_pass_share_pct": 38.176307145074105,
+    "pass_timing": "CUDA events recorded around each model forward call on the current stream; with graphs on, the time includes copying the inputs into the graph's static tensors",
+    "model": "ncm",
+    "label": "NCM, eager (as released)",
+    "precision": "fp32",
+    "kv_cache": "off",
+    "graphs": "off",
+    "seq_len": 128,
+    "kv": {
+     "kv_source": "none",
+     "note": "eager path, unchanged by #5"
+    },
+    "meta": {
+     "time_utc": "2026-11-10T15:45:13+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "ad9225b4eb1eab98a472d9af1e087d4027f1e7b3b4d9f237a4da04ad9d64786b",
+     "argv": [
+      "--model",
+      "ncm",
+      "--cfg",
+      "/work/cfg/lm1b_b16_pen.yaml",
+      "--n",
+      "1024",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--precision",
+      "fp32",
+      "--kv-cache",
+      "off",
+      "--graphs",
+      "off",
+      "--penalties",
+      "config",
+      "--l0",
+      "unigram",
+      "--seed",
+      "42",
+      "--warmup",
+      "1",
+      "--repeats",
+      "3",
+      "--count-passes",
+      "--save-ids",
+      "--table",
+      "A",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.88
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "ncm_root": "/work/ncm",
+      "ncm_head": "no .git (tree copied from the sha-checked tarball)",
+      "config": "/work/cfg/lm1b_b16_pen.yaml",
+      "config_sha256": "167dd21be380085999633d2f62757f4d627e97e4a9bf5f73e9b3c05e14017e33",
+      "eval_shard_sha256": "bf4d42b64bf44b7a57c17c37ba27633fdad34a0124e8f5f67595e3544a7e506e",
+      "functions_sha256": "2ded01d2f5824f7497aad60d97d118eb392f1a40c24e6de85005fe280759638a",
+      "checkpoints": {
+       "generator.pt": {
+        "path": "/dl/ncm/lm1b/small/generator.pt",
+        "bytes": 390138443
+       },
+       "../tokenizer.pt": {
+        "path": "/dl/ncm/lm1b/small/../tokenizer.pt",
+        "bytes": 597840331
+       }
+      }
+     },
+     "generation": {
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0,
+      "cfg_scale": 0.0,
+      "frequency_penalty": 11.5,
+      "frequency_deficit": 2.0,
+      "adjacency_penalty": [
+       10.0,
+       4.0,
+       0.5
+      ],
+      "frequency_allowance": "generator.pt:inference.token_unigram",
+      "level0": "unigram draw from generator.pt:inference.level0_unigram",
+      "penalties": "config",
+      "level_sampling": "multinomial per level at the temperature above",
+      "token_pick": "pick_tokens from eval_shard.py (argmax with the penalties above)"
+     },
+     "levels": [
+      1,
+      8,
+      16,
+      24,
+      32,
+      40,
+      52,
+      64,
+      76,
+      92,
+      108,
+      128
+     ]
+    },
+    "ids_file": "/results/ids-A-ncm.json",
+    "ids_sha256": "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7"
+   }
+  },
+  {
+   "table": "A",
+   "key": "ncm",
+   "replaced_at": "2026-11-10T15:49:04+00:00",
+   "row": {
+    "n": 1024,
+    "batch": 16,
+    "batches_per_run": 64,
+    "warmup_batches": 1,
+    "repeats": 3,
+    "seed": 42,
+    "wall_s": [
+     9.185693045001244,
+     9.155490942008328,
+     9.160625921998871
+    ],
+    "median_wall_s": 9.160625921998871,
+    "level0_s_per_run": [
+     0.010589185083517805,
+     0.010634528123773634,
+     0.010235143970930949
+    ],
+    "median_level0_s": 0.010589185083517805,
+    "repeat_ids_sha256": [
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+     "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7"
+    ],
+    "repeat_ids_identical": true,
+    "passes_per_batch": 11,
+    "median_ms_per_pass": 7.311023950576782,
+    "mean_ms_per_pass": 8.047245079820806,
+    "pass_ms_by_name": {
+     "_decode_level_logits": {
+      "calls": 2112,
+      "median_ms": 7.311023950576782
+     }
+    },
+    "pass_ms_by_index": [
+     4.644560098648071,
+     5.222223997116089,
+     6.41046404838562,
+     6.503551959991455,
+     6.395519971847534,
+     7.262079954147339,
+     9.040143966674805,
+     9.23366403579712,
+     9.967376232147217,
+     10.635983943939209,
+     12.391744136810303
+    ],
+    "pass_ms_sum_per_run_s": [
+     5.67157786655426,
+     5.655151322841644,
+     5.669052419185639
+    ],
+    "non_pass_share_pct_per_run": [
+     38.2563967817249,
+     38.232134588283,
+     38.115010181000414
+    ],
+    "non_pass_share_pct": 38.232134588283,
+    "pass_timing": "CUDA events recorded around each model forward call on the current stream; with graphs on, the time includes copying the inputs into the graph's static tensors",
+    "model": "ncm",
+    "label": "NCM, eager (as released)",
+    "precision": "fp32",
+    "kv_cache": "off",
+    "graphs": "off",
+    "seq_len": 128,
+    "kv": {
+     "kv_source": "none",
+     "note": "eager path, unchanged by #5"
+    },
+    "meta": {
+     "time_utc": "2026-11-10T15:47:17+00:00",
+     "harness": "bench_ncm_duo/1",
+     "harness_sha256": "869347b7a1e774898e9c4d9a3044b19274d26f38ba948a92e063f65a3bdab860",
+     "argv": [
+      "--model",
+      "ncm",
+      "--cfg",
+      "/work/cfg/lm1b_b16_pen.yaml",
+      "--n",
+      "1024",
+      "--batch",
+      "16",
+      "--seq-len",
+      "128",
+      "--precision",
+      "fp32",
+      "--kv-cache",
+      "off",
+      "--graphs",
+      "off",
+      "--penalties",
+      "config",
+      "--l0",
+      "unigram",
+      "--seed",
+      "42",
+      "--warmup",
+      "1",
+      "--repeats",
+      "3",
+      "--count-passes",
+      "--save-ids",
+      "--table",
+      "A",
+      "--out",
+      "/results/results.json"
+     ],
+     "python": "3.12.3",
+     "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+     "packages": {
+      "torch": "2.10.0+cu128",
+      "transformers": "5.22.2",
+      "tokenizers": "0.23.3",
+      "lightning": "2.2.1",
+      "lightning-utilities": "0.15.3",
+      "hydra-core": "1.3.2",
+      "omegaconf": "2.3.0",
+      "torchmetrics": "1.6.1",
+      "huggingface_hub": "2.4.0",
+      "numpy": "2.4.1",
+      "einops": "0.7.0",
+      "triton": "3.6.0",
+      "antlr4-python3-runtime": "4.9.3"
+     },
+     "torch_cuda": "12.8",
+     "cudnn": 91002,
+     "arch_list": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+     ],
+     "device": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "capability": [
+       12,
+       0
+      ],
+      "total_gb": 34.16,
+      "free_gb_at_start": 30.88
+     },
+     "torch_flags": {
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "float32_matmul_precision": "highest",
+      "cudnn_benchmark": false,
+      "sdp_flash": true,
+      "sdp_mem_efficient": true,
+      "sdp_math": true,
+      "sdp_cudnn": true
+     },
+     "sources": {
+      "ncm_root": "/work/ncm",
+      "ncm_head": "no .git (tree copied from the sha-checked tarball)",
+      "config": "/work/cfg/lm1b_b16_pen.yaml",
+      "config_sha256": "167dd21be380085999633d2f62757f4d627e97e4a9bf5f73e9b3c05e14017e33",
+      "eval_shard_sha256": "bf4d42b64bf44b7a57c17c37ba27633fdad34a0124e8f5f67595e3544a7e506e",
+      "functions_sha256": "2ded01d2f5824f7497aad60d97d118eb392f1a40c24e6de85005fe280759638a",
+      "checkpoints": {
+       "generator.pt": {
+        "path": "/dl/ncm/lm1b/small/generator.pt",
+        "bytes": 390138443
+       },
+       "../tokenizer.pt": {
+        "path": "/dl/ncm/lm1b/small/../tokenizer.pt",
+        "bytes": 597840331
+       }
+      }
+     },
+     "generation": {
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0,
+      "cfg_scale": 0.0,
+      "frequency_penalty": 11.5,
+      "frequency_deficit": 2.0,
+      "adjacency_penalty": [
+       10.0,
+       4.0,
+       0.5
+      ],
+      "frequency_allowance": "generator.pt:inference.token_unigram",
+      "level0": "unigram draw from generator.pt:inference.level0_unigram",
+      "penalties": "config",
+      "level_sampling": "multinomial per level at the temperature above",
+      "token_pick": "pick_tokens from eval_shard.py (argmax with the penalties above)"
+     },
+     "levels": [
+      1,
+      8,
+      16,
+      24,
+      32,
+      40,
+      52,
+      64,
+      76,
+      92,
+      108,
+      128
+     ]
+    },
+    "ids_file": "/results/ids-A-ncm.json",
+    "ids_sha256": "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7"
+   }
+  }
+ ],
+ "compare_ids": {
+  "ncm": {
+   "time_utc": "2026-11-10T16:09:22+00:00",
+   "table_a": "A",
+   "table_b": "B",
+   "model": "ncm",
+   "ids_a": {
+    "file": "/results/ids-A-ncm.json",
+    "sha256": "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+    "precision": "fp32",
+    "kv_cache": "off"
+   },
+   "ids_b": {
+    "file": "/results/ids-B-ncm.json",
+    "sha256": "0109ffcddfc419f0aff441e42cb777f26d61b1a58f7359981b56c99d55ad9507",
+    "precision": "bf16",
+    "kv_cache": "on"
+   },
+   "sequences": 1024,
+   "identical_sequences": 0,
+   "identical_pct": 0.0,
+   "positions": 131072,
+   "identical_positions": 39264,
+   "token_identical_pct": 29.9560546875,
+   "first_difference_position_median": 1,
+   "note": "both tables seeded with the same --seed; ids are the decoder's final token picks"
+  }
+ },
+ "output_checks": {
+  "ncm-pen": {
+   "file": "/results/ncm-pen.pkl",
+   "samples": 1280,
+   "empty_strings": 1280,
+   "run_ge_8": 0,
+   "top_4gram_share_ge_25pct": 0,
+   "per_seed": {
+    "42": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.078155517578125,
+     "distinct_2": 0.5055056594488189,
+     "examples_flagged": []
+    },
+    "0": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.07867431640625,
+     "distinct_2": 0.5009227362204725,
+     "examples_flagged": []
+    },
+    "1": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.07763671875,
+     "distinct_2": 0.5009227362204725,
+     "examples_flagged": []
+    },
+    "2": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.079498291015625,
+     "distinct_2": 0.5052903543307087,
+     "examples_flagged": []
+    },
+    "3": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.07989501953125,
+     "distinct_2": 0.5023068405511811,
+     "examples_flagged": []
+    }
+   },
+   "time_utc": "2026-11-10T16:20:32+00:00"
+  },
+  "ncm-nopen": {
+   "file": "/results/ncm-nopen.pkl",
+   "samples": 1280,
+   "empty_strings": 1280,
+   "run_ge_8": 45,
+   "top_4gram_share_ge_25pct": 4,
+   "per_seed": {
+    "42": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 10,
+     "top_4gram_share_ge_25pct": 1,
+     "distinct_1": 0.07000732421875,
+     "distinct_2": 0.4624138779527559,
+     "examples_flagged": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "0": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 12,
+     "top_4gram_share_ge_25pct": 1,
+     "distinct_1": 0.071197509765625,
+     "distinct_2": 0.46149114173228345,
+     "examples_flagged": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "1": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 11,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.071258544921875,
+     "distinct_2": 0.46256766732283466,
+     "examples_flagged": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "2": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 7,
+     "top_4gram_share_ge_25pct": 2,
+     "distinct_1": 0.0718994140625,
+     "distinct_2": 0.4627829724409449,
+     "examples_flagged": [
+      "",
+      "",
+      ""
+     ]
+    },
+    "3": {
+     "samples": 256,
+     "empty_strings": 256,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 5,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.07293701171875,
+     "distinct_2": 0.46662770669291337,
+     "examples_flagged": [
+      "",
+      "",
+      ""
+     ]
+    }
+   },
+   "time_utc": "2026-11-10T16:20:32+00:00"
+  },
+  "duo-ancestral": {
+   "file": "/results/duo-ancestral.pkl",
+   "samples": 1280,
+   "empty_strings": 0,
+   "run_ge_8": 2,
+   "top_4gram_share_ge_25pct": 0,
+   "per_seed": {
+    "42": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 2,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.197967529296875,
+     "distinct_2": 0.7115834153543307,
+     "examples_flagged": [
+      "it has been zero in seven time this election ; and it has happened in a single u. s. presidential... little?, or perhaps because.... ( 12 ) is awesome to me... ",
+      "................ and...... his intention was to be \" just one of the seven days of his life \" to restore his championship in holland after he lost his right leg"
+     ]
+    },
+    "0": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.198822021484375,
+     "distinct_2": 0.7132135826771654,
+     "examples_flagged": []
+    },
+    "1": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.197174072265625,
+     "distinct_2": 0.7059547244094488,
+     "examples_flagged": []
+    },
+    "2": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.197601318359375,
+     "distinct_2": 0.7101070374015748,
+     "examples_flagged": []
+    },
+    "3": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.2010498046875,
+     "distinct_2": 0.7140440452755905,
+     "examples_flagged": []
+    }
+   },
+   "time_utc": "2026-11-10T16:20:32+00:00"
+  },
+  "duo-greedy": {
+   "file": "/results/duo-greedy.pkl",
+   "samples": 1280,
+   "empty_strings": 0,
+   "run_ge_8": 1,
+   "top_4gram_share_ge_25pct": 0,
+   "per_seed": {
+    "42": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 1,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.159027099609375,
+     "distinct_2": 0.6310593011811023,
+     "examples_flagged": [
+      "it has been done in the of of year, and it has been in every single u. s. election election..? because \" just. of... (! ). obvious to see... da!. waaaaaaa!!!!!!"
+     ]
+    },
+    "0": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.161773681640625,
+     "distinct_2": 0.6415784940944882,
+     "examples_flagged": []
+    },
+    "1": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.15850830078125,
+     "distinct_2": 0.6298905019685039,
+     "examples_flagged": []
+    },
+    "2": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.1614990234375,
+     "distinct_2": 0.6376107283464567,
+     "examples_flagged": []
+    },
+    "3": {
+     "samples": 256,
+     "empty_strings": 0,
+     "lengths": [
+      128
+     ],
+     "run_ge_8": 0,
+     "top_4gram_share_ge_25pct": 0,
+     "distinct_1": 0.155609130859375,
+     "distinct_2": 0.6256766732283464,
+     "examples_flagged": []
+    }
+   },
+   "time_utc": "2026-11-10T16:20:32+00:00"
+  }
+ }
+}

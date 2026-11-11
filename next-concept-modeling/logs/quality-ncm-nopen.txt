@@ -1,0 +1,12 @@
+
+merged 1 shards -> 1280 lm1b-small outputs
+
+Loading weights:   0%|          | 0/436 [00:00<?, ?it/s]Loading weights:  34%|███▍      | 148/436 [00:00<00:00, 1476.64it/s]Loading weights:  69%|██████▉   | 301/436 [00:00<00:00, 1503.98it/s]Loading weights: 100%|██████████| 436/436 [00:00<00:00, 1798.06it/s]
+ seed   genPPL  entropy
+   42    79.24   4.1146
+    0    79.19   4.1199
+    1    78.74   4.1195
+    2    79.07   4.1150
+    3    77.69   4.1253
+
+ mean    78.79   4.1189   (+/- 0.64 over 5 seeds, 1280 samples)

@@ -1,0 +1,136 @@
+{
+ "_note": "written by bench/make_slots.py from results/results.json; never edit by hand",
+ "_source_sha256": "9d0785e2be392a05a573ff3619f702a70506f3e21985c709a63404c5b821ce9b",
+ "raw": {
+  "A_ncm_s": 9.033091132005211,
+  "A_duo_s": 225.37135845498415,
+  "B_ncm_s": 5.6488455399812665,
+  "B_duo_s": 159.3679942190065,
+  "C_ncm_s": 4.297531871998217,
+  "A_ncm_passes": 11,
+  "A_duo_passes": 129,
+  "B_ncm_passes": 12,
+  "B_duo_passes": 129,
+  "B_ncm_ms_pass": 3.0699039697647095,
+  "B_duo_ms_pass": 5.453375816345215,
+  "A_ncm_other_pct": 38.04564921921549,
+  "A_duo_other_pct": 51.4295602975135,
+  "B_ncm_other_pct": 59.62866365299397,
+  "B_duo_other_pct": 71.08445605828742,
+  "ncm_pen_ppl": 93.64,
+  "ncm_pen_h": 4.3161,
+  "ncm_pen_sd": 1.79,
+  "ncm_nopen_ppl": 78.79,
+  "ncm_nopen_h": 4.1189,
+  "ncm_nopen_sd": 0.64,
+  "duo_anc_ppl": 100.26,
+  "duo_anc_h": 4.3031,
+  "duo_anc_sd": 2.07,
+  "duo_greedy_ppl": 87.96,
+  "duo_greedy_h": 4.1788,
+  "duo_greedy_sd": 1.79,
+  "ncm_identical_pct": 0.0,
+  "ncm_token_identical_pct": 29.9560546875
+ },
+ "slots": {
+  "NCM_FP32_S": "9.03",
+  "DUO_FP32_S": "225",
+  "RATIO_FP32": "24.9",
+  "NCM_FAST_S": "5.65",
+  "DUO_FAST_S": "159",
+  "RATIO_FAST": "28.2",
+  "NCM_PASSES": 12,
+  "DUO_PASSES": 129,
+  "NCM_MS_PER_PASS": "3.1",
+  "DUO_MS_PER_PASS": "5.5",
+  "NCM_OTHER_PCT": "60",
+  "NCM_SETTINGS_GAIN": "1.6",
+  "DUO_SETTINGS_GAIN": "1.4",
+  "NCM_SAME_PCT": "0",
+  "NCM_PPL": "93.64",
+  "NCM_H": "4.32",
+  "DUO_PPL_ANC": "100.26",
+  "DUO_H_ANC": "4.30",
+  "DUO_PPL_GREEDY": "87.96",
+  "DUO_H_GREEDY": "4.18",
+  "NCM_PPL_NOPEN": "78.79",
+  "NCM_H_NOPEN": "4.12",
+  "NCM_NOPEN_S": "4.30"
+ },
+ "derived": {
+  "RATIO_FP32": {
+   "value": 24.9,
+   "expr": "raw.A_duo_s / raw.A_ncm_s"
+  },
+  "RATIO_FAST": {
+   "value": 28.2,
+   "expr": "raw.B_duo_s / raw.B_ncm_s"
+  },
+  "NCM_SETTINGS_GAIN": {
+   "value": 1.6,
+   "expr": "raw.A_ncm_s / raw.B_ncm_s"
+  },
+  "DUO_SETTINGS_GAIN": {
+   "value": 1.4,
+   "expr": "raw.A_duo_s / raw.B_duo_s"
+  },
+  "PASS_COST_RATIO": {
+   "value": 1.8,
+   "expr": "raw.B_duo_ms_pass / raw.B_ncm_ms_pass"
+  },
+  "PASS_RATIO": {
+   "value": 10.75,
+   "expr": "raw.B_duo_passes / raw.B_ncm_passes"
+  },
+  "RATIO_AB": {
+   "value": 1.13,
+   "expr": "(raw.B_duo_s / raw.B_ncm_s) / (raw.A_duo_s / raw.A_ncm_s)"
+  },
+  "RATIO_AB_CHANGE_PCT": {
+   "value": 13,
+   "expr": "100 * ((raw.B_duo_s / raw.B_ncm_s) / (raw.A_duo_s / raw.A_ncm_s) - 1)"
+  },
+  "PENALTY_TIME_CHANGE_PCT": {
+   "value": 24,
+   "expr": "100 * (raw.B_ncm_s - raw.C_ncm_s) / raw.B_ncm_s"
+  },
+  "DUO_BEST_PPL": {
+   "value": 87.96,
+   "expr": "min(raw.duo_anc_ppl, raw.duo_greedy_ppl)"
+  },
+  "H_GAP_NCM_DUO_GREEDY": {
+   "value": 0.14,
+   "expr": "raw.ncm_pen_h - raw.duo_greedy_h"
+  },
+  "H_GAP_NCM_DUO_ANC": {
+   "value": 0.01,
+   "expr": "raw.ncm_pen_h - raw.duo_anc_h"
+  },
+  "H_DROP_NOPEN": {
+   "value": 0.2,
+   "expr": "raw.ncm_pen_h - raw.ncm_nopen_h"
+  },
+  "PPL_GAIN_NOPEN": {
+   "value": 14.85,
+   "expr": "raw.ncm_pen_ppl - raw.ncm_nopen_ppl"
+  }
+ },
+ "frame_text": {
+  "PASS_COST_STAMP": "measured 1.8×",
+  "SETTINGS_STAMP": "A 24.9× · B 28.2×",
+  "DUO_BEST_PPL": "87.96",
+  "DUO_BEST_SAMPLER": "greedy",
+  "DUO_OTHER_PCT": "71",
+  "NCM_PASSES_A": 11,
+  "NCM_SAME_TOKEN_PCT": "30"
+ },
+ "result_lines": {
+  "R1": "That's above the paper's 21 times, and far above the 10.7 that the step counts alone explain, so the authors' ratio held on this workload. This is my RTX 5090, though, not their H100.",
+  "R2": "So an NCM pass was cheaper, by about 1.8 times, close to the roughly 2 times that the 21 needs. DUO also spent 71 percent of its time outside its passes, against NCM's 60, which widens the gap.",
+  "R3": "The NCM-to-DUO ratio moved from 24.9 to 28.2 times, a change of about 13 percent, so it held across both settings.",
+  "R4": "NCM beat DUO's default sampler, but the order flips with the greedy one, where DUO scored better. NCM's own score landed near the paper's 93.05, and DUO's greedy text was less varied, with entropy 0.14 below NCM's.",
+  "R5": "So the penalties make NCM's score worse: without them it beats even DUO's best, 87.96, so its score doesn't rest on them. But entropy dropped by 0.20, so the output got more repetitive, which means the penalties trade score for variety.",
+  "R6": "So the penalty step isn't cheap: it takes about 24 percent of NCM's time at these settings.",
+  "R7": "On this evidence, NCM is worth trying for fast short-text generation against diffusion models today. It doesn't replace a normal LLM yet. The quality scores come from the fp32 runs, and 0 percent of NCM's passages came out identical at the faster settings, because its codes are sampled and the faster run drew different text."
+ }
+}

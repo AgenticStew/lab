@@ -1,0 +1,90 @@
+VQVAE, Total parameter count: 111.40M
+VQVAE, Non embedding parameter count: 99.63M
+NCP Transformer, Total parameter count: 97.07M
+NCP Transformer, Non embedding parameter count: 96.76M
+  shard0 seed 42: 256 samples
+  shard0 seed 0: 256 samples
+  shard0 seed 1: 256 samples
+  shard0 seed 2: 256 samples
+  shard0 seed 3: 256 samples
+shard 0: 1280 -> /results/ncm-pen.pkl
+
+merged 1 shards -> 1280 lm1b-small outputs
+
+Loading weights:   0%|          | 0/436 [00:00<?, ?it/s]Loading weights:  37%|███▋      | 163/436 [00:00<00:00, 1622.44it/s]Loading weights:  75%|███████▍  | 326/436 [00:00<00:00, 1577.66it/s]Loading weights: 100%|██████████| 436/436 [00:00<00:00, 1820.10it/s]
+ seed   genPPL  entropy
+   42    94.62   4.3187
+    0    93.82   4.3189
+    1    92.46   4.3173
+    2    95.94   4.3168
+    3    91.37   4.3085
+
+ mean    93.64   4.3161   (+/- 1.79 over 5 seeds, 1280 samples)
+/usr/local/lib/python3.12/dist-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+/usr/local/lib/python3.12/dist-packages/torch/profiler/profiler.py:217: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+  seed 42: 256 samples
+  seed 0: 256 samples
+  seed 1: 256 samples
+  seed 2: 256 samples
+  seed 3: 256 samples
+
+merged 1 shards -> 1280 lm1b-duo-ancestral outputs
+
+ seed   genPPL  entropy
+   42   100.61   4.3057
+    0   101.32   4.3064
+    1    96.70   4.2961
+    2   100.67   4.3028
+    3   102.01   4.3047
+
+ mean   100.26   4.3031   (+/- 2.07 over 5 seeds, 1280 samples)
+
+table Q duo_ancestral -> /results/results.json: gen ppl 100.26, entropy 4.3031
+/usr/local/lib/python3.12/dist-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+/usr/local/lib/python3.12/dist-packages/torch/profiler/profiler.py:217: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+  seed 42: 256 samples
+  seed 0: 256 samples
+  seed 1: 256 samples
+  seed 2: 256 samples
+  seed 3: 256 samples
+
+merged 1 shards -> 1280 lm1b-duo-greedy outputs
+
+ seed   genPPL  entropy
+   42    86.25   4.1804
+    0    89.39   4.1851
+    1    89.16   4.1729
+    2    89.23   4.1830
+    3    85.78   4.1726
+
+ mean    87.96   4.1788   (+/- 1.79 over 5 seeds, 1280 samples)
+
+table Q duo_greedy -> /results/results.json: gen ppl 87.96, entropy 4.1788
+VQVAE, Total parameter count: 111.40M
+VQVAE, Non embedding parameter count: 99.63M
+NCP Transformer, Total parameter count: 97.07M
+NCP Transformer, Non embedding parameter count: 96.76M
+  shard0 seed 42: 256 samples
+  shard0 seed 0: 256 samples
+  shard0 seed 1: 256 samples
+  shard0 seed 2: 256 samples
+  shard0 seed 3: 256 samples
+shard 0: 1280 -> /results/ncm-nopen.pkl
+
+merged 1 shards -> 1280 lm1b-small outputs
+
+Loading weights:   0%|          | 0/436 [00:00<?, ?it/s]Loading weights:  34%|███▍      | 148/436 [00:00<00:00, 1476.64it/s]Loading weights:  69%|██████▉   | 301/436 [00:00<00:00, 1503.98it/s]Loading weights: 100%|██████████| 436/436 [00:00<00:00, 1798.06it/s]
+ seed   genPPL  entropy
+   42    79.24   4.1146
+    0    79.19   4.1199
+    1    78.74   4.1195
+    2    79.07   4.1150
+    3    77.69   4.1253
+
+ mean    78.79   4.1189   (+/- 0.64 over 5 seeds, 1280 samples)
+/results/ncm-pen.pkl: 1280 samples, 1280 empty, 0 with a 8+ token run, 0 with a dominant 4-gram
+/results/ncm-nopen.pkl: 1280 samples, 1280 empty, 45 with a 8+ token run, 4 with a dominant 4-gram
+/results/duo-ancestral.pkl: 1280 samples, 0 empty, 2 with a 8+ token run, 0 with a dominant 4-gram
+/results/duo-greedy.pkl: 1280 samples, 0 empty, 1 with a 8+ token run, 0 with a dominant 4-gram

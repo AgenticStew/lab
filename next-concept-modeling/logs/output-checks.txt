@@ -1,0 +1,4 @@
+/results/ncm-pen.pkl: 1280 samples, 1280 empty, 0 with a 8+ token run, 0 with a dominant 4-gram
+/results/ncm-nopen.pkl: 1280 samples, 1280 empty, 45 with a 8+ token run, 4 with a dominant 4-gram
+/results/duo-ancestral.pkl: 1280 samples, 0 empty, 2 with a 8+ token run, 0 with a dominant 4-gram
+/results/duo-greedy.pkl: 1280 samples, 0 empty, 1 with a 8+ token run, 0 with a dominant 4-gram

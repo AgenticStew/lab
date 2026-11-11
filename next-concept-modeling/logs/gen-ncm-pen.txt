@@ -1,0 +1,10 @@
+VQVAE, Total parameter count: 111.40M
+VQVAE, Non embedding parameter count: 99.63M
+NCP Transformer, Total parameter count: 97.07M
+NCP Transformer, Non embedding parameter count: 96.76M
+  shard0 seed 42: 256 samples
+  shard0 seed 0: 256 samples
+  shard0 seed 1: 256 samples
+  shard0 seed 2: 256 samples
+  shard0 seed 3: 256 samples
+shard 0: 1280 -> /results/ncm-pen.pkl

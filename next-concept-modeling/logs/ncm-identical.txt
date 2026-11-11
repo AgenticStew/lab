@@ -1,0 +1,26 @@
+{
+ "time_utc": "2026-11-10T16:09:22+00:00",
+ "table_a": "A",
+ "table_b": "B",
+ "model": "ncm",
+ "ids_a": {
+  "file": "/results/ids-A-ncm.json",
+  "sha256": "239b9a2974111de40a7f3b3455ea6fa862d8d6978efe371b692fd0aae8798ea7",
+  "precision": "fp32",
+  "kv_cache": "off"
+ },
+ "ids_b": {
+  "file": "/results/ids-B-ncm.json",
+  "sha256": "0109ffcddfc419f0aff441e42cb777f26d61b1a58f7359981b56c99d55ad9507",
+  "precision": "bf16",
+  "kv_cache": "on"
+ },
+ "sequences": 1024,
+ "identical_sequences": 0,
+ "identical_pct": 0.0,
+ "positions": 131072,
+ "identical_positions": 39264,
+ "token_identical_pct": 29.9560546875,
+ "first_difference_position_median": 1,
+ "note": "both tables seeded with the same --seed; ids are the decoder's final token picks"
+}

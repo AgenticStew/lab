@@ -1,0 +1,7 @@
+task: lm1b-duo-greedy
+tokenizer:
+  pre_tokenizer:
+    model_id: bert-base-uncased
+eval:
+  ref_model: /dl/gpt2-large
+  metric: genppl_flm

@@ -1,0 +1,13 @@
+/usr/local/lib/python3.12/dist-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+/usr/local/lib/python3.12/dist-packages/torch/profiler/profiler.py:217: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+DUO fp32 graphs=off steps=128 noise_removal=ancestral: 32 sequences, batch 16
+  warm-up done (1 batch); graphs captured so far: 0
+  repeat 1/1: 7.015 s wall, 32 sequences
+DUO bf16 graphs=on steps=128 noise_removal=ancestral: 32 sequences, batch 16
+  warm-up done (1 batch); graphs captured so far: 1
+  repeat 1/1: 5.018 s wall, 32 sequences
+dry run OK on random weights (2 modes). Files new in HF_HOME: none
+  fp32 graphs=off: passes/batch 129, median 13.047215938568115 ms/pass, wall 7.02 s; attention {"backend": "SDPA patch", "attention_fn": "models.dit.regular_attention_multi_headed (F.scaled_dot_product_attention)", "rotary": "duo_sdpa_patch.apply_rotary_emb_torch (flash-attn 2.x pure-torch rotary)", "patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385", "probe_precision": "fp32", "q_dtypes": ["torch.float32"], "q_shapes": [[16, 128, 12, 64]], "attention_calls_in_probe": 12, "cuda_kernels": ["fmha_cutlassF_f32_aligned_64x64_rf_sm80(PyTorchMemEffAttention::AttentionKernel<float, cutlass::arch::Sm80, true, 64, 64, 64, true, true>::Params)"]}
+  bf16 graphs=on: passes/batch 129, median 5.439184188842773 ms/pass, wall 5.02 s; attention {"backend": "SDPA patch", "attention_fn": "models.dit.regular_attention_multi_headed (F.scaled_dot_product_attention)", "rotary": "duo_sdpa_patch.apply_rotary_emb_torch (flash-attn 2.x pure-torch rotary)", "patch_sha256": "50c973d27d635668445b8146154c781ced1732980d72ef8ca980201ee0d38385", "probe_precision": "bf16", "q_dtypes": ["torch.bfloat16"], "q_shapes": [[16, 128, 12, 64]], "attention_calls_in_probe": 12, "cuda_kernels": ["void pytorch_flash::flash_fwd_kernel<Flash_fwd_kernel_traits<64, 128, 128, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 128, 128, 4, cutlass::bfloat16_t> >, false, false, false, false, true, true, false, false>(pytorch_flash::Flash_fwd_params)"]}
+checkpoint (not opened): {"path": "/dl/duo/lm1b_Duo.ckpt", "bytes": 2229753893, "note": "not opened in the dry run (random weights)"}
