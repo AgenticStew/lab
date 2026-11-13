@@ -11,7 +11,7 @@ script that builds YASAKANI (an engine built for Windows) for Linux.
 - RTX 3080 Ti 12 GB · Core i9-12900 · 64 GB DDR4-3200 (NUC 12 Extreme)
 - llama.cpp b12189 (CUDA 13.3) · YASAKANI v0.1.1 (commit 758ef28), built for Linux with `yasakani-linux/install.sh`
 
-## Main results (tokens a second, Qwen3.8-27B UD-Q4_K_M, greedy, thinking off, 512 tokens, median of 3)
+## Main results: this harness (`bench/`; tokens a second, Qwen3.8-27B UD-Q4_K_M, greedy, thinking off, 512 tokens, median of 3)
 | Job | no guesser | MTP (3 ahead) | DFlash 2 | YASAKANI fastest (Linux build) |
 |---|---|---|---|---|
 | new code | 76.5 | 186.5 | 285.7 | 597.2 |
@@ -19,6 +19,26 @@ script that builds YASAKANI (an engine built for Windows) for Linux.
 | explain | 76.9 | 127.1 | 118.8 | 278.7 |
 | story | 76.6 | 113.5 | 123.8 | 236.5 |
 | JSON | 76.6 | 207.1 | 346.2 | 1,182.4 |
+
+## The 1,277 tok/s figure: YASAKANI on a code edit (`formats-harness/`)
+The video's and the Shorts' 1,277 tok/s is the **edit** job of my model-formats harness, a different prompt from the "edit"
+row above. It asks the model to fix an off-by-one bug and return the complete corrected file, so most of the reply is copied
+from the prompt: the best case for any guesser. Same RTX 5090, 512 tokens, greedy, thinking off, median of 3:
+
+| Engine (formats-harness row) | prose | code | JSON | edit |
+|---|---|---|---|---|
+| llama.cpp, no guesser (`gguf-A`) | 77.6 | 78.0 | 76.8 | 76.4 |
+| llama.cpp + MTP (`gguf-mtp`) | 127.8 | 172.5 | 194.6 | 208.7 |
+| ExLlamaV3 + DFlash 2 (`exl3-dflash2`) | 139.1 | 226.8 | 305.4 | 409.3 |
+| TensorFold + DFlash 2 (`tf-dflash2-32k`) | 243.7 | 414.2 | 405.7 | 1,569.3 |
+| **YASAKANI fastest, my Linux build (`ysk-speed`)** | **269.3** | **446.8** | **629.4** | **1,277.3** |
+| YASAKANI quality, my Linux build (`ysk-quality`) | 251.2 | 424.4 | 511.6 | 1,190.7 |
+
+YASAKANI's three edit runs were 1,268.9, 1,284.2 and 1,277.3 tok/s (512 tokens in about 0.40 s), and its reply was identical,
+character for character, to plain llama.cpp's, which ran at 76.1 tok/s in the same session (`gguf-A-r2`). The developer's
+own figure, about 1,222 tok/s, comes from his edit test on his Windows PC: a different prompt, so the two aren't a
+like-for-like comparison. Raw runs: `formats-harness/results/ysk-speed/speed.jsonl`; quality suite (HumanEval 19/20, GSM8K
+18/20, MMLU 160/200, JSON 3/3; the normal Q4_K_M model 19, 18, 163, 3): `formats-harness/results/ysk-speed-q/`.
 
 Everything else (the small 0.8B and 2B guessers, n-gram, the Llama 8B and 70B runs, the 3080 Ti, a 16 GB cap, the 9B,
 sampled settings, thinking mode, VRAM costs, how far ahead to guess) is in `bench/RESULTS.md`; the YASAKANI runs, its quality
