@@ -1,10 +1,10 @@
 {
  "label": "ysk-quality",
  "cmd": [
-  "~/video-studio/tools/yasakani/.venv/bin/yasakani",
+  "~/tools/yasakani/.venv/bin/yasakani",
   "serve",
   "--model-dir",
-  "~/video-studio/models/yasakani-quality",
+  "~/models/yasakani-quality",
   "--dll",
   "~/src/yasakani/build-linux/libyskn.so",
   "--host",

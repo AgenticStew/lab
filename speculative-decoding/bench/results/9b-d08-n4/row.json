@@ -3,7 +3,7 @@
  "cmd": [
   "~/src/llama.cpp-b12189/build/bin/llama-server",
   "-m",
-  "~/video-studio/models/specdec/Qwen3.5-9B-MTP-GGUF/Qwen3.5-9B-Q4_K_M.gguf",
+  "~/models/specdec/Qwen3.5-9B-MTP-GGUF/Qwen3.5-9B-Q4_K_M.gguf",
   "-ngl",
   "99",
   "-c",
@@ -25,7 +25,7 @@
   "--port",
   "8091",
   "-md",
-  "~/video-studio/models/specdec/Qwen3.5-0.8B-GGUF/Qwen3.5-0.8B-Q8_0.gguf",
+  "~/models/specdec/Qwen3.5-0.8B-GGUF/Qwen3.5-0.8B-Q8_0.gguf",
   "--spec-type",
   "draft-simple",
   "--spec-draft-n-max",

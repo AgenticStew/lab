@@ -44,6 +44,7 @@ matches the no-guesser reply exactly (otherwise the % of characters before the f
 | 27b-none-recheck | ok | 15.68 | 70.7 | — | — | — | 70.7 |
 | 27b-none-t07 | ok | 15.71 | 73.7 | — | 73.3 | 73.1 | — |
 | 27b-none-think | ok | 15.70 | 76.4 | — | 76.4 | — | — |
+| 27b-none-ysk-session | ok | 15.72 | 76.0 (0.99x)<br>same | 76.0 (0.99x)<br>same | 75.9 (0.99x)<br>same | 75.7 (0.99x)<br>same | 76.0 (0.99x)<br>same |
 
 ## 9b
 
@@ -102,4 +103,11 @@ matches the no-guesser reply exactly (otherwise the % of characters before the f
 |---|---|---|---|---|---|---|---|
 | nuc-l8-d1-n12 | ok | 7.27 | 211.1 (1.56x)<br>acc 84% · 11.13/check<br>same to 95% | 219.1 (1.64x)<br>acc 90% · 11.61/check<br>same to 13% | 87.8 (0.65x)<br>acc 29% · 4.48/check<br>same to 14% | 68.4 (0.51x)<br>acc 20% · 3.44/check<br>same to 5% | 242.3 (1.81x)<br>acc 97% · 12.60/check<br>same |
 | nuc-l8-none | ok | 5.69 | 135.7 | 133.2 | 134.7 | 134.0 | 133.6 |
+
+## ysk
+
+| Row | Status | VRAM +GiB | code | edit | explain | story | json |
+|---|---|---|---|---|---|---|---|
+| ysk-quality | ok | 16.94 | 606.6 | 766.1 | 248.0 | 221.4 | 1132.5 |
+| ysk-speed | ok | 14.83 | 597.2 | 777.2 | 278.7 | 236.5 | 1182.4 |
 

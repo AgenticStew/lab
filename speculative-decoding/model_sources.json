@@ -1,0 +1,48 @@
+{
+ "unsloth/Qwen3.8-27B-GGUF/MTP/mtp-Qwen3.8-27B-Q4_0.gguf": {
+  "rev": "4af51b3542f775b0a8e4b310bfb3f17e01c306c9",
+  "sha256": "50d9ce5a6da381bbcfb31061cf73df94a90e6faf8efeddee379a9cb8f1501c6e",
+  "size": 1369590656
+ },
+ "z-lab/Qwen3.8-27B-DFlash2-GGUF/Qwen3.8-27B-DFlash2-Q4_K_M.gguf": {
+  "rev": "2d9571f8ce46e151f61c6499c99dee6079e1d610",
+  "sha256": "1a25c56858e1ebe93f2718ac1d49d1151f9323325c1bbfd6209370f4db131ebd",
+  "size": 1143006816
+ },
+ "unsloth/Qwen3.5-0.8B-GGUF/Qwen3.5-0.8B-Q8_0.gguf": {
+  "rev": "6ab461498e2023f6e3c1baea90a8f0fe38ab64d0",
+  "sha256": "0ad885ffd4bb022fc4f0d33a3308fa108ef8613159d3b3a67e23abca056b7a6c",
+  "size": 811843840
+ },
+ "unsloth/Qwen3.5-2B-GGUF/Qwen3.5-2B-Q8_0.gguf": {
+  "rev": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
+  "sha256": "1b04acba824817554f4ce23639bc8495ff70453b8fcb047900c731521021f2c1",
+  "size": 2012012800
+ },
+ "unsloth/Qwen3.5-9B-MTP-GGUF/Qwen3.5-9B-Q4_K_M.gguf": {
+  "rev": "9716a636ee4bddc3fed678220b7a33dd2a4160ae",
+  "sha256": "e8dd94817e95d6c0939102049d068418269978377b13616c4726235e232841fe",
+  "size": 5868826976
+ },
+ "unsloth/Qwen3.8-27B-GGUF/Qwen3.8-27B-UD-Q4_K_M.gguf": {
+  "rev": "4ca720788d1e01f1bff70c033e0d0028fd02e502",
+  "sha256": "322e194ff79741c7baa497c240f677f54b201b0efab44ca8e50f122b39123482",
+  "size": 16464440224,
+  "note": "the file the model-formats test used (HF cache, downloaded 2 Nov 2026); the repo has a newer upload (4af51b3, 16.56 GB) not used here"
+ },
+ "bartowski/Llama-3.2-1B-Instruct-GGUF/Llama-3.2-1B-Instruct-Q8_0.gguf": {
+  "rev": "067b946cf014b7c697f3654f621d577a3e3afd1c",
+  "sha256": "432f310a77f4650a88d0fd59ecdd7cebed8d684bafea53cbff0473542964f0c3",
+  "size": 1321083008
+ },
+ "ollama/llama3.1:8b": {
+  "blob": "sha256-667b0c1932bc6ffc593ed1d03f895bf2dc8dc6df21db3042284a6f4416b06a29",
+  "quant": "Q4_K_M",
+  "size": 4920738944
+ },
+ "ollama/llama3.1:70b": {
+  "blob": "sha256-de20d2cf2dc430b1717a8b07a9df029d651f3895dbffec4729a3902a6fe344c9",
+  "quant": "Q4_K_M",
+  "size": 42520398176
+ }
+}

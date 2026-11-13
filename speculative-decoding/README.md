@@ -44,6 +44,14 @@ Everything else (the small 0.8B and 2B guessers, n-gram, the Llama 8B and 70B ru
 sampled settings, thinking mode, VRAM costs, how far ahead to guess) is in `bench/RESULTS.md`; the YASAKANI runs, its quality
 check and the comparison with TensorFold are in `bench/YASAKANI.md`.
 
+## What you need
+- Linux (I used Ubuntu 24.04 under WSL2), an NVIDIA GPU, Python 3.10+ with `requests` (`pip install requests`).
+- llama.cpp b12189 built with CUDA (`LLAMA_SERVER` / `LLAMA_BENCH` point at it; the default is `~/src/llama.cpp-b12189/build/bin/`).
+- The model files: `download.sh` fetches every GGUF at the exact revision in `model_sources.json` into `$MODELS/specdec`
+  (default `~/models`) and checks each SHA-256. Llama 3.1 8B and 70B come from Ollama (`ollama pull llama3.1:8b llama3.1:70b`);
+  `bench_llama.py` reads Ollama's blob files directly. The RTX 3080 Ti box was set up with `nuc/setup.ps1` (Windows).
+- For the YASAKANI rows: `yasakani-linux/install.sh`, then one model folder in `~/models` (see the end of that script).
+
 ## Rerun
 - `bench/bench.py <row> [--runs 3]` starts llama-server (or `yasakani serve`) for a row, warms up, runs the five prompts in
   `bench/prompts.json` and writes `bench/results/<row>/row.json` (every streamed chunk with its arrival time, the text, and
@@ -60,7 +68,8 @@ YASAKANI (github.com/yasakani-dev/yasakani, Apache-2.0, by its developer; I'm no
 source already has the Linux code paths; two Windows-only file calls in `engine35.cpp` (`_fseeki64`, `_ftelli64`) map to
 `fseeko` / `ftello` with one compiler flag, so the source stays untouched. `yasakani-linux/install.sh` clones it, builds
 `libyskn.so` with CUDA 13.3 and installs its Python package; `yasakani selfcheck` then reproduced the developer's reference
-output on all three prompts. Built and tested under WSL2 on an RTX 5090 only.
+output on all three prompts. Built and tested under WSL2 on an RTX 5090 only: at commit 758ef28 (the runs in this folder) and
+again from a fresh clone at 3d436bf (14 Nov 2026), where the self-check also passed.
 - `formats-harness/` is the harness from my model-formats video (four 512-token jobs plus prefill and a quick quality
   suite). The YASAKANI rows (`ysk-*`), the llama.cpp anchor and the comparison rows (TensorFold, ExLlamaV3 + DFlash 2,
   llama.cpp + MTP) behind the 1,277 tok/s edit figure and the quality check are in `formats-harness/results/`.

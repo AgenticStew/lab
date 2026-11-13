@@ -1,10 +1,10 @@
 # YASAKANI head-to-head (13 Nov 2026, 17:38-18:05 UTC, quiet machine)
 
 YASAKANI v0.1.1 (github.com/yasakani-dev/yasakani @758ef28), built for Linux under WSL2 by
-~/video-studio/setup/install-yasakani.sh; `yasakani selfcheck` passed (bit-identical to the author's Windows reference).
+`../yasakani-linux/install.sh`; `yasakani selfcheck` passed (bit-identical to the author's Windows reference).
 Its own compressed Qwen3.8-27B files (fastest 10.3 GB, quality 12.4 GB) + its retrained DFlash 2 drafter, 32K context,
 loop stopper off. Quiet check: llama-bench tg256 median 78.0; same-session llama.cpp anchor 27b-none-ysk-session 75.7-76.0
-tok/s with replies identical (sha) to the afternoon quiet re-run. Logs: queue_ysk.log, queue_ysk2.log (the first queue's
+tok/s with replies identical (sha) to the afternoon quiet re-run. Queues: queue_ysk.sh, queue_ysk2.sh (the first queue's
 later rows hit "address already in use": a YASAKANI server holds its port a few seconds after it stops; re-run with a wait).
 
 ## This video's harness (bench.py: 5 tasks, greedy, 512 tokens, thinking off, median of 3; tok/s from usage counts)
@@ -21,7 +21,7 @@ YASAKANI fastest vs llama.cpp DFlash 2: 2.1x code, 2.5x edit, 2.3x explain, 1.9x
 code, 15.4x JSON, 3.1x story). Its replies differ from the GGUF's except JSON (identical text): the weights are compressed
 differently. VRAM +15.2 GiB at 32K; load 13 s.
 
-## Model-formats harness (../../../model-formats-5090/bench: decode tok/s, median of 3)
+## Model-formats harness (`../formats-harness`: decode tok/s, median of 3)
 
 | Row | prose | code | json | edit | prefill 8K |
 |---|---|---|---|---|---|

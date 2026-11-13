@@ -3,7 +3,7 @@
  "cmd": [
   "~/src/llama.cpp-b12189/build/bin/llama-server",
   "-m",
-  "~/video-studio/models/specdec/Qwen3.5-9B-MTP-GGUF/Qwen3.5-9B-Q4_K_M.gguf",
+  "~/models/specdec/Qwen3.5-9B-MTP-GGUF/Qwen3.5-9B-Q4_K_M.gguf",
   "-ngl",
   "99",
   "-c",

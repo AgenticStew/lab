@@ -1,10 +1,10 @@
 {
  "label": "ysk-speed",
  "cmd": [
-  "~/video-studio/tools/yasakani/.venv/bin/yasakani",
+  "~/tools/yasakani/.venv/bin/yasakani",
   "serve",
   "--model-dir",
-  "~/video-studio/models/yasakani-speed",
+  "~/models/yasakani-speed",
   "--dll",
   "~/src/yasakani/build-linux/libyskn.so",
   "--host",

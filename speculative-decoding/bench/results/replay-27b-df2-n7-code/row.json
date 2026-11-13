@@ -25,7 +25,7 @@
   "--port",
   "8091",
   "-md",
-  "~/video-studio/models/specdec/Qwen3.8-27B-DFlash2-GGUF/Qwen3.8-27B-DFlash2-Q4_K_M.gguf",
+  "~/models/specdec/Qwen3.8-27B-DFlash2-GGUF/Qwen3.8-27B-DFlash2-Q4_K_M.gguf",
   "--spec-type",
   "draft-dflash",
   "--spec-draft-n-max",

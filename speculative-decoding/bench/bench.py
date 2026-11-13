@@ -19,10 +19,10 @@ import requests
 B = Path(__file__).resolve().parent
 RES = B / "results"
 H = Path.home()
-LLAMA = H / "src/llama.cpp-b12189/build/bin/llama-server"
-M = H / "video-studio/models"
-T27 = next((H / ".cache/huggingface/hub/models--unsloth--Qwen3.8-27B-GGUF/snapshots").glob("*/Qwen3.8-27B-UD-Q4_K_M.gguf"))
-MTP27 = M / "fmt-test/gguf-mtp/MTP/mtp-Qwen3.8-27B-Q4_0.gguf"
+LLAMA = Path(os.environ.get("LLAMA_SERVER", H / "src/llama.cpp-b12189/build/bin/llama-server"))
+M = Path(os.environ.get("MODELS", H / "models"))      # where ../download.sh puts the files
+T27 = M / "specdec/Qwen3.8-27B-GGUF/Qwen3.8-27B-UD-Q4_K_M.gguf"
+MTP27 = M / "specdec/Qwen3.8-27B-GGUF/MTP/mtp-Qwen3.8-27B-Q4_0.gguf"
 DF2 = M / "specdec/Qwen3.8-27B-DFlash2-GGUF/Qwen3.8-27B-DFlash2-Q4_K_M.gguf"
 D08 = M / "specdec/Qwen3.5-0.8B-GGUF/Qwen3.5-0.8B-Q8_0.gguf"
 D2 = M / "specdec/Qwen3.5-2B-GGUF/Qwen3.5-2B-Q8_0.gguf"
@@ -74,9 +74,9 @@ for n in (2, 4, 8):
 
 
 # YASAKANI (github.com/yasakani-dev/yasakani @758ef28, 13 Nov 2026): its own OpenAI-compatible server, built for Linux by
-# ~/video-studio/setup/install-yasakani.sh (self-check passed). Same prompts, greedy, thinking off, 512 tokens.
-YSK_CLI = H / "video-studio/tools/yasakani/.venv/bin/yasakani"
-YSK_LIB = H / "src/yasakani/build-linux/libyskn.so"
+# ../yasakani-linux/install.sh (self-check passed). Same prompts, greedy, thinking off, 512 tokens.
+YSK_CLI = Path(os.environ.get("YASAKANI_CLI", H / "yasakani-venv/bin/yasakani"))      # install.sh defaults
+YSK_LIB = Path(os.environ.get("YASAKANI_DLL", H / "src/yasakani/build-linux/libyskn.so"))
 
 
 def ysk(model_dir):
@@ -89,7 +89,7 @@ ROWS["ysk-quality"] = ysk("yasakani-quality")
 
 
 def add_offload_rows():
-    """27B squeezed into a 12 GB / 16 GB card: -ngl picked per budget (see OFFLOAD.md), guesser on the GPU."""
+    """27B squeezed into a 12 GB / 16 GB card: -ngl picked per budget (offload_ngl.json), guesser on the GPU."""
     f = B / "offload_ngl.json"
     if not f.exists():
         return

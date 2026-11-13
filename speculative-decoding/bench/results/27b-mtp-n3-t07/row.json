@@ -25,7 +25,7 @@
   "--port",
   "8091",
   "-md",
-  "~/video-studio/models/fmt-test/gguf-mtp/MTP/mtp-Qwen3.8-27B-Q4_0.gguf",
+  "~/models/fmt-test/gguf-mtp/MTP/mtp-Qwen3.8-27B-Q4_0.gguf",
   "--spec-type",
   "draft-mtp",
   "--spec-draft-n-max",

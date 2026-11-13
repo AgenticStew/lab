@@ -339,7 +339,7 @@ def main():
     with Smi(out / "smi.csv"):
         for s in a.suite.split(","):
             t0 = time.time()
-            timing = s in ("speed", "prefill")          # renders pause while this flag exists (render_guard.sh)
+            timing = s in ("speed", "prefill")          # other GPU jobs on this PC wait while this flag exists
             if timing:
                 Path("/tmp/bench_timing.flag").write_text(a.label)
             elif Path("/tmp/bench_timing.flag").exists():

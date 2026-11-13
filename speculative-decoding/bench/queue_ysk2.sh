@@ -3,7 +3,7 @@
 # it stops), plus the llama.cpp anchor whose --suffix flag was mistyped. Waits until each port has no sockets at all.
 set -uo pipefail
 cd "$(dirname "$0")"
-FMT=~/video-studio/projects/model-formats-5090/bench
+FMT="$(pwd)/../formats-harness"
 free() { for i in $(seq 120); do ss -tan | grep -q -E "[:.]$1 " || { sleep 3; return; }; sleep 1; done; echo "port $1 still busy"; }
 date -Is; nvidia-smi --query-gpu=memory.used,utilization.gpu,power.draw,temperature.gpu --format=csv,noheader
 free 8091; python3 bench.py 27b-none --runs 3 --suffix=-ysk-session

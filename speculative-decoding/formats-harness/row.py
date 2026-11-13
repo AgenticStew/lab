@@ -13,13 +13,13 @@ import requests
 
 B = Path(__file__).resolve().parent
 H = Path.home()
-M = H / "video-studio/models/fmt-test"
+M = H / "models/fmt-test"           # paths below are my machine's: edit them to yours
 GGUF = next((H / ".cache/huggingface/hub/models--unsloth--Qwen3.8-27B-GGUF/snapshots").glob("*/Qwen3.8-27B-UD-Q4_K_M.gguf"))
 MTP_GGUF = M / "gguf-mtp/MTP/mtp-Qwen3.8-27B-Q4_0.gguf"
 LLAMA = H / "src/llama.cpp/build/bin/llama-server"
-VLLM = H / "video-studio/tools/vllm/.venv/bin/vllm"
-TABBY_PY = H / "video-studio/tools/exllamav3/.venv/bin/python"
-TABBY = H / "video-studio/tools/exllamav3/src/tabbyAPI"
+VLLM = H / "tools/vllm/.venv/bin/vllm"
+TABBY_PY = H / "tools/exllamav3/.venv/bin/python"
+TABBY = H / "tools/exllamav3/src/tabbyAPI"
 THINK_OFF = {"chat_template_kwargs": {"enable_thinking": False}}
 
 LLAMA_A = [str(LLAMA), "-m", str(GGUF), "-ngl", "99", "-c", "32768", "--parallel", "1", "-fa", "on", "-ctk", "f16",
@@ -37,12 +37,12 @@ def vllm(model, *extra):
 
 
 MTP3 = ["--speculative-config", '{"method":"mtp","num_speculative_tokens":3}']
-TFR = H / "video-studio/tools/tensorfold/recipe"
+TFR = H / "tools/tensorfold/recipe"
 TF_ENV = {"HOST": "127.0.0.1", "PORT": "30000", "CONTEXT": "32768", "PARALLEL": "1", "TF_QWEN_KV_PAGES": "0",
           "PROMPT_CACHE_GIB": "0", "KV_CACHE": "bf16", "ALIAS": "qwen38-mlx4"}
 
 def YSK(model_dir):
-    return [str(H / "video-studio/tools/yasakani/.venv/bin/yasakani"), "serve", "--model-dir", str(H / "video-studio/models" / model_dir),
+    return [str(H / "yasakani-venv/bin/yasakani"), "serve", "--model-dir", str(H / "models" / model_dir),
             "--dll", str(H / "src/yasakani/build-linux/libyskn.so"), "--host", "127.0.0.1", "--port", "8765", "--max-ctx", "32768"]
 
 
@@ -86,7 +86,7 @@ ROWS = {
     "exl3-262k-q8": dict(tabby={"draft_mode": "disabled", "ctx": 262144, "cache_mode": "8,8"}, port=5000, extra=THINK_OFF),
     "fp8-eager-fp8kv": dict(cmd=vllm(M / "fp8", "--enforce-eager", "--kv-cache-dtype", "fp8"), port=8000, extra=THINK_OFF),
     # YASAKANI (13 Nov, github.com/yasakani-dev/yasakani @758ef28): its own compressed files + 5090 kernels + DFlash 2 drafting.
-    # Windows-only upstream; built for Linux by ~/video-studio/setup/install-yasakani.sh (self-check passed). 32K like the others;
+    # Windows-only upstream; built for Linux by ../yasakani-linux/install.sh (self-check passed). 32K like the others;
     # its loop stopper off (no other engine has one; the harness counts loops itself).
     "ysk-speed": dict(cmd=YSK("yasakani-speed"), port=8765, extra={**THINK_OFF, "loop_guard": False}),
     "ysk-quality": dict(cmd=YSK("yasakani-quality"), port=8765, extra={**THINK_OFF, "loop_guard": False}),
@@ -149,7 +149,7 @@ def main():
     info = {"label": a.label, "cmd": cmd, "baseline_mib": baseline, "gpu_util": util, "t_launch": time.time(), "status": "starting"}
     FLAG = Path("/tmp/bench_timing.flag")
     FLAG.parent.mkdir(parents=True, exist_ok=True)
-    FLAG.write_text(a.label + " startup")             # load time is measured too: renders pause until the server is ready
+    FLAG.write_text(a.label + " startup")             # load time is measured too
     logf = open(out / "server.log", "w")
     proc = subprocess.Popen(cmd, stdout=logf, stderr=subprocess.STDOUT, env=env, start_new_session=True,
                             cwd=str(TABBY) if "tabby" in row else str(B))

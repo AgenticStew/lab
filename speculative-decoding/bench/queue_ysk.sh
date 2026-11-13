@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# 13 Nov evening: YASAKANI (WSL2 build, self-check passed) head-to-head on a quiet machine (user closed the Windows apps).
+# 13 Nov evening: YASAKANI (WSL2 build, self-check passed) head-to-head on a quiet machine (Windows apps closed).
 # Same prompts and settings as the videos' llama.cpp rows; a same-session llama.cpp anchor in each harness.
 set -uo pipefail
 cd "$(dirname "$0")"
 T27=$(python3 -c "import bench; print(bench.T27)")
-LB=~/src/llama.cpp-b12189/build/bin/llama-bench
-FMT=~/video-studio/projects/model-formats-5090/bench
+LB=${LLAMA_BENCH:-~/src/llama.cpp-b12189/build/bin/llama-bench}
+FMT="$(pwd)/../formats-harness"
 date -Is; nvidia-smi --query-gpu=memory.used,utilization.gpu,power.draw,temperature.gpu --format=csv,noheader
 ss -ltn | grep -E ":(8091|8080|8765) " && { echo "a server port is busy: stop it first"; exit 1; }
 # 0. quiet check (median of the reps: WSL clock jumps fake an occasional ~96 tok/s rep)
