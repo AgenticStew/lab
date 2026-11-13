@@ -1,0 +1,3028 @@
+{
+ "row": "27b-mtp-n3",
+ "prompt": "story",
+ "first": [
+  "The"
+ ],
+ "steps": [
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " salt"
+   ],
+   "rejected": {
+    "piece": " l",
+    "p": 0.847
+   },
+   "t": null
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " air"
+   ],
+   "rejected": {
+    "piece": " in",
+    "p": 0.563
+   },
+   "t": 0.0205
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " cl"
+   ],
+   "rejected": {
+    "piece": " had",
+    "p": 0.453
+   },
+   "t": 0.0412
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    "ung",
+    " to",
+    " Elias"
+   ],
+   "rejected": {
+    "piece": " the",
+    "p": 0.989
+   },
+   "t": 0.0615
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    "\u2019s",
+    " skin"
+   ],
+   "rejected": {
+    "piece": " throat",
+    "p": 0.186
+   },
+   "t": 0.0816
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " like",
+    " a",
+    " second"
+   ],
+   "rejected": {
+    "piece": " dry",
+    "p": 0.323
+   },
+   "t": 0.1021
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " layer"
+   ],
+   "rejected": {
+    "piece": " skin",
+    "p": 0.964
+   },
+   "t": 0.1222
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " of",
+    " wool"
+   ],
+   "rejected": {
+    "piece": " damp",
+    "p": 0.258
+   },
+   "t": 0.1426
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    ",",
+    " a",
+    " constant"
+   ],
+   "rejected": {
+    "piece": " permanent",
+    "p": 0.276
+   },
+   "t": 0.1628
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " reminder",
+    " of",
+    " the"
+   ],
+   "rejected": {
+    "piece": " his",
+    "p": 0.56
+   },
+   "t": 0.183
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " decades"
+   ],
+   "rejected": {
+    "piece": " isolation",
+    "p": 0.196
+   },
+   "t": 0.2031
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " he",
+    " had",
+    " spent"
+   ],
+   "rejected": {
+    "piece": " been",
+    "p": 0.925
+   },
+   "t": 0.2234
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " in"
+   ],
+   "rejected": {
+    "piece": " guarding",
+    "p": 0.285
+   },
+   "t": 0.2435
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " the",
+    " iron"
+   ],
+   "rejected": {
+    "piece": " hollow",
+    "p": 0.653
+   },
+   "t": 0.2637
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " cage"
+   ],
+   "rejected": {
+    "piece": " tower",
+    "p": 0.604
+   },
+   "t": 0.2838
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " of",
+    " the",
+    " l"
+   ],
+   "rejected": {
+    "piece": " L",
+    "p": 0.385
+   },
+   "t": 0.3042
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    "ighthouse",
+    ".",
+    " At"
+   ],
+   "rejected": {
+    "piece": " He",
+    "p": 0.623
+   },
+   "t": 0.3249
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " seventy"
+   ],
+   "rejected": {
+    "piece": " fifty",
+    "p": 0.895
+   },
+   "t": 0.3455
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    "-two",
+    ",",
+    " his"
+   ],
+   "rejected": {
+    "piece": " the",
+    "p": 0.784
+   },
+   "t": 0.366
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " joints"
+   ],
+   "rejected": {
+    "piece": " knees",
+    "p": 0.719
+   },
+   "t": 0.3865
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " c"
+   ],
+   "rejected": {
+    "piece": " a",
+    "p": 0.64
+   },
+   "t": 0.407
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    "reak",
+    "ed",
+    " in"
+   ],
+   "rejected": {
+    "piece": " like",
+    "p": 0.575
+   },
+   "t": 0.4274
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " harmony"
+   ],
+   "rejected": {
+    "piece": " protest",
+    "p": 0.422
+   },
+   "t": 0.4475
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " with",
+    " the",
+    " gro"
+   ],
+   "rejected": {
+    "piece": " wind",
+    "p": 0.701
+   },
+   "t": 0.4679
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    "aning",
+    " metal"
+   ],
+   "rejected": {
+    "piece": " of",
+    "p": 0.847
+   },
+   "t": 0.4885
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " of",
+    " the",
+    " tower"
+   ],
+   "rejected": {
+    "piece": " hull",
+    "p": 0.241
+   },
+   "t": 0.5095
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    ".",
+    " He",
+    " was",
+    " the"
+   ],
+   "rejected": null,
+   "t": 0.5304
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " last"
+   ],
+   "rejected": {
+    "piece": " only",
+    "p": 0.736
+   },
+   "t": 0.5509
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " of"
+   ],
+   "rejected": {
+    "piece": " keeper",
+    "p": 0.925
+   },
+   "t": 0.5711
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " the",
+    " keep"
+   ],
+   "rejected": {
+    "piece": " old",
+    "p": 0.523
+   },
+   "t": 0.5911
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    "ers",
+    ",",
+    " a"
+   ],
+   "rejected": {
+    "piece": " the",
+    "p": 0.919
+   },
+   "t": 0.6118
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " relic",
+    " in"
+   ],
+   "rejected": {
+    "piece": " of",
+    "p": 0.987
+   },
+   "t": 0.6324
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " a",
+    " world",
+    " of"
+   ],
+   "rejected": {
+    "piece": " that",
+    "p": 0.58
+   },
+   "t": 0.6527
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " automated",
+    " sensors"
+   ],
+   "rejected": {
+    "piece": " systems",
+    "p": 0.591
+   },
+   "t": 0.6732
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " and",
+    " satellite"
+   ],
+   "rejected": {
+    "piece": " GPS",
+    "p": 0.693
+   },
+   "t": 0.6933
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " navigation"
+   ],
+   "rejected": {
+    "piece": " drones",
+    "p": 0.366
+   },
+   "t": 0.7133
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    "\n\n"
+   ],
+   "rejected": {
+    "piece": " He",
+    "p": 0.435
+   },
+   "t": 0.7337
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    "One",
+    " Tuesday",
+    ",",
+    " the"
+   ],
+   "rejected": null,
+   "t": 0.7544
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " mail",
+    " boat"
+   ],
+   "rejected": {
+    "piece": " arrived",
+    "p": 0.48
+   },
+   "t": 0.7747
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " arrived",
+    " with"
+   ],
+   "rejected": {
+    "piece": ".",
+    "p": 0.392
+   },
+   "t": 0.7951
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " a",
+    " single"
+   ],
+   "rejected": {
+    "piece": " heavy",
+    "p": 0.64
+   },
+   "t": 0.8155
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ",",
+    " yellow"
+   ],
+   "rejected": {
+    "piece": " damp",
+    "p": 0.231
+   },
+   "t": 0.8358
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    "ed",
+    " envelope",
+    ".",
+    " The"
+   ],
+   "rejected": null,
+   "t": 0.8567
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " post"
+   ],
+   "rejected": {
+    "piece": " paper",
+    "p": 0.233
+   },
+   "t": 0.8769
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    "mark",
+    " was",
+    " faded"
+   ],
+   "rejected": {
+    "piece": " a",
+    "p": 0.316
+   },
+   "t": 0.898
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ",",
+    " but"
+   ],
+   "rejected": {
+    "piece": " illeg",
+    "p": 0.566
+   },
+   "t": 0.9187
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " the",
+    " date",
+    " was",
+    " unmistak"
+   ],
+   "rejected": null,
+   "t": 0.9394
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    "able",
+    ":",
+    " *",
+    "October"
+   ],
+   "rejected": null,
+   "t": 0.9601
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " ",
+    "1",
+    "4",
+    ","
+   ],
+   "rejected": null,
+   "t": 0.9806
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " ",
+    "1",
+    "9",
+    "7"
+   ],
+   "rejected": null,
+   "t": 1.0011
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    "4",
+    "*.",
+    "\n\n",
+    "E"
+   ],
+   "rejected": null,
+   "t": 1.022
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    "lias",
+    " frowned"
+   ],
+   "rejected": {
+    "piece": "\u2019s",
+    "p": 0.723
+   },
+   "t": 1.0422
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    ".",
+    " He",
+    " had"
+   ],
+   "rejected": {
+    "piece": " picked",
+    "p": 0.263
+   },
+   "t": 1.0626
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " been"
+   ],
+   "rejected": {
+    "piece": " never",
+    "p": 0.419
+   },
+   "t": 1.0827
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " the"
+   ],
+   "rejected": {
+    "piece": " keeping",
+    "p": 0.314
+   },
+   "t": 1.1027
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " keeper",
+    " here"
+   ],
+   "rejected": {
+    "piece": " for",
+    "p": 0.696
+   },
+   "t": 1.1227
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " for"
+   ],
+   "rejected": {
+    "piece": " since",
+    "p": 0.488
+   },
+   "t": 1.143
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " thirty",
+    " years",
+    ".",
+    " Before"
+   ],
+   "rejected": null,
+   "t": 1.1633
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " him"
+   ],
+   "rejected": {
+    "piece": " that",
+    "p": 0.8
+   },
+   "t": 1.1837
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ",",
+    " it"
+   ],
+   "rejected": {
+    "piece": " he",
+    "p": 0.316
+   },
+   "t": 1.204
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " had"
+   ],
+   "rejected": {
+    "piece": " was",
+    "p": 0.844
+   },
+   "t": 1.2243
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " been",
+    " his",
+    " father"
+   ],
+   "rejected": {
+    "piece": " brother",
+    "p": 0.439
+   },
+   "t": 1.2448
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    "."
+   ],
+   "rejected": {
+    "piece": ",",
+    "p": 0.635
+   },
+   "t": 1.2647
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " Before"
+   ],
+   "rejected": {
+    "piece": " The",
+    "p": 0.399
+   },
+   "t": 1.2852
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " that",
+    ",",
+    " his",
+    " grandfather"
+   ],
+   "rejected": null,
+   "t": 1.3055
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    " No"
+   ],
+   "rejected": {
+    "piece": " The",
+    "p": 0.741
+   },
+   "t": 1.3256
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " one",
+    " had",
+    " missed"
+   ],
+   "rejected": {
+    "piece": " ever",
+    "p": 0.954
+   },
+   "t": 1.3458
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " a",
+    " mail"
+   ],
+   "rejected": {
+    "piece": " letter",
+    "p": 0.723
+   },
+   "t": 1.366
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " run"
+   ],
+   "rejected": {
+    "piece": ".",
+    "p": 0.251
+   },
+   "t": 1.386
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " in"
+   ],
+   "rejected": {
+    "piece": ".",
+    "p": 0.373
+   },
+   "t": 1.4061
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " half"
+   ],
+   "rejected": {
+    "piece": " fifty",
+    "p": 0.956
+   },
+   "t": 1.4265
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " a",
+    " century",
+    ".",
+    " The"
+   ],
+   "rejected": null,
+   "t": 1.447
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " letter",
+    " was",
+    " addressed"
+   ],
+   "rejected": {
+    "piece": " a",
+    "p": 0.491
+   },
+   "t": 1.4674
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " simply"
+   ],
+   "rejected": {
+    "piece": " to",
+    "p": 0.997
+   },
+   "t": 1.4879
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " to",
+    " *",
+    "The"
+   ],
+   "rejected": {
+    "piece": "E",
+    "p": 0.668
+   },
+   "t": 1.5086
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " Keeper",
+    ","
+   ],
+   "rejected": {
+    "piece": " of",
+    "p": 0.593
+   },
+   "t": 1.5289
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " Black",
+    "rock"
+   ],
+   "rejected": {
+    "piece": " Rock",
+    "p": 0.816
+   },
+   "t": 1.5492
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " Light"
+   ],
+   "rejected": {
+    "piece": " Point",
+    "p": 0.814
+   },
+   "t": 1.5693
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    "*.",
+    "\n\n",
+    "His"
+   ],
+   "rejected": {
+    "piece": "He",
+    "p": 0.837
+   },
+   "t": 1.5897
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " hands",
+    " trem",
+    "bled",
+    " as"
+   ],
+   "rejected": null,
+   "t": 1.6105
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " he",
+    " broke"
+   ],
+   "rejected": {
+    "piece": " opened",
+    "p": 0.473
+   },
+   "t": 1.6307
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " the",
+    " wax"
+   ],
+   "rejected": {
+    "piece": " seal",
+    "p": 0.933
+   },
+   "t": 1.6509
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " seal",
+    ".",
+    " Inside"
+   ],
+   "rejected": {
+    "piece": " He",
+    "p": 0.589
+   },
+   "t": 1.6715
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " was"
+   ],
+   "rejected": {
+    "piece": ",",
+    "p": 0.786
+   },
+   "t": 1.6914
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " a",
+    " single",
+    " sheet"
+   ],
+   "rejected": {
+    "piece": ",",
+    "p": 0.392
+   },
+   "t": 1.7153
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " of",
+    " paper",
+    ",",
+    " the"
+   ],
+   "rejected": null,
+   "t": 1.7359
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " ink"
+   ],
+   "rejected": {
+    "piece": " handwriting",
+    "p": 0.674
+   },
+   "t": 1.7562
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " brown"
+   ],
+   "rejected": {
+    "piece": " brittle",
+    "p": 0.265
+   },
+   "t": 1.7765
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " and"
+   ],
+   "rejected": {
+    "piece": "ed",
+    "p": 0.905
+   },
+   "t": 1.7971
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " brittle",
+    ".",
+    "\n\n",
+    "*"
+   ],
+   "rejected": null,
+   "t": 1.8177
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    "Dear"
+   ],
+   "rejected": {
+    "piece": "To",
+    "p": 0.389
+   },
+   "t": 1.8379
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " Keeper"
+   ],
+   "rejected": {
+    "piece": " Elias",
+    "p": 0.981
+   },
+   "t": 1.8581
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    ",*",
+    "\n\n",
+    "*",
+    "If"
+   ],
+   "rejected": null,
+   "t": 1.8785
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " you",
+    " are",
+    " reading"
+   ],
+   "rejected": {
+    "piece": " looking",
+    "p": 0.193
+   },
+   "t": 1.8992
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " this",
+    ",",
+    " the"
+   ],
+   "rejected": {
+    "piece": " I",
+    "p": 0.513
+   },
+   "t": 1.9312
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " storm",
+    " has",
+    " finally"
+   ],
+   "rejected": {
+    "piece": " failed",
+    "p": 0.773
+   },
+   "t": 1.9526
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " broken"
+   ],
+   "rejected": {
+    "piece": " passed",
+    "p": 0.437
+   },
+   "t": 1.9731
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    ".",
+    " I",
+    " am",
+    " sorry"
+   ],
+   "rejected": null,
+   "t": 1.9936
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " I"
+   ],
+   "rejected": {
+    "piece": " for",
+    "p": 0.488
+   },
+   "t": 2.0141
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " could",
+    " not",
+    " stay"
+   ],
+   "rejected": {
+    "piece": " leave",
+    "p": 0.642
+   },
+   "t": 2.0344
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " to"
+   ],
+   "rejected": {
+    "piece": ".",
+    "p": 0.97
+   },
+   "t": 2.0546
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " see"
+   ],
+   "rejected": {
+    "piece": " watch",
+    "p": 0.422
+   },
+   "t": 2.0755
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " the",
+    " dawn"
+   ],
+   "rejected": {
+    "piece": " light",
+    "p": 0.886
+   },
+   "t": 2.0959
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    ".",
+    " I",
+    " left"
+   ],
+   "rejected": {
+    "piece": " am",
+    "p": 0.492
+   },
+   "t": 2.1162
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " the"
+   ],
+   "rejected": {
+    "piece": " behind",
+    "p": 0.344
+   },
+   "t": 2.1362
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " light"
+   ],
+   "rejected": {
+    "piece": " key",
+    "p": 0.452
+   },
+   "t": 2.1563
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " burning"
+   ],
+   "rejected": {
+    "piece": " on",
+    "p": 0.566
+   },
+   "t": 2.1764
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " for",
+    " you"
+   ],
+   "rejected": {
+    "piece": " the",
+    "p": 0.741
+   },
+   "t": 2.1966
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ",",
+    " not"
+   ],
+   "rejected": {
+    "piece": " but",
+    "p": 0.578
+   },
+   "t": 2.2168
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " for"
+   ],
+   "rejected": {
+    "piece": " just",
+    "p": 0.881
+   },
+   "t": 2.2367
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " the",
+    " ships"
+   ],
+   "rejected": {
+    "piece": " ship",
+    "p": 0.73
+   },
+   "t": 2.2571
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    ",",
+    " but",
+    " for",
+    " the"
+   ],
+   "rejected": null,
+   "t": 2.2777
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " thing"
+   ],
+   "rejected": {
+    "piece": " hope",
+    "p": 0.436
+   },
+   "t": 2.2982
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " that",
+    " follows"
+   ],
+   "rejected": {
+    "piece": " waits",
+    "p": 0.303
+   },
+   "t": 2.3185
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " them"
+   ],
+   "rejected": {
+    "piece": " from",
+    "p": 0.298
+   },
+   "t": 2.339
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    " Do"
+   ],
+   "rejected": {
+    "piece": " I",
+    "p": 0.354
+   },
+   "t": 2.3593
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " not",
+    " look"
+   ],
+   "rejected": {
+    "piece": " let",
+    "p": 0.759
+   },
+   "t": 2.3801
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " at"
+   ],
+   "rejected": {
+    "piece": " into",
+    "p": 0.344
+   },
+   "t": 2.4002
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " the",
+    " water"
+   ],
+   "rejected": {
+    "piece": " windows",
+    "p": 0.276
+   },
+   "t": 2.4204
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " after"
+   ],
+   "rejected": {
+    "piece": ".",
+    "p": 0.771
+   },
+   "t": 2.4404
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " midnight"
+   ],
+   "rejected": {
+    "piece": " dark",
+    "p": 0.383
+   },
+   "t": 2.4607
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    " It"
+   ],
+   "rejected": {
+    "piece": " Do",
+    "p": 0.957
+   },
+   "t": 2.4811
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " is",
+    " not",
+    " the"
+   ],
+   "rejected": {
+    "piece": " a",
+    "p": 0.484
+   },
+   "t": 2.5016
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " sea",
+    " that"
+   ],
+   "rejected": {
+    "piece": ".",
+    "p": 0.778
+   },
+   "t": 2.5218
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " is",
+    " dark"
+   ],
+   "rejected": {
+    "piece": " watching",
+    "p": 0.252
+   },
+   "t": 2.5422
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    ",",
+    " but",
+    " the",
+    " eyes"
+   ],
+   "rejected": null,
+   "t": 2.5628
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " beneath"
+   ],
+   "rejected": {
+    "piece": " that",
+    "p": 0.778
+   },
+   "t": 2.5831
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " it",
+    "."
+   ],
+   "rejected": {
+    "piece": ".*",
+    "p": 0.926
+   },
+   "t": 2.6036
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " Keep"
+   ],
+   "rejected": {
+    "piece": " I",
+    "p": 0.347
+   },
+   "t": 2.6242
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " the",
+    " light",
+    " on"
+   ],
+   "rejected": {
+    "piece": " steady",
+    "p": 0.316
+   },
+   "t": 2.6447
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    " Keep"
+   ],
+   "rejected": {
+    "piece": " Trust",
+    "p": 0.216
+   },
+   "t": 2.6652
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " it",
+    " bright"
+   ],
+   "rejected": {
+    "piece": " on",
+    "p": 0.528
+   },
+   "t": 2.6853
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    " If"
+   ],
+   "rejected": {
+    "piece": " Keep",
+    "p": 0.451
+   },
+   "t": 2.7056
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " the"
+   ],
+   "rejected": {
+    "piece": " you",
+    "p": 0.926
+   },
+   "t": 2.7257
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " beam"
+   ],
+   "rejected": {
+    "piece": " light",
+    "p": 0.887
+   },
+   "t": 2.7461
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " falt"
+   ],
+   "rejected": {
+    "piece": " goes",
+    "p": 0.735
+   },
+   "t": 2.7663
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    "ers",
+    ",",
+    " they"
+   ],
+   "rejected": {
+    "piece": " the",
+    "p": 0.843
+   },
+   "t": 2.7869
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " will",
+    " know"
+   ],
+   "rejected": {
+    "piece": " come",
+    "p": 0.845
+   },
+   "t": 2.8071
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " you"
+   ],
+   "rejected": {
+    "piece": " they",
+    "p": 0.333
+   },
+   "t": 2.8272
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " are",
+    " alone"
+   ],
+   "rejected": {
+    "piece": " here",
+    "p": 0.32
+   },
+   "t": 2.8474
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    ".*",
+    "\n\n",
+    "*",
+    "\u2014"
+   ],
+   "rejected": null,
+   "t": 2.8682
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " Arthur"
+   ],
+   "rejected": {
+    "piece": " Y",
+    "p": 0.241
+   },
+   "t": 2.8886
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    "*",
+    "\n\n",
+    "E",
+    "lias"
+   ],
+   "rejected": null,
+   "t": 2.9094
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " dropped",
+    " the",
+    " paper",
+    "."
+   ],
+   "rejected": null,
+   "t": 2.93
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " Arthur"
+   ],
+   "rejected": {
+    "piece": " The",
+    "p": 0.554
+   },
+   "t": 2.9505
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " had"
+   ],
+   "rejected": {
+    "piece": " was",
+    "p": 0.704
+   },
+   "t": 2.9705
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " been",
+    " the"
+   ],
+   "rejected": {
+    "piece": " his",
+    "p": 0.846
+   },
+   "t": 2.991
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " keeper",
+    " before",
+    " his"
+   ],
+   "rejected": {
+    "piece": " him",
+    "p": 0.967
+   },
+   "t": 3.0115
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " grandfather"
+   ],
+   "rejected": {
+    "piece": " father",
+    "p": 0.729
+   },
+   "t": 3.0317
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    " Arthur"
+   ],
+   "rejected": {
+    "piece": " He",
+    "p": 0.862
+   },
+   "t": 3.0521
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " had",
+    " vanished"
+   ],
+   "rejected": {
+    "piece": " died",
+    "p": 0.731
+   },
+   "t": 3.0726
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " in",
+    " "
+   ],
+   "rejected": {
+    "piece": " a",
+    "p": 0.635
+   },
+   "t": 3.0929
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    "1",
+    "9",
+    "7",
+    "4"
+   ],
+   "rejected": null,
+   "t": 3.1135
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " during"
+   ],
+   "rejected": {
+    "piece": ",",
+    "p": 0.738
+   },
+   "t": 3.1338
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " a",
+    " hurricane"
+   ],
+   "rejected": {
+    "piece": " storm",
+    "p": 0.967
+   },
+   "t": 3.155
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ",",
+    " his"
+   ],
+   "rejected": {
+    "piece": " the",
+    "p": 0.24
+   },
+   "t": 3.1753
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " body",
+    " never",
+    " found",
+    "."
+   ],
+   "rejected": null,
+   "t": 3.1961
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " The",
+    " official"
+   ],
+   "rejected": {
+    "piece": " locals",
+    "p": 0.247
+   },
+   "t": 3.2164
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " report"
+   ],
+   "rejected": {
+    "piece": " story",
+    "p": 0.317
+   },
+   "t": 3.2372
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " said",
+    " he",
+    " had",
+    " fallen"
+   ],
+   "rejected": null,
+   "t": 3.2573
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " over",
+    "board",
+    ".",
+    "\n\n"
+   ],
+   "rejected": null,
+   "t": 3.2775
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    "A"
+   ],
+   "rejected": {
+    "piece": "But",
+    "p": 0.621
+   },
+   "t": 3.2976
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " cold",
+    " dread"
+   ],
+   "rejected": {
+    "piece": ",",
+    "p": 0.885
+   },
+   "t": 3.3181
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ",",
+    " colder"
+   ],
+   "rejected": {
+    "piece": " heavier",
+    "p": 0.337
+   },
+   "t": 3.3383
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " than",
+    " the",
+    " Atlantic"
+   ],
+   "rejected": {
+    "piece": " wind",
+    "p": 0.772
+   },
+   "t": 3.3587
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    ","
+   ],
+   "rejected": {
+    "piece": " wind",
+    "p": 0.857
+   },
+   "t": 3.3786
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " settled",
+    " in"
+   ],
+   "rejected": {
+    "piece": " into",
+    "p": 0.858
+   },
+   "t": 3.399
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " Elias",
+    "\u2019s",
+    " stomach"
+   ],
+   "rejected": {
+    "piece": " chest",
+    "p": 0.53
+   },
+   "t": 3.4196
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    " He"
+   ],
+   "rejected": {
+    "piece": " Elias",
+    "p": 0.312
+   },
+   "t": 3.4399
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " looked",
+    " at",
+    " the",
+    " clock"
+   ],
+   "rejected": null,
+   "t": 3.4605
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    " It"
+   ],
+   "rejected": {
+    "piece": " He",
+    "p": 0.693
+   },
+   "t": 3.4809
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " was",
+    " ",
+    "1",
+    "1"
+   ],
+   "rejected": null,
+   "t": 3.5014
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    ":",
+    "5",
+    "8"
+   ],
+   "rejected": {
+    "piece": "9",
+    "p": 0.791
+   },
+   "t": 3.5216
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " PM",
+    ".",
+    "\n\n",
+    "He"
+   ],
+   "rejected": null,
+   "t": 3.5423
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " rushed"
+   ],
+   "rejected": {
+    "piece": " remembered",
+    "p": 0.354
+   },
+   "t": 3.5628
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " to",
+    " the",
+    " lantern"
+   ],
+   "rejected": {
+    "piece": " main",
+    "p": 0.583
+   },
+   "t": 3.583
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " room",
+    ","
+   ],
+   "rejected": {
+    "piece": ".",
+    "p": 0.543
+   },
+   "t": 3.6031
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " his"
+   ],
+   "rejected": {
+    "piece": " the",
+    "p": 0.409
+   },
+   "t": 3.6234
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " heart"
+   ],
+   "rejected": {
+    "piece": " hands",
+    "p": 0.608
+   },
+   "t": 3.6434
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " hammer",
+    "ing",
+    " against",
+    " his"
+   ],
+   "rejected": null,
+   "t": 3.6639
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " ribs",
+    ".",
+    " The",
+    " great"
+   ],
+   "rejected": null,
+   "t": 3.6847
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " Fres",
+    "nel",
+    " lens"
+   ],
+   "rejected": {
+    "piece": " light",
+    "p": 0.731
+   },
+   "t": 3.7055
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " was",
+    " dark"
+   ],
+   "rejected": {
+    "piece": " still",
+    "p": 0.674
+   },
+   "t": 3.7259
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    "."
+   ],
+   "rejected": {
+    "piece": ",",
+    "p": 0.844
+   },
+   "t": 3.7463
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " The",
+    " automatic"
+   ],
+   "rejected": {
+    "piece": " automated",
+    "p": 0.283
+   },
+   "t": 3.7668
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " rotation"
+   ],
+   "rejected": {
+    "piece": " generator",
+    "p": 0.409
+   },
+   "t": 3.7869
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " mechanism"
+   ],
+   "rejected": {
+    "piece": " system",
+    "p": 0.947
+   },
+   "t": 3.8076
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    ","
+   ],
+   "rejected": {
+    "piece": " had",
+    "p": 0.874
+   },
+   "t": 3.8288
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " which",
+    " he"
+   ],
+   "rejected": {
+    "piece": " had",
+    "p": 0.89
+   },
+   "t": 3.8497
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " had",
+    " checked"
+   ],
+   "rejected": {
+    "piece": " been",
+    "p": 0.628
+   },
+   "t": 3.8707
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " only"
+   ],
+   "rejected": {
+    "piece": " every",
+    "p": 0.937
+   },
+   "t": 3.8914
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " an"
+   ],
+   "rejected": {
+    "piece": " twice",
+    "p": 0.362
+   },
+   "t": 3.912
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " hour",
+    " ago",
+    ",",
+    " had"
+   ],
+   "rejected": null,
+   "t": 3.9328
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " stopped",
+    ".",
+    " The"
+   ],
+   "rejected": null,
+   "t": 3.9537
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " bulb"
+   ],
+   "rejected": {
+    "piece": " main",
+    "p": 0.48
+   },
+   "t": 3.9742
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " was",
+    " out"
+   ],
+   "rejected": {
+    "piece": " flick",
+    "p": 0.314
+   },
+   "t": 3.9948
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    ".",
+    "\n\n",
+    "P"
+   ],
+   "rejected": {
+    "piece": "He",
+    "p": 0.85
+   },
+   "t": 4.015
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    "anic",
+    " surged"
+   ],
+   "rejected": {
+    "piece": ".",
+    "p": 0.537
+   },
+   "t": 4.0353
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    "."
+   ],
+   "rejected": {
+    "piece": " through",
+    "p": 0.491
+   },
+   "t": 4.0555
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " He",
+    " f"
+   ],
+   "rejected": {
+    "piece": " grabbed",
+    "p": 0.453
+   },
+   "t": 4.0758
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    "umbled",
+    " for",
+    " the",
+    " emergency"
+   ],
+   "rejected": null,
+   "t": 4.0965
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " generator"
+   ],
+   "rejected": {
+    "piece": " switch",
+    "p": 0.366
+   },
+   "t": 4.1166
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " switch"
+   ],
+   "rejected": {
+    "piece": ",",
+    "p": 0.988
+   },
+   "t": 4.1369
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    ",",
+    " but",
+    " his"
+   ],
+   "rejected": {
+    "piece": " the",
+    "p": 0.945
+   },
+   "t": 4.1573
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " fingers"
+   ],
+   "rejected": {
+    "piece": " hands",
+    "p": 0.412
+   },
+   "t": 4.1774
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " were",
+    " too"
+   ],
+   "rejected": {
+    "piece": " locked",
+    "p": 0.284
+   },
+   "t": 4.1978
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " numb",
+    "."
+   ],
+   "rejected": {
+    "piece": " to",
+    "p": 0.487
+   },
+   "t": 4.2181
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " He",
+    " slammed"
+   ],
+   "rejected": {
+    "piece": " had",
+    "p": 0.177
+   },
+   "t": 4.2385
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " the",
+    " lever"
+   ],
+   "rejected": {
+    "piece": " switch",
+    "p": 0.613
+   },
+   "t": 4.2587
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    "."
+   ],
+   "rejected": {
+    "piece": ",",
+    "p": 0.403
+   },
+   "t": 4.2791
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " Nothing"
+   ],
+   "rejected": {
+    "piece": " The",
+    "p": 0.86
+   },
+   "t": 4.2994
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    "."
+   ],
+   "rejected": {
+    "piece": " happened",
+    "p": 0.957
+   },
+   "t": 4.3197
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " The",
+    " silence"
+   ],
+   "rejected": {
+    "piece": " light",
+    "p": 0.452
+   },
+   "t": 4.34
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " of"
+   ],
+   "rejected": {
+    "piece": " that",
+    "p": 0.683
+   },
+   "t": 4.3602
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " the",
+    " tower",
+    " was",
+    " absolute"
+   ],
+   "rejected": null,
+   "t": 4.3806
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ",",
+    " save"
+   ],
+   "rejected": {
+    "piece": " deaf",
+    "p": 0.311
+   },
+   "t": 4.401
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " for",
+    " the",
+    " rhyth"
+   ],
+   "rejected": {
+    "piece": " silence",
+    "p": 0.585
+   },
+   "t": 4.4214
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    "mic",
+    " crashing"
+   ],
+   "rejected": {
+    "piece": " ticking",
+    "p": 0.326
+   },
+   "t": 4.4415
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    " of",
+    " waves"
+   ],
+   "rejected": {
+    "piece": " the",
+    "p": 0.972
+   },
+   "t": 4.4745
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " below"
+   ],
+   "rejected": {
+    "piece": " against",
+    "p": 0.775
+   },
+   "t": 4.4953
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    ".",
+    "\n\n",
+    "Then"
+   ],
+   "rejected": {
+    "piece": "He",
+    "p": 0.702
+   },
+   "t": 4.5159
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ",",
+    " he"
+   ],
+   "rejected": {
+    "piece": " as",
+    "p": 0.269
+   },
+   "t": 4.5365
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " heard",
+    " it",
+    ".",
+    " A"
+   ],
+   "rejected": null,
+   "t": 4.557
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " soft"
+   ],
+   "rejected": {
+    "piece": " low",
+    "p": 0.44
+   },
+   "t": 4.5773
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    ",",
+    " wet",
+    " sl"
+   ],
+   "rejected": {
+    "piece": " sound",
+    "p": 0.528
+   },
+   "t": 4.5975
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    "apping",
+    " sound"
+   ],
+   "rejected": {
+    "piece": " against",
+    "p": 0.353
+   },
+   "t": 4.6181
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " against",
+    " the",
+    " glass"
+   ],
+   "rejected": {
+    "piece": " wet",
+    "p": 0.235
+   },
+   "t": 4.6386
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " of",
+    " the",
+    " lantern"
+   ],
+   "rejected": {
+    "piece": " foundation",
+    "p": 0.478
+   },
+   "t": 4.6592
+  },
+  {
+   "k": 3,
+   "accepted": 2,
+   "tokens": [
+    " room",
+    ".",
+    " Not"
+   ],
+   "rejected": null,
+   "t": 4.6804
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " rain"
+   ],
+   "rejected": {
+    "piece": " a",
+    "p": 0.488
+   },
+   "t": 4.7005
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    ".",
+    " Not",
+    " wind",
+    "."
+   ],
+   "rejected": null,
+   "t": 4.7212
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    "\n\n",
+    "E",
+    "lias",
+    " turned"
+   ],
+   "rejected": null,
+   "t": 4.7421
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    " slowly"
+   ],
+   "rejected": {
+    "piece": ",",
+    "p": 0.448
+   },
+   "t": 4.7627
+  },
+  {
+   "k": 3,
+   "accepted": 1,
+   "tokens": [
+    ".",
+    "\n\n"
+   ],
+   "rejected": {
+    "piece": " The",
+    "p": 0.532
+   },
+   "t": 4.783
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    "There"
+   ],
+   "rejected": {
+    "piece": "Outside",
+    "p": 0.299
+   },
+   "t": 4.8032
+  },
+  {
+   "k": 3,
+   "accepted": 0,
+   "tokens": [
+    ","
+   ],
+   "rejected": {
+    "piece": " were",
+    "p": 0.624
+   },
+   "t": 4.8235
+  },
+  {
+   "k": 3,
+   "accepted": 3,
+   "tokens": [
+    " pressed",
+    " against",
+    " the",
+    " curved"
+   ],
+   "rejected": null,
+   "t": 4.8439
+  },
+  {
+   "k": 1,
+   "accepted": 1,
+   "tokens": [
+    " glass",
+    ","
+   ],
+   "rejected": null,
+   "t": 4.8735
+  }
+ ],
+ "check": {
+  "text_matches_client": true,
+  "steps": 238,
+  "steps_with_wrong_token_count": 0,
+  "rejected_guesses_logged": 198,
+  "rejected_guess_differs_from_model_token": 198
+ },
+ "tps_debug": 104.17110481101302,
+ "accept_rate": 0.38342696629213485,
+ "mean_len": 2.1470588235294117
+}

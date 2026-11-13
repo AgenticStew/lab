@@ -1,0 +1,94 @@
+[
+  {
+    "build_commit": "80d2c0c2c",
+    "build_number": 12189,
+    "cpu_info": "AMD Ryzen 9 9950X3D 16-Core Processor",
+    "gpu_info": "NVIDIA GeForce RTX 5090",
+    "backends": "CUDA",
+    "model_filename": "~/.cache/huggingface/hub/models--unsloth--Qwen3.8-27B-GGUF/snapshots/4ca720788d1e01f1bff70c033e0d0028fd02e502/Qwen3.8-27B-UD-Q4_K_M.gguf",
+    "model_type": "qwen35 27B Q4_K - Medium",
+    "model_size": 16453443584,
+    "model_n_params": 27320697856,
+    "n_batch": 2048,
+    "n_ubatch": 512,
+    "n_threads": 16,
+    "cpu_mask": "0x0",
+    "cpu_strict": false,
+    "poll": 50,
+    "type_k": "f16",
+    "type_v": "f16",
+    "n_gpu_layers": 99,
+    "n_cpu_moe": 0,
+    "split_mode": "layer",
+    "main_gpu": 0,
+    "no_kv_offload": false,
+    "flash_attn": 1,
+    "devices": "auto",
+    "tensor_split": "0.00",
+    "tensor_buft_overrides": "none",
+    "load_mode": "auto",
+    "lazy_mode": "auto",
+    "embeddings": false,
+    "no_op_offload": 0,
+    "no_host": false,
+    "repack": true,
+    "fit_target": 0,
+    "fit_min_ctx": 0,
+    "n_prompt": 0,
+    "n_gen": 256,
+    "n_depth": 0,
+    "test_time": "2026-11-13T16:20:14Z",
+    "avg_ns": 3285121019,
+    "stddev_ns": 251524905,
+    "avg_ts": 78.406907,
+    "stddev_ts": 7.162081,
+    "samples_ns": [ 2663359088, 3357155275, 3395472650, 3379381995, 3370057572, 3367443609, 3384206880, 3363891089 ],
+    "samples_ts": [ 96.1192, 76.255, 75.3945, 75.7535, 75.9631, 76.0221, 75.6455, 76.1023 ]
+  }
+]
+Collecting data...
+Generating '/tmp/nsys-report-5868.qdstrm'
+
+[1/1] [0%                          ] prof.nsys-rep
+[1/1] [0%                          ] prof.nsys-rep
+[1/1] [0%                          ] prof.nsys-rep
+[1/1] [8%                          ] prof.nsys-rep
+[1/1] [6%                          ] prof.nsys-rep
+[1/1] [====25%                     ] prof.nsys-rep
+[1/1] [===22%                      ] prof.nsys-rep
+[1/1] [====28%                     ] prof.nsys-rep
+[1/1] [=====29%                    ] prof.nsys-rep
+[1/1] [====26%                     ] prof.nsys-rep
+[1/1] [===24%                      ] prof.nsys-rep
+[1/1] [====28%                     ] prof.nsys-rep
+[1/1] [====25%                     ] prof.nsys-rep
+[1/1] [===23%                      ] prof.nsys-rep
+[1/1] [===22%                      ] prof.nsys-rep
+[1/1] [==20%                       ] prof.nsys-rep
+[1/1] [==19%                       ] prof.nsys-rep
+[1/1] [==18%                       ] prof.nsys-rep
+[1/1] [==20%                       ] prof.nsys-rep
+[1/1] [===23%                      ] prof.nsys-rep
+[1/1] [====26%                     ] prof.nsys-rep
+[1/1] [=====29%                    ] prof.nsys-rep
+[1/1] [=====32%                    ] prof.nsys-rep
+[1/1] [======35%                   ] prof.nsys-rep
+[1/1] [=======37%                  ] prof.nsys-rep
+[1/1] [========40%                 ] prof.nsys-rep
+[1/1] [=========43%                ] prof.nsys-rep
+[1/1] [=========46%                ] prof.nsys-rep
+[1/1] [==========49%               ] prof.nsys-rep
+[1/1] [===========50%              ] prof.nsys-rep
+[1/1] [===========51%              ] prof.nsys-rep
+[1/1] [===========52%              ] prof.nsys-rep
+[1/1] [===========53%              ] prof.nsys-rep
+[1/1] [============54%             ] prof.nsys-rep
+[1/1] [============55%             ] prof.nsys-rep
+[1/1] [============56%             ] prof.nsys-rep
+[1/1] [============57%             ] prof.nsys-rep
+[1/1] [=============58%            ] prof.nsys-rep
+[1/1] [=============59%            ] prof.nsys-rep
+[1/1] [========================100%] prof.nsys-rep
+[1/1] [========================100%] prof.nsys-rep
+Generated:
+	../wsl-vs-win/prof.nsys-rep

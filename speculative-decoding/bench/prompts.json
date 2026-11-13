@@ -1,0 +1,22 @@
+{
+ "code": {
+  "label": "Write new code",
+  "messages": [{"role": "user", "content": "Write a Python function `merge_intervals(intervals)` that merges overlapping intervals in a list of [start, end] pairs and returns the merged list sorted by start. Include a docstring, type hints and three example calls with their expected output in comments. Reply with the code only."}]
+ },
+ "edit": {
+  "label": "Edit pasted code",
+  "messages": [{"role": "user", "content": "Rename the variable `tmp` to `total` everywhere in this file and add a one-line docstring to each function. Return the whole file and nothing else.\n\n```python\nimport csv\nfrom collections import defaultdict\n\n\ndef load_rows(path):\n    rows = []\n    with open(path, newline=\"\") as f:\n        reader = csv.DictReader(f)\n        for row in reader:\n            rows.append(row)\n    return rows\n\n\ndef sum_by_region(rows):\n    tmp = defaultdict(float)\n    for row in rows:\n        region = row[\"region\"].strip().title()\n        amount = float(row[\"amount\"])\n        tmp[region] += amount\n    return dict(tmp)\n\n\ndef top_regions(rows, n=3):\n    tmp = sum_by_region(rows)\n    ranked = sorted(tmp.items(), key=lambda kv: kv[1], reverse=True)\n    return ranked[:n]\n\n\ndef monthly_totals(rows):\n    tmp = defaultdict(float)\n    for row in rows:\n        month = row[\"date\"][:7]\n        tmp[month] += float(row[\"amount\"])\n    return dict(sorted(tmp.items()))\n\n\ndef report(path):\n    rows = load_rows(path)\n    tmp = top_regions(rows)\n    for region, amount in tmp:\n        print(f\"{region:<12} {amount:>10.2f}\")\n    for month, amount in monthly_totals(rows).items():\n        print(f\"{month}  {amount:>10.2f}\")\n\n\nif __name__ == \"__main__\":\n    report(\"sales.csv\")\n```"}]
+ },
+ "explain": {
+  "label": "Explain something",
+  "messages": [{"role": "user", "content": "Explain how a refrigerator keeps food cold, for a curious twelve-year-old, in about 250 words."}]
+ },
+ "story": {
+  "label": "Write a story",
+  "messages": [{"role": "user", "content": "Write an original short story of about 300 words about a lighthouse keeper who receives a letter that was posted fifty years ago. Make the ending surprising."}]
+ },
+ "json": {
+  "label": "Fill in JSON",
+  "messages": [{"role": "user", "content": "Turn this into a JSON array of objects with the keys name, role, city and start_year. Reply with the JSON only.\n\nAmara Okafor joined in 2019 as a data engineer in Lagos. Tom Becker, product designer, Berlin, since 2021. Priya Nair has led the support team in Pune since 2017. Lucas Moreau started in 2023 as a backend developer in Lyon. Sofia Rossi is our finance manager in Milan; she joined in 2020. Kenji Watanabe, mobile developer in Osaka, 2022. Grace Mensah joined Accra's sales team as an account executive in 2018. Daniel Kowalski, DevOps engineer in Warsaw, joined in 2024."}]
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "label": "gguf-A-r2",
+ "model": "qwen38",
+ "base": "http://127.0.0.1:8080/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "cache_prompt": false
+ },
+ "note": "",
+ "speed": {
+  "prose": {
+   "decode_tps": 76.46,
+   "e2e_tps": 75.33,
+   "completion_tokens": 512,
+   "runs": [
+    76.28,
+    76.46,
+    76.56
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 76.33,
+   "e2e_tps": 75.14,
+   "completion_tokens": 512,
+   "runs": [
+    89.04,
+    76.23,
+    76.33
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 76.27,
+   "e2e_tps": 75.17,
+   "completion_tokens": 512,
+   "runs": [
+    89.55,
+    76.22,
+    76.27
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 76.2,
+   "e2e_tps": 73.51,
+   "completion_tokens": 512,
+   "runs": [
+    76.14,
+    89.32,
+    76.2
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794592407.7241344,
+   1794592513.858006
+  ]
+ }
+}

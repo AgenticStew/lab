@@ -1,0 +1,36 @@
+{
+ "label": "ysk-speed-q",
+ "model": "qwen3.8-27b",
+ "base": "http://127.0.0.1:8765/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "loop_guard": false
+ },
+ "note": "",
+ "quality": {
+  "humaneval": {
+   "pass": 19,
+   "n": 20
+  },
+  "gsm8k": {
+   "pass": 18,
+   "n": 20
+  },
+  "mmlu": {
+   "pass": 160,
+   "n": 200
+  },
+  "json": {
+   "pass": 3,
+   "n": 3
+  }
+ },
+ "suite_times": {
+  "quality": [
+   1794592531.527972,
+   1794592565.1435428
+  ]
+ }
+}

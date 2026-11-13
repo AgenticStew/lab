@@ -1,0 +1,110 @@
+{
+ "label": "gguf-A",
+ "model": "qwen38",
+ "base": "http://127.0.0.1:8080/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "cache_prompt": false
+ },
+ "note": "",
+ "speed": {
+  "prose": {
+   "decode_tps": 77.59,
+   "e2e_tps": 76.38,
+   "completion_tokens": 512,
+   "runs": [
+    77.66,
+    77.59,
+    77.28
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 77.97,
+   "e2e_tps": 76.77,
+   "completion_tokens": 512,
+   "runs": [
+    76.18,
+    78.55,
+    77.97
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 76.83,
+   "e2e_tps": 75.47,
+   "completion_tokens": 512,
+   "runs": [
+    76.83,
+    76.64,
+    78.12
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 76.42,
+   "e2e_tps": 73.68,
+   "completion_tokens": 512,
+   "runs": [
+    76.42,
+    75.83,
+    77.47
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794031146.6938999,
+   1794031255.6769743
+  ],
+  "prefill": [
+   1794031255.6771696,
+   1794031294.9816387
+  ],
+  "quality": [
+   1794031294.981819,
+   1794031485.4940507
+  ]
+ },
+ "prefill": {
+  "2k": {
+   "ttft": 0.5433,
+   "prefill_tps": 3721.7,
+   "prompt_tokens": 2024,
+   "needle": "3/3"
+  },
+  "8k": {
+   "ttft": 2.1021,
+   "prefill_tps": 3883.3,
+   "prompt_tokens": 8162,
+   "needle": "3/3"
+  },
+  "32k": {
+   "ttft": 9.00875,
+   "prefill_tps": 3548.25,
+   "prompt_tokens": 31962,
+   "needle": "2/2"
+  }
+ },
+ "quality": {
+  "humaneval": {
+   "pass": 19,
+   "n": 20
+  },
+  "gsm8k": {
+   "pass": 18,
+   "n": 20
+  },
+  "mmlu": {
+   "pass": 163,
+   "n": 200
+  },
+  "json": {
+   "pass": 3,
+   "n": 3
+  }
+ }
+}

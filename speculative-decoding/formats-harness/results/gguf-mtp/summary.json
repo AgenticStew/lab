@@ -1,0 +1,88 @@
+{
+ "label": "gguf-mtp",
+ "model": "qwen38",
+ "base": "http://127.0.0.1:8080/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  },
+  "cache_prompt": false
+ },
+ "note": "",
+ "speed": {
+  "prose": {
+   "decode_tps": 127.82,
+   "e2e_tps": 124.08,
+   "completion_tokens": 512,
+   "runs": [
+    136.52,
+    127.82,
+    125.04
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 172.52,
+   "e2e_tps": 165.58,
+   "completion_tokens": 512,
+   "runs": [
+    169.6,
+    175.34,
+    172.52
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 194.64,
+   "e2e_tps": 182.91,
+   "completion_tokens": 512,
+   "runs": [
+    192.46,
+    196.84,
+    194.64
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 208.71,
+   "e2e_tps": 183.24,
+   "completion_tokens": 512,
+   "runs": [
+    203.81,
+    210.13,
+    208.71
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794031491.894508,
+   1794031543.2773397
+  ],
+  "prefill": [
+   1794031543.2775722,
+   1794031585.810069
+  ]
+ },
+ "prefill": {
+  "2k": {
+   "ttft": 0.7093,
+   "prefill_tps": 2853.6,
+   "prompt_tokens": 2024,
+   "needle": "3/3"
+  },
+  "8k": {
+   "ttft": 2.4423,
+   "prefill_tps": 3341.5,
+   "prompt_tokens": 8160,
+   "needle": "3/3"
+  },
+  "32k": {
+   "ttft": 9.8198,
+   "prefill_tps": 3254.8999999999996,
+   "prompt_tokens": 31962,
+   "needle": "2/2"
+  }
+ }
+}

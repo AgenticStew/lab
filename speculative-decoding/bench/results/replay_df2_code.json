@@ -1,0 +1,1051 @@
+{
+ "row": "27b-df2-n7",
+ "prompt": "code",
+ "first": [
+  "```"
+ ],
+ "steps": [
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    "python",
+    "\n",
+    "from"
+   ],
+   "rejected": null,
+   "t": null
+  },
+  {
+   "k": 7,
+   "accepted": 3,
+   "tokens": [
+    " typing",
+    " import",
+    " List",
+    ","
+   ],
+   "rejected": null,
+   "t": 0.0228
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " Tuple",
+    "\n\n\n",
+    "def",
+    " merge",
+    "_intervals",
+    "(int",
+    "ervals",
+    ":"
+   ],
+   "rejected": null,
+   "t": 0.0461
+  },
+  {
+   "k": 7,
+   "accepted": 1,
+   "tokens": [
+    " List",
+    "[List"
+   ],
+   "rejected": null,
+   "t": 0.0688
+  },
+  {
+   "k": 7,
+   "accepted": 4,
+   "tokens": [
+    "[int",
+    "]])",
+    " ->",
+    " List",
+    "[List"
+   ],
+   "rejected": null,
+   "t": 0.0914
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "[int",
+    "]]",
+    ":",
+    "\n",
+    "   ",
+    " \"\"\"",
+    "\n",
+    "   "
+   ],
+   "rejected": null,
+   "t": 0.1146
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " Merge",
+    " overlapping",
+    " intervals",
+    " in",
+    " a",
+    " list",
+    " of",
+    " ["
+   ],
+   "rejected": null,
+   "t": 0.1377
+  },
+  {
+   "k": 7,
+   "accepted": 6,
+   "tokens": [
+    "start",
+    ",",
+    " end",
+    "]",
+    " pairs",
+    ".",
+    "\n\n"
+   ],
+   "rejected": null,
+   "t": 0.1606
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "   ",
+    " Args",
+    ":",
+    "\n",
+    "       ",
+    " intervals",
+    ":",
+    " A"
+   ],
+   "rejected": null,
+   "t": 0.1836
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    " list",
+    " of",
+    " intervals"
+   ],
+   "rejected": null,
+   "t": 0.2059
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    ",",
+    " where",
+    " each",
+    " interval",
+    " is",
+    " a",
+    " list",
+    " of"
+   ],
+   "rejected": null,
+   "t": 0.2298
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " two",
+    " integers",
+    " [",
+    "start",
+    ",",
+    " end",
+    "].",
+    "\n\n"
+   ],
+   "rejected": null,
+   "t": 0.2533
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "   ",
+    " Returns",
+    ":",
+    "\n",
+    "       ",
+    " A",
+    " list",
+    " of"
+   ],
+   "rejected": null,
+   "t": 0.2767
+  },
+  {
+   "k": 7,
+   "accepted": 5,
+   "tokens": [
+    " merged",
+    " intervals",
+    " sorted",
+    " by",
+    " start",
+    " time"
+   ],
+   "rejected": null,
+   "t": 0.2995
+  },
+  {
+   "k": 7,
+   "accepted": 3,
+   "tokens": [
+    ".",
+    "\n\n",
+    "   ",
+    " Examples"
+   ],
+   "rejected": null,
+   "t": 0.322
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    ":",
+    "\n",
+    "       ",
+    " >>>",
+    " merge",
+    "_intervals",
+    "([[",
+    "1"
+   ],
+   "rejected": null,
+   "t": 0.345
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    ",",
+    " ",
+    "3"
+   ],
+   "rejected": null,
+   "t": 0.3674
+  },
+  {
+   "k": 7,
+   "accepted": 5,
+   "tokens": [
+    "],",
+    " [",
+    "2",
+    ",",
+    " ",
+    "6"
+   ],
+   "rejected": null,
+   "t": 0.3901
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    "],",
+    " [",
+    "8"
+   ],
+   "rejected": null,
+   "t": 0.413
+  },
+  {
+   "k": 7,
+   "accepted": 4,
+   "tokens": [
+    ",",
+    " ",
+    "1",
+    "0",
+    "],"
+   ],
+   "rejected": null,
+   "t": 0.4358
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    " [",
+    "1",
+    "5"
+   ],
+   "rejected": null,
+   "t": 0.4584
+  },
+  {
+   "k": 7,
+   "accepted": 3,
+   "tokens": [
+    ",",
+    " ",
+    "1",
+    "8"
+   ],
+   "rejected": null,
+   "t": 0.481
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "]])",
+    "\n",
+    "       ",
+    " [[",
+    "1",
+    ",",
+    " ",
+    "6"
+   ],
+   "rejected": null,
+   "t": 0.5042
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "],",
+    " [",
+    "8",
+    ",",
+    " ",
+    "1",
+    "0",
+    "],"
+   ],
+   "rejected": null,
+   "t": 0.5278
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " [",
+    "1",
+    "5",
+    ",",
+    " ",
+    "1",
+    "8",
+    "]]"
+   ],
+   "rejected": null,
+   "t": 0.5513
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "\n\n",
+    "       ",
+    " >>>",
+    " merge",
+    "_intervals",
+    "([[",
+    "1",
+    ","
+   ],
+   "rejected": null,
+   "t": 0.5745
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " ",
+    "4",
+    "],",
+    " [",
+    "4",
+    ",",
+    " ",
+    "5"
+   ],
+   "rejected": null,
+   "t": 0.5978
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "]])",
+    "\n",
+    "       ",
+    " [[",
+    "1",
+    ",",
+    " ",
+    "5"
+   ],
+   "rejected": null,
+   "t": 0.6216
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "]]",
+    "\n\n",
+    "       ",
+    " >>>",
+    " merge",
+    "_intervals",
+    "([[",
+    "1"
+   ],
+   "rejected": null,
+   "t": 0.6459
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    ",",
+    " ",
+    "4"
+   ],
+   "rejected": null,
+   "t": 0.6693
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    "],",
+    " [",
+    "0"
+   ],
+   "rejected": null,
+   "t": 0.707
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    ",",
+    " ",
+    "4"
+   ],
+   "rejected": null,
+   "t": 0.7316
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "]])",
+    "\n",
+    "       ",
+    " [[",
+    "0",
+    ",",
+    " ",
+    "4"
+   ],
+   "rejected": null,
+   "t": 0.7552
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "]]",
+    "\n",
+    "   ",
+    " \"\"\"",
+    "\n",
+    "   ",
+    " if",
+    " not"
+   ],
+   "rejected": null,
+   "t": 0.7786
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " intervals",
+    ":",
+    "\n",
+    "       ",
+    " return",
+    " []",
+    "\n\n",
+    "   "
+   ],
+   "rejected": null,
+   "t": 0.8023
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " #",
+    " Sort",
+    " intervals",
+    " by",
+    " start",
+    " time",
+    "\n",
+    "   "
+   ],
+   "rejected": null,
+   "t": 0.8258
+  },
+  {
+   "k": 7,
+   "accepted": 0,
+   "tokens": [
+    " sorted"
+   ],
+   "rejected": null,
+   "t": 0.8478
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "_intervals",
+    " =",
+    " sorted",
+    "(int",
+    "ervals",
+    ",",
+    " key",
+    "=lambda"
+   ],
+   "rejected": null,
+   "t": 0.8709
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " x",
+    ":",
+    " x",
+    "[",
+    "0",
+    "])",
+    "\n\n",
+    "   "
+   ],
+   "rejected": null,
+   "t": 0.8941
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " merged",
+    " =",
+    " [",
+    "sorted",
+    "_intervals",
+    "[",
+    "0",
+    "]]"
+   ],
+   "rejected": null,
+   "t": 0.9173
+  },
+  {
+   "k": 7,
+   "accepted": 4,
+   "tokens": [
+    "\n\n",
+    "   ",
+    " for",
+    " current",
+    " in"
+   ],
+   "rejected": null,
+   "t": 0.9404
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " sorted",
+    "_intervals",
+    "[",
+    "1",
+    ":",
+    "]:",
+    "\n",
+    "       "
+   ],
+   "rejected": null,
+   "t": 0.9634
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " last",
+    " =",
+    " merged",
+    "[-",
+    "1",
+    "]",
+    "\n",
+    "       "
+   ],
+   "rejected": null,
+   "t": 0.9863
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " if",
+    " current",
+    "[",
+    "0",
+    "]",
+    " <=",
+    " last",
+    "["
+   ],
+   "rejected": null,
+   "t": 1.0094
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "1",
+    "]:",
+    "\n",
+    "           ",
+    " #",
+    " Over",
+    "lapping",
+    " intervals"
+   ],
+   "rejected": null,
+   "t": 1.0327
+  },
+  {
+   "k": 7,
+   "accepted": 0,
+   "tokens": [
+    ","
+   ],
+   "rejected": null,
+   "t": 1.0549
+  },
+  {
+   "k": 7,
+   "accepted": 4,
+   "tokens": [
+    " merge",
+    " them",
+    "\n",
+    "           ",
+    " last"
+   ],
+   "rejected": null,
+   "t": 1.0774
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "[",
+    "1",
+    "]",
+    " =",
+    " max",
+    "(last",
+    "[",
+    "1"
+   ],
+   "rejected": null,
+   "t": 1.1006
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "],",
+    " current",
+    "[",
+    "1",
+    "])",
+    "\n",
+    "       ",
+    " else"
+   ],
+   "rejected": null,
+   "t": 1.1236
+  },
+  {
+   "k": 7,
+   "accepted": 4,
+   "tokens": [
+    ":",
+    "\n",
+    "           ",
+    " #",
+    " Non"
+   ],
+   "rejected": null,
+   "t": 1.1462
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    "-over",
+    "lapping",
+    " interval"
+   ],
+   "rejected": null,
+   "t": 1.1685
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    ",",
+    " add",
+    " to"
+   ],
+   "rejected": null,
+   "t": 1.1912
+  },
+  {
+   "k": 7,
+   "accepted": 1,
+   "tokens": [
+    " merged",
+    " list"
+   ],
+   "rejected": null,
+   "t": 1.2139
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "\n",
+    "           ",
+    " merged",
+    ".append",
+    "(current",
+    ")",
+    "\n\n",
+    "   "
+   ],
+   "rejected": null,
+   "t": 1.2368
+  },
+  {
+   "k": 7,
+   "accepted": 6,
+   "tokens": [
+    " return",
+    " merged",
+    "\n\n\n",
+    "#",
+    " Example",
+    " calls",
+    " with"
+   ],
+   "rejected": null,
+   "t": 1.2599
+  },
+  {
+   "k": 7,
+   "accepted": 5,
+   "tokens": [
+    " expected",
+    " output",
+    ":",
+    "\n",
+    "#",
+    " print"
+   ],
+   "rejected": null,
+   "t": 1.2825
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "(",
+    "merge",
+    "_intervals",
+    "([[",
+    "1",
+    ",",
+    " ",
+    "3"
+   ],
+   "rejected": null,
+   "t": 1.3057
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "],",
+    " [",
+    "2",
+    ",",
+    " ",
+    "6",
+    "],",
+    " ["
+   ],
+   "rejected": null,
+   "t": 1.3291
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "8",
+    ",",
+    " ",
+    "1",
+    "0",
+    "],",
+    " [",
+    "1"
+   ],
+   "rejected": null,
+   "t": 1.3525
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "5",
+    ",",
+    " ",
+    "1",
+    "8",
+    "]]",
+    "))",
+    "\n"
+   ],
+   "rejected": null,
+   "t": 1.376
+  },
+  {
+   "k": 7,
+   "accepted": 2,
+   "tokens": [
+    "#",
+    " Expected",
+    " output"
+   ],
+   "rejected": null,
+   "t": 1.3986
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    ":",
+    " [[",
+    "1",
+    ",",
+    " ",
+    "6",
+    "],",
+    " ["
+   ],
+   "rejected": null,
+   "t": 1.4219
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "8",
+    ",",
+    " ",
+    "1",
+    "0",
+    "],",
+    " [",
+    "1"
+   ],
+   "rejected": null,
+   "t": 1.445
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "5",
+    ",",
+    " ",
+    "1",
+    "8",
+    "]]",
+    "\n\n",
+    "#"
+   ],
+   "rejected": null,
+   "t": 1.468
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " print",
+    "(",
+    "merge",
+    "_intervals",
+    "([[",
+    "1",
+    ",",
+    " "
+   ],
+   "rejected": null,
+   "t": 1.4913
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "4",
+    "],",
+    " [",
+    "4",
+    ",",
+    " ",
+    "5",
+    "]]"
+   ],
+   "rejected": null,
+   "t": 1.5144
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "))",
+    "\n",
+    "#",
+    " Expected",
+    " output",
+    ":",
+    " [[",
+    "1"
+   ],
+   "rejected": null,
+   "t": 1.5374
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    ",",
+    " ",
+    "5",
+    "]]",
+    "\n\n",
+    "#",
+    " print",
+    "("
+   ],
+   "rejected": null,
+   "t": 1.5605
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "merge",
+    "_intervals",
+    "([[",
+    "1",
+    ",",
+    " ",
+    "4",
+    "],"
+   ],
+   "rejected": null,
+   "t": 1.5836
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    " [",
+    "0",
+    ",",
+    " ",
+    "4",
+    "]]",
+    "))",
+    "\n"
+   ],
+   "rejected": null,
+   "t": 1.6211
+  },
+  {
+   "k": 7,
+   "accepted": 7,
+   "tokens": [
+    "#",
+    " Expected",
+    " output",
+    ":",
+    " [[",
+    "0",
+    ",",
+    " "
+   ],
+   "rejected": null,
+   "t": 1.6468
+  },
+  {
+   "k": 7,
+   "accepted": 4,
+   "tokens": [
+    "4",
+    "]]",
+    "\n",
+    "```"
+   ],
+   "rejected": null,
+   "t": 1.6695
+  }
+ ],
+ "check": {
+  "text_matches_client": true,
+  "steps": 72,
+  "steps_with_wrong_token_count": 1,
+  "rejected_guesses_logged": 0,
+  "rejected_guess_differs_from_model_token": 0
+ },
+ "tps_debug": 268.22790568003404,
+ "accept_rate": 0.7638888888888888,
+ "mean_len": 6.347222222222222
+}

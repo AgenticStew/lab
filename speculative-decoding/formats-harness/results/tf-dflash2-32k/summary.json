@@ -1,0 +1,118 @@
+{
+ "label": "tf-dflash2-32k",
+ "model": "agentic-works-5090",
+ "base": "http://127.0.0.1:30000/v1",
+ "extra": {
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "note": "",
+ "speed": {
+  "prose": {
+   "decode_tps": 243.69,
+   "e2e_tps": 233.49,
+   "completion_tokens": 512,
+   "runs": [
+    243.69,
+    245.61,
+    225.41
+   ],
+   "loops": 0
+  },
+  "code": {
+   "decode_tps": 414.21,
+   "e2e_tps": 384.7,
+   "completion_tokens": 512,
+   "runs": [
+    434.24,
+    409.6,
+    414.21
+   ],
+   "loops": 0
+  },
+  "json": {
+   "decode_tps": 405.74,
+   "e2e_tps": 371.77,
+   "completion_tokens": 512,
+   "runs": [
+    525.03,
+    385.95,
+    405.74
+   ],
+   "loops": 0
+  },
+  "edit": {
+   "decode_tps": 1569.31,
+   "e2e_tps": 992.63,
+   "completion_tokens": 512,
+   "runs": [
+    1569.65,
+    1569.31,
+    1554.66
+   ],
+   "loops": 0
+  }
+ },
+ "suite_times": {
+  "speed": [
+   1794039004.3471794,
+   1794039026.2934525
+  ],
+  "prefill": [
+   1794039026.2936218,
+   1794039057.6727023
+  ],
+  "quality": [
+   1794039057.6729176,
+   1794039104.0165536
+  ],
+  "ident": [
+   1794039104.0167286,
+   1794039106.6202826
+  ]
+ },
+ "prefill": {
+  "2k": {
+   "ttft": 0.448,
+   "prefill_tps": 4513.6,
+   "prompt_tokens": 2022,
+   "needle": "3/3"
+  },
+  "8k": {
+   "ttft": 1.7067,
+   "prefill_tps": 4782.5,
+   "prompt_tokens": 8162,
+   "needle": "3/3"
+  },
+  "32k": {
+   "ttft": 7.4709,
+   "prefill_tps": 4278.35,
+   "prompt_tokens": 31963,
+   "needle": "2/2"
+  }
+ },
+ "quality": {
+  "humaneval": {
+   "pass": 19,
+   "n": 20
+  },
+  "gsm8k": {
+   "pass": 18,
+   "n": 20
+  },
+  "mmlu": {
+   "pass": 161,
+   "n": 200
+  },
+  "json": {
+   "pass": 3,
+   "n": 3
+  }
+ },
+ "ident": {
+  "prose": 1183,
+  "json": 484,
+  "code": 1040
+ }
+}

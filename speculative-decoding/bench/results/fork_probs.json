@@ -1,0 +1,31 @@
+{
+ "fork_char": 809,
+ "same_text_as_timed_plain_run": true,
+ "context": "e fridge through a special valve. Here’s the key part: when ",
+ "plain_continues": "a liquid turns back into a gas, it absor",
+ "mtp_continues": "the liquid refrigerant expands into a ga",
+ "token_index": 177,
+ "chosen": " a",
+ "top5": [
+  {
+   "token": " a",
+   "p": 0.4199
+  },
+  {
+   "token": " the",
+   "p": 0.3967
+  },
+  {
+   "token": " this",
+   "p": 0.1007
+  },
+  {
+   "token": " liquids",
+   "p": 0.0326
+  },
+  {
+   "token": " that",
+   "p": 0.0215
+  }
+ ]
+}

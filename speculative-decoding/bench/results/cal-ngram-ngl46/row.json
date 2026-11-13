@@ -1,0 +1,317 @@
+{
+ "label": "cal-ngram-ngl46",
+ "cmd": [
+  "~/src/llama.cpp-b12189/build/bin/llama-server",
+  "-m",
+  "~/.cache/huggingface/hub/models--unsloth--Qwen3.8-27B-GGUF/snapshots/4ca720788d1e01f1bff70c033e0d0028fd02e502/Qwen3.8-27B-UD-Q4_K_M.gguf",
+  "-ngl",
+  "46",
+  "-c",
+  "8192",
+  "--parallel",
+  "1",
+  "-fa",
+  "on",
+  "--no-cache-prompt",
+  "--cache-ram",
+  "0",
+  "--jinja",
+  "--fit",
+  "off",
+  "-t",
+  "16",
+  "--host",
+  "127.0.0.1",
+  "--port",
+  "8091",
+  "--spec-type",
+  "ngram-mod"
+ ],
+ "vram_base_mib": 2886,
+ "temp": 0.0,
+ "max_tokens": 64,
+ "seed": 42,
+ "sampling": "greedy",
+ "started": "2026-11-13T06:38:09",
+ "load_s": 2.0,
+ "runs": {
+  "code": [
+   {
+    "tps": 9.236778211759738,
+    "server_tps": 9.23697458292494,
+    "n": 64,
+    "ttft": 0.534437,
+    "prompt_n": 69,
+    "draft_n": 0,
+    "draft_acc": 0,
+    "accept_rate": null,
+    "mean_len": null,
+    "finish": "length",
+    "sha": "ef5ff01f3e59067a",
+    "text": "```python\nfrom typing import List, Tuple\n\n\ndef merge_intervals(intervals: List[List[int]]) -> List[List[int]]:\n    \"\"\"\n    Merge overlapping intervals in a list of [start, end] pairs.\n\n    Args:\n        intervals: A list of intervals, where each interval is a list",
+    "chunks": [
+     [
+      0.534437,
+      "```"
+     ],
+     [
+      0.639945,
+      "python"
+     ],
+     [
+      0.747316,
+      "\n"
+     ],
+     [
+      0.854876,
+      "from"
+     ],
+     [
+      0.959154,
+      " typing"
+     ],
+     [
+      1.061714,
+      " import"
+     ],
+     [
+      1.165247,
+      " List"
+     ],
+     [
+      1.26772,
+      ","
+     ],
+     [
+      1.374076,
+      " Tuple"
+     ],
+     [
+      1.480019,
+      "\n\n\n"
+     ],
+     [
+      1.584508,
+      "def"
+     ],
+     [
+      1.68102,
+      " merge"
+     ],
+     [
+      1.778851,
+      "_intervals"
+     ],
+     [
+      1.87694,
+      "(int"
+     ],
+     [
+      1.976247,
+      "ervals"
+     ],
+     [
+      2.076458,
+      ":"
+     ],
+     [
+      2.1733,
+      " List"
+     ],
+     [
+      2.270626,
+      "[List"
+     ],
+     [
+      2.368566,
+      "[int"
+     ],
+     [
+      2.466302,
+      "]])"
+     ],
+     [
+      2.565108,
+      " ->"
+     ],
+     [
+      2.663923,
+      " List"
+     ],
+     [
+      2.762117,
+      "[List"
+     ],
+     [
+      2.858589,
+      "[int"
+     ],
+     [
+      2.955507,
+      "]]"
+     ],
+     [
+      3.053301,
+      ":"
+     ],
+     [
+      3.152998,
+      "\n"
+     ],
+     [
+      3.252539,
+      "   "
+     ],
+     [
+      3.350976,
+      " \"\"\""
+     ],
+     [
+      3.449798,
+      "\n"
+     ],
+     [
+      3.548042,
+      "   "
+     ],
+     [
+      3.646464,
+      " Merge"
+     ],
+     [
+      3.745764,
+      " overlapping"
+     ],
+     [
+      3.846209,
+      " intervals"
+     ],
+     [
+      3.950694,
+      " in"
+     ],
+     [
+      4.055874,
+      " a"
+     ],
+     [
+      4.161599,
+      " list"
+     ],
+     [
+      4.267453,
+      " of"
+     ],
+     [
+      4.375871,
+      " ["
+     ],
+     [
+      4.720503,
+      "start"
+     ],
+     [
+      4.836416,
+      ","
+     ],
+     [
+      4.950518,
+      " end"
+     ],
+     [
+      5.062747,
+      "]"
+     ],
+     [
+      5.17396,
+      " pairs"
+     ],
+     [
+      5.28678,
+      "."
+     ],
+     [
+      5.399331,
+      "\n\n"
+     ],
+     [
+      5.507409,
+      "   "
+     ],
+     [
+      5.616834,
+      " Args"
+     ],
+     [
+      5.723231,
+      ":"
+     ],
+     [
+      5.830829,
+      "\n"
+     ],
+     [
+      5.937519,
+      "       "
+     ],
+     [
+      6.043944,
+      " intervals"
+     ],
+     [
+      6.152226,
+      ":"
+     ],
+     [
+      6.258523,
+      " A"
+     ],
+     [
+      6.376781,
+      " list"
+     ],
+     [
+      6.481926,
+      " of"
+     ],
+     [
+      6.588097,
+      " intervals"
+     ],
+     [
+      6.69602,
+      ","
+     ],
+     [
+      6.803477,
+      " where"
+     ],
+     [
+      6.912508,
+      " each"
+     ],
+     [
+      7.023328,
+      " interval"
+     ],
+     [
+      7.13374,
+      " is"
+     ],
+     [
+      7.243121,
+      " a"
+     ],
+     [
+      7.354997,
+      " list"
+     ]
+    ]
+   }
+  ]
+ },
+ "status": "ok",
+ "vram_peak_mib": 14859,
+ "vram_delta_mib": 11973,
+ "buffers": []
+}

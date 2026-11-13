@@ -1,0 +1,1235 @@
+{
+ "label": "l8-ngram-simple--explain-0",
+ "cmd": [
+  "~/src/llama.cpp-b12189/build/bin/llama-server",
+  "-m",
+  "/usr/share/ollama/.ollama/models/blobs/sha256-667b0c1932bc6ffc593ed1d03f895bf2dc8dc6df21db3042284a6f4416b06a29",
+  "-ngl",
+  "99",
+  "-c",
+  "8192",
+  "--parallel",
+  "1",
+  "-fa",
+  "on",
+  "--no-cache-prompt",
+  "--cache-ram",
+  "0",
+  "--jinja",
+  "--fit",
+  "off",
+  "-t",
+  "16",
+  "--host",
+  "127.0.0.1",
+  "--port",
+  "8091",
+  "--spec-type",
+  "ngram-simple",
+  "--spec-draft-n-max",
+  "64"
+ ],
+ "vram_base_mib": 2845,
+ "temp": 0.0,
+ "max_tokens": 512,
+ "seed": 42,
+ "sampling": "greedy",
+ "started": "2026-11-13T06:46:50",
+ "load_s": 1.0,
+ "runs": {
+  "explain": [
+   {
+    "tps": 205.52965975371515,
+    "server_tps": 204.8429630499649,
+    "n": 294,
+    "ttft": 0.016491,
+    "prompt_n": 57,
+    "draft_n": 0,
+    "draft_acc": 0,
+    "accept_rate": null,
+    "mean_len": null,
+    "finish": "stop",
+    "sha": "68f9d083fd02fe37",
+    "text": "Hey there, curious 12-year-old! Let's talk about how a refrigerator keeps your food cold.\n\nYou know how sometimes you leave a cold drink outside on a hot day and it gets warm quickly? That's because the heat from the sun is making the drink warm up. A refrigerator works in the opposite way. It uses a special liquid called refrigerant to take heat away from the inside of the fridge and move it outside.\n\nHere's how it works: the refrigerant is pumped through a special coil inside the fridge. As it passes through the coil, it absorbs heat from the air inside the fridge. This makes the refrigerant get warmer and turn into a gas. The gas is then pumped outside the fridge, where it releases its heat into the air.\n\nAs the refrigerant releases its heat, it cools down and turns back into a liquid. This liquid is then pumped back inside the fridge, where it can absorb more heat and start the cycle again.\n\nThis process is called the \"refrigeration cycle,\" and it's what keeps your food cold. The fridge is also insulated, which means it's wrapped in a special material that helps keep the cold air inside. This way, the cold air can't escape, and your food stays fresh and cool.\n\nSo, to sum it up, a refrigerator uses a special liquid to take heat away from the inside and move it outside, keeping your food cold and fresh. Pretty cool, right?",
+    "chunks": [
+     [
+      0.016491,
+      "Hey"
+     ],
+     [
+      0.024626,
+      " there"
+     ],
+     [
+      0.029736,
+      ","
+     ],
+     [
+      0.034388,
+      " curious"
+     ],
+     [
+      0.039115,
+      " "
+     ],
+     [
+      0.044551,
+      "12"
+     ],
+     [
+      0.049468,
+      "-year"
+     ],
+     [
+      0.054215,
+      "-old"
+     ],
+     [
+      0.059026,
+      "!"
+     ],
+     [
+      0.064043,
+      " Let"
+     ],
+     [
+      0.068866,
+      "'s"
+     ],
+     [
+      0.073747,
+      " talk"
+     ],
+     [
+      0.078431,
+      " about"
+     ],
+     [
+      0.083577,
+      " how"
+     ],
+     [
+      0.088362,
+      " a"
+     ],
+     [
+      0.093169,
+      " refrigerator"
+     ],
+     [
+      0.097878,
+      " keeps"
+     ],
+     [
+      0.102638,
+      " your"
+     ],
+     [
+      0.107494,
+      " food"
+     ],
+     [
+      0.112326,
+      " cold"
+     ],
+     [
+      0.117256,
+      ".\n\n"
+     ],
+     [
+      0.122099,
+      "You"
+     ],
+     [
+      0.126831,
+      " know"
+     ],
+     [
+      0.131729,
+      " how"
+     ],
+     [
+      0.136501,
+      " sometimes"
+     ],
+     [
+      0.141401,
+      " you"
+     ],
+     [
+      0.146245,
+      " leave"
+     ],
+     [
+      0.151004,
+      " a"
+     ],
+     [
+      0.155948,
+      " cold"
+     ],
+     [
+      0.160798,
+      " drink"
+     ],
+     [
+      0.165535,
+      " outside"
+     ],
+     [
+      0.170282,
+      " on"
+     ],
+     [
+      0.174947,
+      " a"
+     ],
+     [
+      0.179906,
+      " hot"
+     ],
+     [
+      0.184762,
+      " day"
+     ],
+     [
+      0.189558,
+      " and"
+     ],
+     [
+      0.194204,
+      " it"
+     ],
+     [
+      0.199007,
+      " gets"
+     ],
+     [
+      0.20391,
+      " warm"
+     ],
+     [
+      0.208682,
+      " quickly"
+     ],
+     [
+      0.213582,
+      "?"
+     ],
+     [
+      0.218332,
+      " That"
+     ],
+     [
+      0.223173,
+      "'s"
+     ],
+     [
+      0.227987,
+      " because"
+     ],
+     [
+      0.232919,
+      " the"
+     ],
+     [
+      0.238007,
+      " heat"
+     ],
+     [
+      0.242788,
+      " from"
+     ],
+     [
+      0.247512,
+      " the"
+     ],
+     [
+      0.252402,
+      " sun"
+     ],
+     [
+      0.257401,
+      " is"
+     ],
+     [
+      0.26216,
+      " making"
+     ],
+     [
+      0.267058,
+      " the"
+     ],
+     [
+      0.271871,
+      " drink"
+     ],
+     [
+      0.27691,
+      " warm"
+     ],
+     [
+      0.281716,
+      " up"
+     ],
+     [
+      0.286354,
+      "."
+     ],
+     [
+      0.291129,
+      " A"
+     ],
+     [
+      0.296397,
+      " refrigerator"
+     ],
+     [
+      0.301213,
+      " works"
+     ],
+     [
+      0.305945,
+      " in"
+     ],
+     [
+      0.310829,
+      " the"
+     ],
+     [
+      0.31595,
+      " opposite"
+     ],
+     [
+      0.320586,
+      " way"
+     ],
+     [
+      0.325261,
+      "."
+     ],
+     [
+      0.329875,
+      " It"
+     ],
+     [
+      0.334953,
+      " uses"
+     ],
+     [
+      0.339642,
+      " a"
+     ],
+     [
+      0.344562,
+      " special"
+     ],
+     [
+      0.349393,
+      " liquid"
+     ],
+     [
+      0.354328,
+      " called"
+     ],
+     [
+      0.359057,
+      " refriger"
+     ],
+     [
+      0.363854,
+      "ant"
+     ],
+     [
+      0.368642,
+      " to"
+     ],
+     [
+      0.373633,
+      " take"
+     ],
+     [
+      0.378378,
+      " heat"
+     ],
+     [
+      0.38313,
+      " away"
+     ],
+     [
+      0.388028,
+      " from"
+     ],
+     [
+      0.393018,
+      " the"
+     ],
+     [
+      0.397721,
+      " inside"
+     ],
+     [
+      0.402447,
+      " of"
+     ],
+     [
+      0.407126,
+      " the"
+     ],
+     [
+      0.41233,
+      " fridge"
+     ],
+     [
+      0.417125,
+      " and"
+     ],
+     [
+      0.421715,
+      " move"
+     ],
+     [
+      0.426405,
+      " it"
+     ],
+     [
+      0.431611,
+      " outside"
+     ],
+     [
+      0.436441,
+      ".\n\n"
+     ],
+     [
+      0.441184,
+      "Here"
+     ],
+     [
+      0.445862,
+      "'s"
+     ],
+     [
+      0.450931,
+      " how"
+     ],
+     [
+      0.455745,
+      " it"
+     ],
+     [
+      0.460609,
+      " works"
+     ],
+     [
+      0.46542,
+      ":"
+     ],
+     [
+      0.470427,
+      " the"
+     ],
+     [
+      0.475222,
+      " refriger"
+     ],
+     [
+      0.479995,
+      "ant"
+     ],
+     [
+      0.484842,
+      " is"
+     ],
+     [
+      0.489804,
+      " pumped"
+     ],
+     [
+      0.494486,
+      " through"
+     ],
+     [
+      0.499275,
+      " a"
+     ],
+     [
+      0.504073,
+      " special"
+     ],
+     [
+      0.509332,
+      " coil"
+     ],
+     [
+      0.513915,
+      " inside"
+     ],
+     [
+      0.518871,
+      " the"
+     ],
+     [
+      0.52369,
+      " fridge"
+     ],
+     [
+      0.529035,
+      "."
+     ],
+     [
+      0.533723,
+      " As"
+     ],
+     [
+      0.538437,
+      " it"
+     ],
+     [
+      0.543201,
+      " passes"
+     ],
+     [
+      0.548213,
+      " through"
+     ],
+     [
+      0.55292,
+      " the"
+     ],
+     [
+      0.557583,
+      " coil"
+     ],
+     [
+      0.562261,
+      ","
+     ],
+     [
+      0.567273,
+      " it"
+     ],
+     [
+      0.572114,
+      " absorbs"
+     ],
+     [
+      0.576777,
+      " heat"
+     ],
+     [
+      0.581615,
+      " from"
+     ],
+     [
+      0.586778,
+      " the"
+     ],
+     [
+      0.591623,
+      " air"
+     ],
+     [
+      0.596531,
+      " inside"
+     ],
+     [
+      0.601569,
+      " the"
+     ],
+     [
+      0.606602,
+      " fridge"
+     ],
+     [
+      0.611388,
+      "."
+     ],
+     [
+      0.616276,
+      " This"
+     ],
+     [
+      0.621105,
+      " makes"
+     ],
+     [
+      0.626136,
+      " the"
+     ],
+     [
+      0.630996,
+      " refriger"
+     ],
+     [
+      0.63586,
+      "ant"
+     ],
+     [
+      0.640708,
+      " get"
+     ],
+     [
+      0.645824,
+      " warmer"
+     ],
+     [
+      0.650409,
+      " and"
+     ],
+     [
+      0.655307,
+      " turn"
+     ],
+     [
+      0.660043,
+      " into"
+     ],
+     [
+      0.665296,
+      " a"
+     ],
+     [
+      0.670298,
+      " gas"
+     ],
+     [
+      0.674994,
+      "."
+     ],
+     [
+      0.67968,
+      " The"
+     ],
+     [
+      0.684822,
+      " gas"
+     ],
+     [
+      0.689631,
+      " is"
+     ],
+     [
+      0.694225,
+      " then"
+     ],
+     [
+      0.699039,
+      " pumped"
+     ],
+     [
+      0.704153,
+      " outside"
+     ],
+     [
+      0.708947,
+      " the"
+     ],
+     [
+      0.713743,
+      " fridge"
+     ],
+     [
+      0.718506,
+      ","
+     ],
+     [
+      0.723529,
+      " where"
+     ],
+     [
+      0.728361,
+      " it"
+     ],
+     [
+      0.733288,
+      " releases"
+     ],
+     [
+      0.738107,
+      " its"
+     ],
+     [
+      0.74299,
+      " heat"
+     ],
+     [
+      0.747792,
+      " into"
+     ],
+     [
+      0.752561,
+      " the"
+     ],
+     [
+      0.757569,
+      " air"
+     ],
+     [
+      0.762397,
+      ".\n\n"
+     ],
+     [
+      0.76723,
+      "As"
+     ],
+     [
+      0.772071,
+      " the"
+     ],
+     [
+      0.776914,
+      " refriger"
+     ],
+     [
+      0.781882,
+      "ant"
+     ],
+     [
+      0.786632,
+      " releases"
+     ],
+     [
+      0.791617,
+      " its"
+     ],
+     [
+      0.796639,
+      " heat"
+     ],
+     [
+      0.801458,
+      ","
+     ],
+     [
+      0.806133,
+      " it"
+     ],
+     [
+      0.810917,
+      " co"
+     ],
+     [
+      0.816072,
+      "ols"
+     ],
+     [
+      0.820832,
+      " down"
+     ],
+     [
+      0.825687,
+      " and"
+     ],
+     [
+      0.830327,
+      " turns"
+     ],
+     [
+      0.835325,
+      " back"
+     ],
+     [
+      0.840174,
+      " into"
+     ],
+     [
+      0.845011,
+      " a"
+     ],
+     [
+      0.849769,
+      " liquid"
+     ],
+     [
+      0.854908,
+      "."
+     ],
+     [
+      0.859496,
+      " This"
+     ],
+     [
+      0.864359,
+      " liquid"
+     ],
+     [
+      0.869206,
+      " is"
+     ],
+     [
+      0.874252,
+      " then"
+     ],
+     [
+      0.879026,
+      " pumped"
+     ],
+     [
+      0.8838,
+      " back"
+     ],
+     [
+      0.888679,
+      " inside"
+     ],
+     [
+      0.893674,
+      " the"
+     ],
+     [
+      0.898346,
+      " fridge"
+     ],
+     [
+      0.903171,
+      ","
+     ],
+     [
+      0.907877,
+      " where"
+     ],
+     [
+      0.912758,
+      " it"
+     ],
+     [
+      0.917634,
+      " can"
+     ],
+     [
+      0.922315,
+      " absorb"
+     ],
+     [
+      0.927206,
+      " more"
+     ],
+     [
+      0.93197,
+      " heat"
+     ],
+     [
+      0.936963,
+      " and"
+     ],
+     [
+      0.941714,
+      " start"
+     ],
+     [
+      0.946422,
+      " the"
+     ],
+     [
+      0.951319,
+      " cycle"
+     ],
+     [
+      0.956233,
+      " again"
+     ],
+     [
+      0.961066,
+      ".\n\n"
+     ],
+     [
+      0.965911,
+      "This"
+     ],
+     [
+      0.970587,
+      " process"
+     ],
+     [
+      0.975658,
+      " is"
+     ],
+     [
+      0.980392,
+      " called"
+     ],
+     [
+      0.985272,
+      " the"
+     ],
+     [
+      0.993284,
+      " \""
+     ],
+     [
+      0.99844,
+      "ref"
+     ],
+     [
+      1.003203,
+      "riger"
+     ],
+     [
+      1.008104,
+      "ation"
+     ],
+     [
+      1.013306,
+      " cycle"
+     ],
+     [
+      1.018033,
+      ",\""
+     ],
+     [
+      1.022834,
+      " and"
+     ],
+     [
+      1.027656,
+      " it"
+     ],
+     [
+      1.033063,
+      "'s"
+     ],
+     [
+      1.037943,
+      " what"
+     ],
+     [
+      1.042713,
+      " keeps"
+     ],
+     [
+      1.047662,
+      " your"
+     ],
+     [
+      1.052593,
+      " food"
+     ],
+     [
+      1.057487,
+      " cold"
+     ],
+     [
+      1.062121,
+      "."
+     ],
+     [
+      1.06689,
+      " The"
+     ],
+     [
+      1.072134,
+      " fridge"
+     ],
+     [
+      1.077106,
+      " is"
+     ],
+     [
+      1.081827,
+      " also"
+     ],
+     [
+      1.086655,
+      " insulated"
+     ],
+     [
+      1.091571,
+      ","
+     ],
+     [
+      1.096456,
+      " which"
+     ],
+     [
+      1.101375,
+      " means"
+     ],
+     [
+      1.106535,
+      " it"
+     ],
+     [
+      1.111203,
+      "'s"
+     ],
+     [
+      1.116092,
+      " wrapped"
+     ],
+     [
+      1.120935,
+      " in"
+     ],
+     [
+      1.125947,
+      " a"
+     ],
+     [
+      1.130792,
+      " special"
+     ],
+     [
+      1.135558,
+      " material"
+     ],
+     [
+      1.140474,
+      " that"
+     ],
+     [
+      1.145533,
+      " helps"
+     ],
+     [
+      1.150218,
+      " keep"
+     ],
+     [
+      1.1551,
+      " the"
+     ],
+     [
+      1.159972,
+      " cold"
+     ],
+     [
+      1.16502,
+      " air"
+     ],
+     [
+      1.1698,
+      " inside"
+     ],
+     [
+      1.174708,
+      "."
+     ],
+     [
+      1.179432,
+      " This"
+     ],
+     [
+      1.184401,
+      " way"
+     ],
+     [
+      1.189168,
+      ","
+     ],
+     [
+      1.193896,
+      " the"
+     ],
+     [
+      1.198645,
+      " cold"
+     ],
+     [
+      1.203691,
+      " air"
+     ],
+     [
+      1.208595,
+      " can"
+     ],
+     [
+      1.213337,
+      "'t"
+     ],
+     [
+      1.21803,
+      " escape"
+     ],
+     [
+      1.223159,
+      ","
+     ],
+     [
+      1.227994,
+      " and"
+     ],
+     [
+      1.23285,
+      " your"
+     ],
+     [
+      1.237495,
+      " food"
+     ],
+     [
+      1.242533,
+      " stays"
+     ],
+     [
+      1.247411,
+      " fresh"
+     ],
+     [
+      1.25239,
+      " and"
+     ],
+     [
+      1.257193,
+      " cool"
+     ],
+     [
+      1.262172,
+      ".\n\n"
+     ],
+     [
+      1.266853,
+      "So"
+     ],
+     [
+      1.271609,
+      ","
+     ],
+     [
+      1.276498,
+      " to"
+     ],
+     [
+      1.281207,
+      " sum"
+     ],
+     [
+      1.286025,
+      " it"
+     ],
+     [
+      1.290847,
+      " up"
+     ],
+     [
+      1.295722,
+      ","
+     ],
+     [
+      1.300823,
+      " a"
+     ],
+     [
+      1.305574,
+      " refrigerator"
+     ],
+     [
+      1.310324,
+      " uses"
+     ],
+     [
+      1.315217,
+      " a"
+     ],
+     [
+      1.320363,
+      " special"
+     ],
+     [
+      1.325376,
+      " liquid"
+     ],
+     [
+      1.330006,
+      " to"
+     ],
+     [
+      1.334851,
+      " take"
+     ],
+     [
+      1.339926,
+      " heat"
+     ],
+     [
+      1.34478,
+      " away"
+     ],
+     [
+      1.349499,
+      " from"
+     ],
+     [
+      1.354226,
+      " the"
+     ],
+     [
+      1.359206,
+      " inside"
+     ],
+     [
+      1.364066,
+      " and"
+     ],
+     [
+      1.368904,
+      " move"
+     ],
+     [
+      1.373604,
+      " it"
+     ],
+     [
+      1.378592,
+      " outside"
+     ],
+     [
+      1.383466,
+      ","
+     ],
+     [
+      1.388253,
+      " keeping"
+     ],
+     [
+      1.393219,
+      " your"
+     ],
+     [
+      1.398163,
+      " food"
+     ],
+     [
+      1.402899,
+      " cold"
+     ],
+     [
+      1.407901,
+      " and"
+     ],
+     [
+      1.412803,
+      " fresh"
+     ],
+     [
+      1.417841,
+      "."
+     ],
+     [
+      1.422534,
+      " Pretty"
+     ],
+     [
+      1.427535,
+      " cool"
+     ],
+     [
+      1.432375,
+      ","
+     ],
+     [
+      1.437358,
+      " right"
+     ],
+     [
+      1.442076,
+      "?"
+     ]
+    ]
+   }
+  ]
+ },
+ "status": "ok",
+ "vram_peak_mib": 8975,
+ "vram_delta_mib": 6130,
+ "buffers": []
+}
